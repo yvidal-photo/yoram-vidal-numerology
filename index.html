@@ -289,22 +289,31 @@ nav {
 .process-list {
     list-style: none;
     padding: 0;
-    margin: 0 0 1.5rem;
+    margin: 0 auto 1.5rem;
+    max-width: 560px;
 }
 
 .process-list li {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    gap: 0.75rem;
     font-size: 1.1rem;
     padding: 0.7rem 0;
     border-bottom: 1px solid rgba(140, 90, 43, 0.12);
+    text-align: right;
 }
 
 .process-list li:last-child {
     border-bottom: none;
 }
 
-.process-list li strong {
+.process-list .term {
     color: #8C5A2B;
     font-weight: 500;
+}
+
+.process-list .desc {
+    color: #1C130C;
 }
 
 /* Testimonials */
@@ -584,6 +593,10 @@ footer a:hover {
     .container {
         padding: 0 16px;
     }
+    .process-list li {
+        grid-template-columns: 1fr;
+        gap: 0.2rem;
+    }
     .cta-button {
         padding: 0.85rem 1.7rem;
         font-size: 1rem;
@@ -656,10 +669,10 @@ footer a:hover {
 
                 <h3>במה ניגע במפגש?</h3>
                 <ul class="process-list">
-                    <li><strong>האופי והשאיפות שלכם</strong> - מה באמת מניע אתכם מבפנים.</li>
-                    <li><strong>קריירה ותעסוקה</strong> - מהו תחום העיסוק והמקצוע שהכי מתאימים לכם.</li>
-                    <li><strong>הנתיב שלכם</strong> - הבנת הכיוון וה"ייעוד" האישי שלכם.</li>
-                    <li><strong>זוגיות ומערכות יחסים</strong> - הדינמיקה שלכם מול האנשים הקרובים אליכם.</li>
+                    <li><span class="term">האופי והשאיפות שלכם</span><span class="desc">מה באמת מניע אתכם מבפנים.</span></li>
+                    <li><span class="term">קריירה ותעסוקה</span><span class="desc">מהו תחום העיסוק והמקצוע שהכי מתאימים לכם.</span></li>
+                    <li><span class="term">הנתיב שלכם</span><span class="desc">הבנת הכיוון וה"ייעוד" האישי שלכם.</span></li>
+                    <li><span class="term">זוגיות ומערכות יחסים</span><span class="desc">הדינמיקה שלכם מול האנשים הקרובים אליכם.</span></li>
                 </ul>
 
                 <h3>למי זה מתאים?</h3>
