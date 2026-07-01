@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>יורם וידל - ייעוץ נומרולוגי</title>
-    <meta name="description" content="יורם וידל - ייעוץ נומרולוגי אישי בליווי חם ומקצועי. גלו את הכוח הנסתר במספרים שלכם, מצאו את הייעוד והבינו את עצמכם לעומק.">
-    <meta property="og:title" content="יורם וידל - ייעוץ נומרולוגי מקצועי">
-    <meta property="og:description" content="גלו את הכוח הנסתר במספרים שלכם. ליווי אישי וחם למציאת ייעוד, הבנה עצמית ואיזון בחיים.">
+    <meta name="description" content="יורם וידל - ייעוץ נומרולוגי אישי. שנים של רקע באמנות, ריפוי והתפתחות אישית, שהפכו לכלי מדויק להכרת עצמכם לעומק.">
+    <meta property="og:title" content="יורם וידל - ייעוץ נומרולוגי">
+    <meta property="og:description" content="לראות אותך לעומק, דרך המספרים שלך. ליווי אישי וחם, מבוסס על שנים של עבודה עם אנשים.">
     <meta property="og:image" content="assets/yoram-vidal-profile.jpg">
     <meta property="og:type" content="website">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23141e30'/%3E%3Ctext x='50' y='68' font-size='55' text-anchor='middle' fill='%2303dac6' font-family='Arial'%3E7%3C/text%3E%3C/svg%3E">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Heebo:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%239C5A2E'/%3E%3Ctext x='50' y='68' font-size='55' text-anchor='middle' fill='%23F3E9DC' font-family='Arial'%3E7%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
-       /* כללי: איפוס ברירת מחדל, גופנים וצבעים בסיסיים */
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -20,49 +19,58 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #e0e0e0; /* טקסט בהיר יותר על רקע כהה */
-    background: linear-gradient(135deg, #243b55 0%, #141e30 100%); /* רקע גרדיאנט כהה */
+    font-family: 'Heebo', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #1C130C;
+    background: linear-gradient(135deg, #FBF7F0 0%, #F3E9DC 100%);
     direction: rtl;
     text-align: right;
     overflow-x: hidden;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 24px;
 }
 
-/* כותרות */
 h1, h2, h3 {
-    color: #bb86fc; /* סגול אלקטרוני לכותרות */
+    font-family: 'Heebo', sans-serif;
+    font-weight: 500;
+    color: #8C5A2B;
     margin-bottom: 1rem;
-    line-height: 1.2;
+    line-height: 1.3;
 }
 
-h1 { font-size: 3.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-h2 { font-size: 2.8rem; text-align: center; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-h3 { font-size: 1.8rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.5); }
+h1 { font-size: 3rem; }
+h2 { font-size: 2.3rem; text-align: center; }
+h3 { font-size: 1.5rem; }
 
 p {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     margin-bottom: 1.5rem;
-    color: #ddd;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    color: #1C130C;
+}
+
+.section-intro {
+    text-align: center;
+    max-width: 620px;
+    margin: -1.5rem auto 3rem;
+    color: #8A7A68;
+    font-size: 1.05rem;
 }
 
 /* Header */
 header {
-    background: rgba(25, 39, 59, 0.8); /* רקע כהה ושקוף יותר */
-    backdrop-filter: blur(15px);
+    background: rgba(251, 247, 240, 0.9);
+    backdrop-filter: blur(12px);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: background 0.3s ease;
+    border-bottom: 1px solid rgba(140, 90, 43, 0.12);
 }
 
 nav {
@@ -73,546 +81,436 @@ nav {
 }
 
 .logo {
-    font-size: 1.7rem;
-    font-weight: bold;
-    color: #03dac6; /* ציאן אלקטרוני ללוגו */
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #8C5A2B;
     text-decoration: none;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 2.2rem;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links a {
-    color: #eee;
+    color: #1C130C;
     text-decoration: none;
+    font-size: 0.95rem;
     transition: color 0.3s ease;
-    position: relative;
 }
 
 .nav-links a:hover {
-    color: #03dac6;
+    color: #C97F3C;
 }
 
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    right: 0;
-    width: 0;
-    height: 2px;
-    background: #03dac6;
-    transition: width 0.3s ease;
-}
-
-.nav-links a:hover::after {
-    width: 100%;
-}
-
-/* Hero Section */
+/* Hero */
 .hero {
-    min-height: 100vh;
     display: flex;
     align-items: center;
-    position: relative;
-    overflow: hidden;
-    padding-top: 60px; /* להתאים להדר הקבוע */
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #243b55 0%, #141e30 100%);
-    opacity: 1;
-    z-index: -1;
+    padding-top: 95px;
+    padding-bottom: 40px;
 }
 
 .hero-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 2rem;
     align-items: center;
-    z-index: 2;
-    position: relative;
-}
-
-.hero-text {
-    animation: slideInRight 1s ease-out;
 }
 
 .hero-text h1 {
-    font-size: 4rem;
-}
-
-.hero-text .highlight {
-    color: #03dac6;
-    display: block;
-    font-size: 2.3rem;
-    margin-bottom: 0.8rem;
+    font-size: 2.7rem;
+    margin-bottom: 1.3rem;
 }
 
 .hero-text p {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.8rem;
+}
+
+.hero-contact-line {
+    margin: 1rem 0 1.6rem;
+    font-size: 1rem;
+    color: #8A7A68;
+}
+
+.hero-contact-line a {
+    color: #8A7A68;
+    text-decoration: none;
 }
 
 .hero-visual {
     display: flex;
     justify-content: center;
-    align-items: center;
-    animation: slideInLeft 1s ease-out;
 }
 
-.numbers-circle {
-    width: 380px;
-    height: 380px;
+.hero-photo {
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    background: rgba(36, 59, 85, 0.6);
-    backdrop-filter: blur(10px);
-    border: 2px solid #bb86fc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    animation: rotate 20s linear infinite;
-}
-
-.numbers-circle::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    border-radius: 50%;
-    background: linear-gradient(45deg, #2962ff, #00e5ff, #2962ff);
-    z-index: -1;
-    animation: pulseBorder 3s linear infinite;
-}
-
-@keyframes pulseBorder {
-    0% { opacity: 0.8; }
-    50% { opacity: 1; }
-    100% { opacity: 0.8; }
-}
-
-.center-number {
-    font-size: 5rem;
-    color: #03dac6;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-}
-
-.floating-number {
-    position: absolute;
-    font-size: 1.4rem;
-    color: #00e5ff;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
-    animation: pulse 1.5s ease-in-out infinite;
+    object-fit: cover;
+    border: 1px solid rgba(140, 90, 43, 0.25);
+    box-shadow: 0 20px 50px rgba(140, 90, 43, 0.16);
 }
 
 .cta-button {
     display: inline-block;
-    background: linear-gradient(45deg, #bb86fc, #2962ff);
-    color: #1e1e1e;
-    padding: 1.1rem 2.3rem;
-    font-size: 1.2rem;
-    font-weight: bold;
+    background: #8C5A2B;
+    color: #FBF7F0;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    font-weight: 500;
     text-decoration: none;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(171, 134, 252, 0.4);
-    position: relative;
-    overflow: hidden;
+    border-radius: 8px;
+    transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
     border: none;
-}
-
-.cta-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    transition: right 0.4s ease-in-out;
-}
-
-.cta-button:hover::before {
-    right: 100%;
+    box-shadow: 0 3px 10px rgba(140, 90, 43, 0.2);
 }
 
 .cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(171, 134, 252, 0.6);
+    background: #74471F;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 14px rgba(140, 90, 43, 0.28);
 }
 
-.cta-subtext {
-    font-size: 0.95rem;
-    color: #9fb3c8;
-    margin-top: 0.9rem;
-    margin-bottom: 0;
-}
-
-/* WhatsApp button variant */
 .whatsapp-button {
-    background: linear-gradient(45deg, #25D366, #128C7E);
-    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    background: #2E9E6D;
+    box-shadow: 0 3px 10px rgba(46, 158, 109, 0.25);
 }
 
 .whatsapp-button:hover {
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+    background: #22794F;
+    box-shadow: 0 5px 14px rgba(46, 158, 109, 0.32);
 }
 
-/* Services Section */
+.cta-subtext {
+    font-size: 0.9rem;
+    color: #8A7A68;
+    margin-top: 0.8rem;
+    margin-bottom: 0;
+}
+
+/* Services */
 .services {
-    padding: 6rem 0;
-    background: #1e1e1e;
+    padding: 2.5rem 0;
 }
 
-.services h2 {
-    color: #03dac6;
-    margin-bottom: 3rem;
-}
-
-.services h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70px;
-    height: 3px;
-    background: linear-gradient(45deg, #2962ff, #00e5ff);
-}
-
-.services-grid {
+.services-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    border-top: 1px solid rgba(140, 90, 43, 0.15);
 }
 
-.service-card {
-    background: rgba(36, 59, 85, 0.7);
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #2962ff;
+.service-item {
+    display: flex;
+    gap: 1.1rem;
+    padding: 1.8rem 0;
+    border-bottom: 1px solid rgba(140, 90, 43, 0.15);
 }
 
-.service-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 4px;
-    background: linear-gradient(45deg, #bb86fc, #00e5ff);
+.service-item:nth-child(odd) {
+    border-left: 1px solid rgba(140, 90, 43, 0.15);
+    padding-left: 2rem;
 }
 
-.service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+.service-item:nth-child(even) {
+    padding-right: 2rem;
 }
 
 .service-icon {
-    font-size: 2.8rem;
-    margin-bottom: 1rem;
-    color: #00e5ff;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    color: #8C5A2B;
+    flex-shrink: 0;
+    margin-top: 0.15rem;
 }
 
-.service-card h3 {
-    font-size: 1.6rem;
-    margin-bottom: 0.8rem;
-    color: #bb86fc;
+.service-item h3 {
+    margin-bottom: 0.4rem;
 }
 
-.service-card p {
-    color: #ddd;
-    line-height: 1.6;
+.service-item p {
+    margin-bottom: 0;
+    font-size: 1rem;
 }
 
-/* Testimonials Section */
-.testimonials {
-    padding: 6rem 0;
-    background: linear-gradient(135deg, #1a2a44 0%, #101a2c 100%);
+/* Process */
+.process {
+    padding: 2.5rem 0;
+    background: #F8F2E8;
 }
 
-.testimonials h2 {
-    color: #03dac6;
-    margin-bottom: 1rem;
-}
-
-.testimonials .section-subtitle {
-    text-align: center;
-    margin-top: -1.5rem;
-    margin-bottom: 2.5rem;
-    color: #9fb3c8;
-    font-size: 1.05rem;
-}
-
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.testimonial-card {
-    background: rgba(36, 59, 85, 0.7);
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-    border: 1px solid #bb86fc;
+.process-meta {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.process-meta-item {
+    text-align: center;
+}
+
+.process-meta-item .label {
+    display: block;
+    font-size: 0.85rem;
+    color: #8A7A68;
+    margin-bottom: 0.3rem;
+}
+
+.process-meta-item .value {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.2rem;
+    color: #8C5A2B;
+}
+
+.process-body {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.process-body h3 {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.process-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+}
+
+.process-list li {
+    font-size: 1.05rem;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid rgba(140, 90, 43, 0.12);
+}
+
+.process-list li:last-child {
+    border-bottom: none;
+}
+
+.process-list li strong {
+    color: #8C5A2B;
+    font-weight: 500;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 2.5rem 0;
+}
+
+.testimonial-list {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.testimonial-item {
+    padding: 2rem 0;
+    border-top: 1px solid rgba(140, 90, 43, 0.15);
+}
+
+.testimonial-item:last-child {
+    border-bottom: 1px solid rgba(140, 90, 43, 0.15);
 }
 
 .testimonial-quote-icon {
-    font-size: 2rem;
-    color: #03dac6;
+    font-family: 'Heebo', sans-serif;
+    font-size: 2.4rem;
+    color: #C97F3C;
+    line-height: 0.5;
+    display: block;
     margin-bottom: 0.8rem;
-    line-height: 1;
 }
 
-.testimonial-card p {
-    color: #ddd;
-    font-size: 1.05rem;
-    flex-grow: 1;
+.testimonial-item p {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.2rem;
+    color: #1C130C;
+    margin-bottom: 1rem;
 }
 
 .testimonial-author {
-    margin-top: 1rem;
-    font-weight: bold;
-    color: #bb86fc;
-    font-size: 1rem;
-    text-shadow: none;
+    font-weight: 500;
+    color: #8C5A2B;
+    font-size: 0.95rem;
 }
 
 .testimonial-role {
     display: block;
-    font-weight: normal;
-    color: #9fb3c8;
-    font-size: 0.9rem;
+    font-weight: 300;
+    color: #8A7A68;
+    font-size: 0.85rem;
 }
 
-/* About Section */
+/* About */
 .about {
-    padding: 6rem 0;
-    background: linear-gradient(135deg, #141e30 0%, #243b55 100%);
-    color: #eee;
+    padding: 2.5rem 0;
+    background: #F8F2E8;
 }
 
-.about-content {
-    display: grid;
-    grid-template-columns: 400px 1fr;
-    gap: 4rem;
-    align-items: center;
+.about-body {
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-.about-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.about-body p {
+    font-size: 1.15rem;
 }
 
-.profile-image {
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #03dac6;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-    transition: all 0.3s ease;
-    animation: pulse 5s ease-in-out infinite;
+/* Credentials */
+.credentials {
+    padding: 2.5rem 0;
 }
 
-.profile-image:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+.credentials-list {
+    max-width: 700px;
+    margin: 2rem auto 0;
 }
 
-.about-text h2 {
-    font-size: 2.6rem;
-    margin-bottom: 1.8rem;
+.credential-item {
+    padding: 1.1rem 0;
+    border-bottom: 1px solid rgba(140, 90, 43, 0.15);
+    font-size: 1.05rem;
 }
 
-.about-text p {
-    font-size: 1.2rem;
-    margin-bottom: 1.3rem;
+.credential-item:last-child {
+    border-bottom: none;
 }
 
-.about-visual {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.credential-item .name {
+    font-weight: 500;
+    color: #8C5A2B;
 }
 
-.wisdom-circle {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: rgba(36, 59, 85, 0.6);
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    animation: rotate 15s linear infinite reverse;
-    border: 2px solid #00e5ff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+.credentials-note {
+    max-width: 700px;
+    margin: 1.8rem auto 0;
+    text-align: right;
+    color: #8A7A68;
+    font-size: 1rem;
 }
 
-.wisdom-circle::before {
-    content: '☯';
-    font-size: 5rem;
-    color: #bb86fc;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-}
-
-/* Contact Section */
+/* Contact */
 .contact {
-    padding: 6rem 0;
-    background: #1e1e1e;
-}
-
-.contact h2 {
-    color: #03dac6;
-    margin-bottom: 3rem;
-}
-
-.contact h2::after {
-    background: linear-gradient(45deg, #2962ff, #bb86fc);
+    padding: 2.5rem 0;
+    background: #F8F2E8;
 }
 
 .contact-info-card {
-    max-width: 600px;
-    margin: 0 auto 2.5rem;
-    background: rgba(36, 59, 85, 0.8);
-    padding: 2.5rem;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-    border: 1px solid #2962ff;
+    max-width: 560px;
+    margin: 0 auto 2rem;
     text-align: center;
 }
 
 .contact-info-card h3 {
-    color: #bb86fc;
+    color: #8C5A2B;
     margin-bottom: 1.2rem;
 }
 
-.contact-info-card .contact-details {
-    margin-top: 1.5rem;
-    color: #ccc;
+.contact-details {
+    margin-top: 1.3rem;
+    color: #5C4F42;
     font-size: 1rem;
 }
 
-.contact-info-card .contact-details a {
-    color: #03dac6;
+.contact-details a {
+    color: #C97F3C;
     text-decoration: none;
 }
 
-.contact-info-card .contact-details a:hover {
+.contact-details a:hover {
     text-decoration: underline;
 }
 
 .or-divider {
     text-align: center;
-    color: #9fb3c8;
+    color: #8A7A68;
     font-size: 1rem;
     margin-bottom: 2rem;
 }
 
 .contact-form {
-    max-width: 600px;
+    max-width: 560px;
     margin: 0 auto;
-    background: rgba(36, 59, 85, 0.8);
-    padding: 3rem;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-    border: 1px solid #2962ff;
+    background: #FBF8F2;
+    padding: 2.5rem;
+    border-radius: 6px;
+    border: 1px solid rgba(140, 90, 43, 0.15);
 }
 
 .form-group {
-    margin-bottom: 2rem;
+    margin-bottom: 1.6rem;
 }
 
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    font-weight: bold;
-    color: #bb86fc;
+    font-weight: 500;
+    color: #8C5A2B;
+    font-size: 0.95rem;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 1rem;
-    border: 1px solid #444;
-    border-radius: 5px;
+    padding: 0.9rem;
+    border: 1px solid #D9C9AE;
+    border-radius: 4px;
     font-size: 1rem;
-    background-color: #2b486b;
-    color: #eee;
+    font-family: 'Heebo', sans-serif;
+    background-color: #FFFFFF;
+    color: #1C130C;
     transition: border-color 0.3s ease;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #03dac6;
-    box-shadow: 0 0 5px #03dac6;
+    border-color: #C97F3C;
 }
 
 .form-group textarea {
-    height: 120px;
+    height: 110px;
     resize: vertical;
 }
 
 .submit-btn {
     width: 100%;
-    background: linear-gradient(45deg, #2962ff, #bb86fc);
-    color: #1e1e1e;
-    padding: 1.1rem 2rem;
-    font-size: 1.2rem;
-    font-weight: bold;
+    background: #8C5A2B;
+    color: #FBF7F0;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(41, 98, 255, 0.6);
+    transition: background 0.25s ease;
+    font-family: 'Heebo', sans-serif;
 }
 
 .submit-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(41, 98, 255, 0.8);
+    background: #74471F;
 }
 
 /* Footer */
 footer {
-    background: #141e30;
-    color: #ccc;
+    background: #3D2817;
+    color: #E8DCC8;
     text-align: center;
     padding: 2rem 0;
     font-size: 0.9rem;
 }
 
 footer a {
-    color: #ccc;
+    color: #E8DCC8;
     text-decoration: none;
     margin: 0 10px;
-    opacity: 0.8;
+    opacity: 0.85;
 }
 
 footer a:hover {
@@ -620,151 +518,79 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Animations */
-@keyframes slideInRight {
-    from { transform: translateX(100%); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
-}
-
-@keyframes slideInLeft {
-    from { transform: translateX(-100%); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
-}
-
-@keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
-@keyframes pulse {
-    0%, 100% { transform: scale(1); opacity: 0.8; }
-    50% { transform: scale(1.05); opacity: 1; }
-}
-
-/* רספונסיביות */
-@media (max-width: 992px) {
+/* Responsive */
+@media (max-width: 900px) {
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
     }
     .hero-visual {
-        margin-top: 3rem;
-    }
-    .hero-text h1 {
-        font-size: 3rem;
-    }
-    .hero-text .highlight {
-        font-size: 2rem;
-    }
-    .about-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 3rem;
-    }
-    .about-image {
         order: -1;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+    }
+    .hero-photo {
+        width: 220px;
+        height: 220px;
+    }
+    .service-item:nth-child(odd),
+    .service-item:nth-child(even) {
+        border-left: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .services-list {
+        grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 768px) {
-    h1 { font-size: 2.5rem; }
-    h2 { font-size: 2.2rem; }
-    h3 { font-size: 1.6rem; }
+    h1 { font-size: 2.1rem; }
+    h2 { font-size: 1.9rem; }
+    h3 { font-size: 1.3rem; }
     p { font-size: 1rem; }
-    .cta-button { font-size: 1.1rem; padding: 1rem 2rem; }
 
     .nav-links {
         display: none;
     }
     .logo {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
-
-    .hero-section {
-        padding-top: 80px;
+    .hero {
+        padding-top: 90px;
         min-height: auto;
-        padding-bottom: 60px;
-    }
-    .hero-content {
-        gap: 2rem;
     }
     .hero-text h1 {
-        font-size: 2.2rem;
-    }
-    .hero-text .highlight {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
     .hero-text p {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
-    .numbers-circle {
-        width: 280px;
-        height: 280px;
+    .process-meta {
+        gap: 2rem;
     }
-    .center-number {
-        font-size: 3.5rem;
-    }
-
-    .services-grid, .testimonials-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    .service-card, .testimonial-card, .contact-form, .contact-info-card {
-        padding: 2rem;
-    }
-    .profile-image {
-        width: 250px;
-        height: 250px;
-    }
-    .wisdom-circle {
-        width: 250px;
-        height: 250px;
-    }
-    .wisdom-circle::before {
-        font-size: 4rem;
-    }
-
-    .services, .testimonials, .about, .contact {
+    .services, .process, .testimonials, .about, .credentials, .contact {
         padding: 3rem 0;
     }
 }
 
 @media (max-width: 480px) {
     .container {
-        padding: 0 15px;
-    }
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.8rem; }
-    .hero-text h1 {
-        font-size: 1.8rem;
-    }
-    .hero-text .highlight {
-        font-size: 1.5rem;
-    }
-    .hero-text p {
-        font-size: 1rem;
-    }
-    .numbers-circle {
-        width: 240px;
-        height: 240px;
-    }
-    .center-number {
-        font-size: 3rem;
+        padding: 0 16px;
     }
     .cta-button {
-        padding: 0.8rem 1.8rem;
+        padding: 0.85rem 1.7rem;
         font-size: 1rem;
     }
-    .contact-form, .contact-info-card {
-        padding: 2rem 1.5rem;
+    .contact-form {
+        padding: 2rem 1.4rem;
     }
-    .form-group label {
-        font-size: 0.95rem;
+    .credential-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
     }
-    .form-group input, .form-group textarea {
-        padding: 0.8rem;
-        font-size: 0.95rem;
+    .credential-item .detail {
+        text-align: right;
     }
 }
     </style>
@@ -775,9 +601,10 @@ footer a:hover {
             <a href="#" class="logo">יורם וידל</a>
             <ul class="nav-links">
                 <li><a href="#home">בית</a></li>
+                <li><a href="#about">אודותיי</a></li>
                 <li><a href="#services">שירותים</a></li>
+                <li><a href="#process">התהליך</a></li>
                 <li><a href="#testimonials">המלצות</a></li>
-                <li><a href="#about">אודות</a></li>
                 <li><a href="#contact">צור קשר</a></li>
             </ul>
         </nav>
@@ -787,101 +614,15 @@ footer a:hover {
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>
-                        <span class="highlight">יורם וידל</span>
-                        ייעוץ נומרולוגי מקצועי
-                    </h1>
-                    <p>גלו את הכוח הנסתר במספרים שלכם. מצאו את הייעוד, הבינו את עצמכם והגיעו לפוטנציאל האמיתי בליווי אישי וחם.</p>
-                    <div style="margin: 1rem 0; font-size: 1.1rem; color: #f0c14b;">
-                        📞 052-302-4422 | 📧 yvidal@gmail.com
+                    <h1>מפגש נומרולוגי אישי</h1>
+                    <p>שיחה בינינו, דרך המספרים שליוו אותך מהרגע שנולדת - יחד נגיע להבנה עמוקה יותר על מי שאתה, על הדפוסים, החוזקות והדרך שמתאימה לך.</p>
+                    <div class="hero-contact-line">
+                        <a href="tel:0523024422">📞 052-302-4422</a> &nbsp;|&nbsp; <a href="mailto:yvidal@gmail.com">📧 yvidal@gmail.com</a>
                     </div>
-                    <a href="https://wa.me/972523024422?text=%D7%94%D7%99%20%D7%99%D7%95%D7%A8%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%A0%D7%95%D7%9E%D7%A8%D7%95%D7%9C%D7%95%D7%92%D7%99" class="cta-button whatsapp-button" target="_blank" rel="noopener">💬 שלח הודעה בוואטסאפ</a>
-                    <p class="cta-subtext">לבירור זמינות ומחיר בהתאמה אישית</p>
+                    <a href="https://wa.me/972523024422?text=%D7%94%D7%99%20%D7%99%D7%95%D7%A8%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%A0%D7%95%D7%9E%D7%A8%D7%95%D7%9C%D7%95%D7%92%D7%99" class="cta-button whatsapp-button" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="vertical-align:-4px;margin-left:6px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.05 0C5.463 0 .102 5.362.102 11.949c0 2.096.548 4.15 1.588 5.965L0 24l6.212-1.628c1.75.955 3.72 1.459 5.808 1.459h.005c6.588 0 11.949-5.362 11.949-11.949C24 5.362 18.638.001 12.05.001zm0 21.844h-.004c-1.86 0-3.696-.502-5.309-1.451l-.381-.227-3.939 1.032 1.05-3.844-.249-.394c-1.033-1.646-1.578-3.55-1.578-5.51 0-5.706 4.644-10.35 10.354-10.35 2.766 0 5.363 1.078 7.318 3.035 1.955 1.956 3.033 4.554 3.032 7.324 0 5.706-4.644 10.35-10.354 10.35z"/></svg> לקביעת פגישה</a>
                 </div>
                 <div class="hero-visual">
-                    <div class="numbers-circle">
-                        <div class="center-number">7</div>
-                        <div class="floating-number">1</div>
-                        <div class="floating-number">2</div>
-                        <div class="floating-number">3</div>
-                        <div class="floating-number">4</div>
-                        <div class="floating-number">5</div>
-                        <div class="floating-number">6</div>
-                        <div class="floating-number">8</div>
-                        <div class="floating-number">9</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="services">
-        <div class="container">
-            <h2>השירותים שלי</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🔮</div>
-                    <h3>ליווי אישי</h3>
-                    <p>תהליך אישי מותאם לצרכים שלכם, בגישה נעימה ועמוקה המבוססת על נומרולוגיה, הקשבה פעילה וניסיון רב בליווי אנשים.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🎯</div>
-                    <h3>מציאת יעוד</h3>
-                    <p>גילוי המטרה האמיתית בחיים דרך ניתוח נומרולוגי מעמיק ותובנות אישיות שיעזרו להבין את הייעוד האמיתי.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🌟</div>
-                    <h3>מעברי חיים</h3>
-                    <p>ליווי וחיזוק במעברי חיים משמעותיים - קריירה, זוגיות, החלטות גדולות, ושינויים חיוניים בחיים.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">💝</div>
-                    <h3>יעוץ זוגיות</h3>
-                    <p>הבנת הדינמיקה בזוגיות דרך נומרולוגיה, שיפור התקשורת והעמקת הקשר בין בני הזוג.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🧘</div>
-                    <h3>חיפוש פנימי</h3>
-                    <p>מסע לתוך הנפש לגילוי כוחות נסתרים, פיתוח אינטואיציה והעמקת הקשר עם העצמי הפנימי.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🌈</div>
-                    <h3>פיתוח אישי</h3>
-                    <p>כלים מעשיים לפיתוח אישי, חיזוק הביטחון העצמי והגשמת חלומות ושאיפות אישיות.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2>מה אומרים עליי</h2>
-            <p class="section-subtitle">כמה מילים מאנשים שליוויתי</p>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-quote-icon">”</div>
-                    <p>יורם אדם מיוחד בעל שילוב נדיר של יצירתיות, רגישות ועומק. הוא יודע להקשיב באמת, לשאול את השאלות הנכונות ולהעניק תובנות מתוך מקום כן ואכפתי.</p>
-                    <div class="testimonial-author">רוית גורני</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-quote-icon">”</div>
-                    <p>החוויה הייתה מדויקת ומלאה בתובנות משמעותיות. יורם הפגין רגישות רבה ונטולת שיפוטיות, וסקרנות אמיתית להכיר אותי דרך המספרים. ממליצה בחום על הייעוץ שלו.</p>
-                    <div class="testimonial-author">גלית סלומון<span class="testimonial-role">יועצת חינוכית</span></div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-quote-icon">”</div>
-                    <p>יורם יודע להתחבר לאנשים, להסביר דברים בצורה ברורה ומדויקת, ונותן תחושה שיש מי שמקשיב ומכוון באמת. קיבלתי תובנות משמעותיות וכלים שעזרו לי מאוד.</p>
-                    <div class="testimonial-author">עמית אריכא</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-quote-icon">”</div>
-                    <p>בענווה, בפשטות ובעדינות יורם הראה לי דברים נכונים כל כך על הזוגיות שלי. הוא אישר תחושות שלי וחידש לי נקודות מבט על החיים.</p>
-                    <div class="testimonial-author">נעמי שחטר</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-quote-icon">”</div>
-                    <p>הגעתי בלי לדעת למה לצפות, והוא היה מדויק ברמות. יצאתי מהפגישה עם הרבה חומר למחשבה ותחושה טובה. ממליצה מכל הלב לכל מי שמתלבט.</p>
-                    <div class="testimonial-author">נעמי נגר</div>
+                    <img src="assets/yoram-vidal-profile.jpg" alt="יורם וידל" class="hero-photo">
                 </div>
             </div>
         </div>
@@ -889,18 +630,141 @@ footer a:hover {
 
     <section id="about" class="about">
         <div class="container">
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="assets/yoram-vidal-profile.jpg" alt="יורם וידל - מומחה נומרולוגיה" class="profile-image">
+            <h2>אודותיי</h2>
+            <div class="about-body">
+                <p>במשך שנים רבות חייתי ונשמתי את עולמות היצירה והאומנות, בעיקר דרך המוזיקה והצילום. במקביל, תמיד פעמה בי המשיכה העמוקה לעולמות הריפוי וההתפתחות האישית והרוחנית. למדתי והעמקתי בשיטות מגוונות (הילינג, רייקי, שיאצו וביו-אנרגיה) ואף ניהלתי קליניקה טיפולית משלי.</p>
+                <p>הנומרולוגיה ליוותה אותי תמיד, תחילה כחוט שני ברקע, ועד שבשנים האחרונות תפסה תנופה מרכזית בעשייה שלי. עבורי, הנומרולוגיה היא לא מיסטיקה מרוחקת או עולם אזוטרי – היא כלי עבודה מדויק, פרקטי ומבוסס. היא מאפשרת לי "לקרוא" את המפה הפנימית של האדם הניצב מולי, לזהות פוטנציאלים וחסמים, ולסייע לו להגיע למודעות עצמית גבוהה ופריצת דרך.</p>
+                <p>היום, מתוך בשלות של דרך חיים עשירה, אישית ומקצועית כאחד, אני כאן כדי ללוות אתכם במסע שלכם, ולתת לכם את המפתחות המדויקים להתפתחות פנימית רוחנית ולבחירות נכונות.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>השירותים שלי</h2>
+            <p class="section-intro">כמה מהדרכים שבהן אני מלווה אנשים דרך הנומרולוגיה</p>
+            <div class="services-list">
+                <div class="service-item">
+                    <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="12" r="6"/><circle cx="16" cy="12" r="6"/></svg></div>
+                    <div>
+                        <h3>ליווי אישי</h3>
+                        <p>אני מלווה אתכם בתהליך שמותאם בדיוק אליכם. בלי הגדרות נוקשות או נוסחאות קבועות, אלא מתוך הקשבה אמיתית ועבודה משותפת על מה שבאמת חשוב לכם.</p>
+                    </div>
                 </div>
-                <div class="about-text">
-                    <h2>אודות יורם וידל</h2>
-                    <p>שמי יורם וידל, ואני מתמחה בייעוץ נומרולוגי מקצועי. לצד הנומרולוגיה, אני מביא איתי גם ניסיון רב שנים בליווי וטיפול באנשים מתחום הרפואה האלטרנטיבית - שילוב שנותן לי כלים עמוקים להקשיב, להבין ולראות לעומק את האדם שמולי.</p>
-                    <p>הגישה שלי מבוססת על שילוב של ידע נומרולוגי עמוק, הקשבה אמפתית וניסיון רב בליווי אנשים במגוון מצבי חיים. אני מאמין שלכל אדם יש ייעוד ייחודי, והמספרים יכולים לעזור לנו לגלות אותו.</p>
-                    <p>המטרה שלי היא לתת לך כלים מעשיים להבנת עצמך, לפיתוח הפוטנציאל שלך ולהשגת איזון והרמוניה בחיים.</p>
+                <div class="service-item">
+                    <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7l2 5-2 5-2-5z"/></svg></div>
+                    <div>
+                        <h3>מציאת כיוון וייעוד</h3>
+                        <p>דרך המספרים שלכם, נעבוד יחד כדי לזהות את הדרך שבאמת מתאימה לכם. נבין מהו ה"ייעוד" שלכם – אבל בלי המילים הגדולות, פשוט ובגובה העיניים.</p>
+                    </div>
                 </div>
-                <div class="about-visual">
-                    <div class="wisdom-circle"></div>
+                <div class="service-item">
+                    <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v6M12 10l-6 10M12 10l6 10"/></svg></div>
+                    <div>
+                        <h3>צמתים חשובים בחיים</h3>
+                        <p>כשאתם עומדים בפני החלטה גדולה כמו שינוי קריירה, מעבר, או זוגיות חדשה, אני כאן כדי לעזור לכם לעשות סדר בבלבול, לראות את הדברים בבהירות ולצעוד בביטחון.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></svg></div>
+                    <div>
+                        <h3>ייעוץ והבנה זוגית</h3>
+                        <p>אני עוזר לזוגות להבין טוב יותר את הדינמיקה ביניהם. נראה יחד מאיפה מגיעות אי-ההבנות, ונלמד איך לגשר על הפערים וליצור תקשורת מקרבת, תומכת ומבינה.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8"/></svg></div>
+                    <div>
+                        <h3>היכרות וחיפוש פנימי</h3>
+                        <p>לפעמים הדרך הכי טובה להתקדם היא פשוט להכיר את עצמכם קצת יותר לעומק. נצא יחד למסע שבו תגלו מחדש את הכוחות והאיכויות שאולי שכחתם שקיימים בתוככם.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="12" r="4"/><path d="M12 12h9M17 12v4M20 12v3"/></svg></div>
+                    <div>
+                        <h3>כלים לשינוי ופיתוח אישי</h3>
+                        <p>תובנות זה נהדר, אבל המטרה היא להביא אותן לתוך החיים עצמם. אני מציע לכם כלים מעשיים ופרקטיים שיכולים לעזור לכם ליישם את השינוי ולהתקדם לעבר מה שאתם באמת רוצים.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="process">
+        <div class="container">
+            <h2>מה קורה בפגישה?</h2>
+            <p class="section-intro">כדי שתדעו בדיוק למה לצפות</p>
+            <div class="process-body">
+                <div class="process-meta">
+                    <div class="process-meta-item">
+                        <span class="label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-6px;display:inline-block"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></svg> משך המפגש</span>
+                        <span class="value">כשעה עד שעה וחצי</span>
+                    </div>
+                    <div class="process-meta-item">
+                        <span class="label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-6px;display:inline-block"><path d="M12 21s7-7.5 7-12a7 7 0 0 0-14 0c0 4.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg> איך נפגשים?</span>
+                        <span class="value">פנים אל פנים (מומלץ בחום) או בזום - מה שנוח לכם</span>
+                    </div>
+                </div>
+                <p>המפגש שלנו הוא קודם כל שיחה בגובה העיניים בין שני אנשים. דרך המפה הנומרולוגית והמספרים שלכם, נעבוד יחד כדי להבין טוב יותר את מי שאתם: נזהה את החוזקות הטבעיות שלכם, נסמן את הנקודות שכדאי לשים אליהן יותר לב, ונבין מה אפשר לשנות ומה כדאי ללמוד לקבל באהבה. במהלך השיחה נסתכל גם קדימה אל העתיד, וגם נבין איך מצבים והשפעות מהעבר מעצבים את ההווה שלכם.</p>
+
+                <h3>במה ניגע במפגש?</h3>
+                <ul class="process-list">
+                    <li><strong>האופי והשאיפות שלכם</strong> - מה באמת מניע אתכם מבפנים.</li>
+                    <li><strong>קריירה ותעסוקה</strong> - מהו תחום העיסוק והמקצוע שהכי מתאימים לכם.</li>
+                    <li><strong>הנתיב שלכם</strong> - הבנת הכיוון וה"ייעוד" האישי שלכם.</li>
+                    <li><strong>זוגיות ומערכות יחסים</strong> - הדינמיקה שלכם מול האנשים הקרובים אליכם.</li>
+                </ul>
+
+                <h3>למי זה מתאים?</h3>
+                <p>המפגש מיועד גם למי שנמצא כרגע בצומת דרכים משמעותי (שינוי קריירה, זוגיות, מעברי חיים והחלטות גדולות), וגם למי שפשוט מרגיש שהגיע הזמן להעמיק בהכרת עצמו, להתפתח ולמצוא בהירות פנימית.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="credentials" class="credentials">
+        <div class="container">
+            <h2>הכשרה ורקע מקצועי</h2>
+            <p class="section-intro">שנים של עבודה בעולמות הריפוי, ההתפתחות האישית וההקשבה לאנשים</p>
+            <p>מאחוריי שנים ארוכות של למידה, חקירה וטיפול. הנה התחנות המרכזיות והכלים שעיצבו את דרכי המקצועית:</p>
+            <div class="credentials-list">
+                <div class="credential-item"><span class="name"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-6px;display:inline-block"><path d="M9 4l-2 16M17 4l-2 16M4 9h16M4 15h16"/></svg> נומרולוגיה:</span> לימוד מעמיק ואינטנסיבי אצל מספר מורים פרטיים מובילים בתחום. לאורך הדרך חקרתי כלים נוספים להבנת נפש האדם (ביניהם גם קלפי טארוט), אך בנומרולוגיה מצאתי את השפה המדויקת, המבוססת והנכונה ביותר עבורי.</div>
+                <div class="credential-item"><span class="name"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-6px;display:inline-block"><path d="M12 20v-6M12 14l-4-8M12 14l-1-9M12 14l1-9M12 14l4-8"/></svg> שיאצו:</span> לימודים והסמכה בבית הספר "תמורות" - מהמוסדות הוותיקים והמובילים בישראל לרפואה משלימה.</div>
+                <div class="credential-item"><span class="name"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-6px;display:inline-block"><path d="M13 3L4 14h6l-1 7 9-11h-6z"/></svg> ביואנרגיה:</span> לימוד והעמקה בשיטה הייחודית בהדרכתו הישירה של רפי רוזן (מפתח השיטה בארץ).</div>
+                <div class="credential-item"><span class="name"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-6px;display:inline-block"><path d="M12 4v4M12 16v4M4 12h4M16 12h4M6.5 6.5l2.8 2.8M14.7 14.7l2.8 2.8M17.5 6.5l-2.8 2.8M9.3 14.7l-2.8 2.8"/></svg> הילינג ורייקי:</span> הגעה לדרגה 2, המאפשרת עבודה אנרגטית עמוקה וממוקדת.</div>
+            </div>
+            <p class="credentials-note"><strong>השילוב שהוא היתרון שלכם:</strong> כל הכלים והניסיון שצברתי לאורך השנים בתחומי המגע, הטיפול והאנרגיה, מתנקזים היום לתוך הייעוץ הנומרולוגי שלי. הם מאפשרים לי לא רק לקרוא מספרים, אלא באמת להקשיב לכם, לראות אתכם מעבר למילים ולתת לכם ליווי עמוק ומקיף במיוחד.</p>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>מה אומרים עליי</h2>
+            <p class="section-intro">כמה מילים מאנשים שליוויתי</p>
+            <div class="testimonial-list">
+                <div class="testimonial-item">
+                    <span class="testimonial-quote-icon">"</span>
+                    <p>יורם אדם מיוחד בעל שילוב נדיר של יצירתיות, רגישות ועומק. הוא יודע להקשיב באמת, לשאול את השאלות הנכונות ולהעניק תובנות מתוך מקום כן ואכפתי.</p>
+                    <div class="testimonial-author">רוית גורני</div>
+                </div>
+                <div class="testimonial-item">
+                    <span class="testimonial-quote-icon">"</span>
+                    <p>החוויה הייתה מדויקת ומלאה בתובנות משמעותיות. יורם הפגין רגישות רבה ונטולת שיפוטיות, וסקרנות אמיתית להכיר אותי דרך המספרים. ממליצה בחום על הייעוץ שלו.</p>
+                    <div class="testimonial-author">גלית סלומון<span class="testimonial-role">יועצת חינוכית</span></div>
+                </div>
+                <div class="testimonial-item">
+                    <span class="testimonial-quote-icon">"</span>
+                    <p>יורם יודע להתחבר לאנשים, להסביר דברים בצורה ברורה ומדויקת, ונותן תחושה שיש מי שמקשיב ומכוון באמת. קיבלתי תובנות משמעותיות וכלים שעזרו לי מאוד.</p>
+                    <div class="testimonial-author">עמית אריכא</div>
+                </div>
+                <div class="testimonial-item">
+                    <span class="testimonial-quote-icon">"</span>
+                    <p>בענווה, בפשטות ובעדינות יורם הראה לי דברים נכונים כל כך על הזוגיות שלי. הוא אישר תחושות שלי וחידש לי נקודות מבט על החיים.</p>
+                    <div class="testimonial-author">נעמי שחטר</div>
+                </div>
+                <div class="testimonial-item">
+                    <span class="testimonial-quote-icon">"</span>
+                    <p>הגעתי בלי לדעת למה לצפות, והוא היה מדויק ברמות. יצאתי מהפגישה עם הרבה חומר למחשבה ותחושה טובה. ממליצה מכל הלב לכל מי שמתלבט.</p>
+                    <div class="testimonial-author">נעמי נגר</div>
                 </div>
             </div>
         </div>
@@ -912,7 +776,7 @@ footer a:hover {
 
             <div class="contact-info-card">
                 <h3>הדרך הכי מהירה ליצור קשר</h3>
-                <a href="https://wa.me/972523024422?text=%D7%94%D7%99%20%D7%99%D7%95%D7%A8%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%A0%D7%95%D7%9E%D7%A8%D7%95%D7%9C%D7%95%D7%92%D7%99" class="cta-button whatsapp-button" target="_blank" rel="noopener">💬 שלח הודעה בוואטסאפ</a>
+                <a href="https://wa.me/972523024422?text=%D7%94%D7%99%20%D7%99%D7%95%D7%A8%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%A0%D7%95%D7%9E%D7%A8%D7%95%D7%9C%D7%95%D7%92%D7%99" class="cta-button whatsapp-button" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="vertical-align:-4px;margin-left:6px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.05 0C5.463 0 .102 5.362.102 11.949c0 2.096.548 4.15 1.588 5.965L0 24l6.212-1.628c1.75.955 3.72 1.459 5.808 1.459h.005c6.588 0 11.949-5.362 11.949-11.949C24 5.362 18.638.001 12.05.001zm0 21.844h-.004c-1.86 0-3.696-.502-5.309-1.451l-.381-.227-3.939 1.032 1.05-3.844-.249-.394c-1.033-1.646-1.578-3.55-1.578-5.51 0-5.706 4.644-10.35 10.354-10.35 2.766 0 5.363 1.078 7.318 3.035 1.955 1.956 3.033 4.554 3.032 7.324 0 5.706-4.644 10.35-10.354 10.35z"/></svg> לקביעת פגישה</a>
                 <div class="contact-details">
                     <p style="margin-bottom: 0.4rem;">📞 <a href="tel:0523024422">052-302-4422</a></p>
                     <p style="margin-bottom: 0.4rem;">📧 <a href="mailto:yvidal@gmail.com">yvidal@gmail.com</a></p>
@@ -957,7 +821,6 @@ footer a:hover {
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -971,27 +834,15 @@ footer a:hover {
             });
         });
 
-        // Header scroll effect
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(20, 30, 48, 0.95)';
-            } else {
-                header.style.background = 'rgba(25, 39, 59, 0.8)';
-            }
-        });
-
-        // Check for form submission success
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.get('success') === 'true') {
             document.getElementById('thank-you').style.display = 'block';
             document.querySelector('.contact-form').style.display = 'none';
         }
 
-        // Add animation on scroll
         const observerOptions = {
             threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
+            rootMargin: '0px 0px -60px 0px'
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -1003,33 +854,12 @@ footer a:hover {
             });
         }, observerOptions);
 
-        // Observe service and testimonial cards
-        document.querySelectorAll('.service-card, .testimonial-card').forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(50px)';
-            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(card);
+        document.querySelectorAll('.service-item, .testimonial-item, .credential-item').forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(20px)';
+            item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(item);
         });
-
-        // Random number animation in the hero circle
-        function animateNumbers() {
-            const floatingNumbers = document.querySelectorAll('.floating-number');
-            const centerNumber = document.querySelector('.center-number');
-
-            if (centerNumber) {
-                centerNumber.textContent = Math.floor(Math.random() * 9) + 1;
-                centerNumber.style.transform = `scale(${1 + Math.random() * 0.1})`;
-            }
-
-            floatingNumbers.forEach((number, index) => {
-                setTimeout(() => {
-                    number.textContent = Math.floor(Math.random() * 9) + 1;
-                    number.style.transform = `scale(${0.8 + Math.random() * 0.4})`;
-                }, index * 200);
-            });
-        }
-
-        setInterval(animateNumbers, 3000);
     </script>
 </body>
 </html>
