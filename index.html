@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>יורם וידל - ייעוץ נומרולוגי</title>
+    <meta name="description" content="יורם וידל - ייעוץ נומרולוגי אישי בליווי חם ומקצועי. גלו את הכוח הנסתר במספרים שלכם, מצאו את הייעוד והבינו את עצמכם לעומק.">
+    <meta property="og:title" content="יורם וידל - ייעוץ נומרולוגי מקצועי">
+    <meta property="og:description" content="גלו את הכוח הנסתר במספרים שלכם. ליווי אישי וחם למציאת ייעוד, הבנה עצמית ואיזון בחיים.">
+    <meta property="og:image" content="assets/yoram-vidal-profile.jpg">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23141e30'/%3E%3Ctext x='50' y='68' font-size='55' text-anchor='middle' fill='%2303dac6' font-family='Arial'%3E7%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Heebo:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+       /* כללי: איפוס ברירת מחדל, גופנים וצבעים בסיסיים */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0; /* טקסט בהיר יותר על רקע כהה */
+    background: linear-gradient(135deg, #243b55 0%, #141e30 100%); /* רקע גרדיאנט כהה */
+    direction: rtl;
+    text-align: right;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* כותרות */
+h1, h2, h3 {
+    color: #bb86fc; /* סגול אלקטרוני לכותרות */
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+h1 { font-size: 3.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+h2 { font-size: 2.8rem; text-align: center; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+h3 { font-size: 1.8rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.5); }
+
+p {
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
+    color: #ccc;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Header */
+header {
+    background: rgba(25, 39, 59, 0.8); /* רקע כהה ושקוף יותר */
+    backdrop-filter: blur(15px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 0;
+}
+
+.logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #03dac6; /* ציאן אלקטרוני ללוגו */
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.2rem;
+}
+
+.nav-links a {
+    color: #eee;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: #03dac6;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background: #03dac6;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 60px; /* להתאים להדר הקבוע */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #243b55 0%, #141e30 100%);
+    opacity: 1;
+    z-index: -1;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+}
+
+.hero-text {
+    animation: slideInRight 1s ease-out;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+}
+
+.hero-text .highlight {
+    color: #03dac6;
+    display: block;
+    font-size: 2.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideInLeft 1s ease-out;
+}
+
+.numbers-circle {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background: rgba(36, 59, 85, 0.6);
+    backdrop-filter: blur(10px);
+    border: 2px solid #bb86fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: rotate 20s linear infinite;
+}
+
+.numbers-circle::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #2962ff, #00e5ff, #2962ff);
+    z-index: -1;
+    animation: pulseBorder 3s linear infinite;
+}
+
+@keyframes pulseBorder {
+    0% { opacity: 0.8; }
+    50% { opacity: 1; }
+    100% { opacity: 0.8; }
+}
+
+.center-number {
+    font-size: 5rem;
+    color: #03dac6;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.floating-number {
+    position: absolute;
+    font-size: 1.4rem;
+    color: #00e5ff;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(45deg, #bb86fc, #2962ff);
+    color: #1e1e1e;
+    padding: 1.1rem 2.3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(171, 134, 252, 0.4);
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: right 0.4s ease-in-out;
+}
+
+.cta-button:hover::before {
+    right: 100%;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(171, 134, 252, 0.6);
+}
+
+.cta-subtext {
+    font-size: 0.95rem;
+    color: #9fb3c8;
+    margin-top: 0.9rem;
+    margin-bottom: 0;
+}
+
+/* WhatsApp button variant */
+.whatsapp-button {
+    background: linear-gradient(45deg, #25D366, #128C7E);
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-button:hover {
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+/* Services Section */
+.services {
+    padding: 6rem 0;
+    background: #1e1e1e;
+}
+
+.services h2 {
+    color: #03dac6;
+    margin-bottom: 3rem;
+}
+
+.services h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 3px;
+    background: linear-gradient(45deg, #2962ff, #00e5ff);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.service-card {
+    background: rgba(36, 59, 85, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #2962ff;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(45deg, #bb86fc, #00e5ff);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+}
+
+.service-icon {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #00e5ff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.service-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+    color: #bb86fc;
+}
+
+.service-card p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #1a2a44 0%, #101a2c 100%);
+}
+
+.testimonials h2 {
+    color: #03dac6;
+    margin-bottom: 1rem;
+}
+
+.testimonials .section-subtitle {
+    text-align: center;
+    margin-top: -1.5rem;
+    margin-bottom: 2.5rem;
+    color: #9fb3c8;
+    font-size: 1.05rem;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial-card {
+    background: rgba(36, 59, 85, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    border: 1px solid #bb86fc;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-quote-icon {
+    font-size: 2rem;
+    color: #03dac6;
+    margin-bottom: 0.8rem;
+    line-height: 1;
+}
+
+.testimonial-card p {
+    color: #ddd;
+    font-size: 1.05rem;
+    flex-grow: 1;
+}
+
+.testimonial-author {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #bb86fc;
+    font-size: 1rem;
+    text-shadow: none;
+}
+
+.testimonial-role {
+    display: block;
+    font-weight: normal;
+    color: #9fb3c8;
+    font-size: 0.9rem;
+}
+
+/* About Section */
+.about {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #141e30 0%, #243b55 100%);
+    color: #eee;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #03dac6;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+    animation: pulse 5s ease-in-out infinite;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+.about-text h2 {
+    font-size: 2.6rem;
+    margin-bottom: 1.8rem;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.3rem;
+}
+
+.about-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wisdom-circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(36, 59, 85, 0.6);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: rotate 15s linear infinite reverse;
+    border: 2px solid #00e5ff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.wisdom-circle::before {
+    content: '☯';
+    font-size: 5rem;
+    color: #bb86fc;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+/* Contact Section */
+.contact {
+    padding: 6rem 0;
+    background: #1e1e1e;
+}
+
+.contact h2 {
+    color: #03dac6;
+    margin-bottom: 3rem;
+}
+
+.contact h2::after {
+    background: linear-gradient(45deg, #2962ff, #bb86fc);
+}
+
+.contact-info-card {
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    background: rgba(36, 59, 85, 0.8);
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    border: 1px solid #2962ff;
+    text-align: center;
+}
+
+.contact-info-card h3 {
+    color: #bb86fc;
+    margin-bottom: 1.2rem;
+}
+
+.contact-info-card .contact-details {
+    margin-top: 1.5rem;
+    color: #ccc;
+    font-size: 1rem;
+}
+
+.contact-info-card .contact-details a {
+    color: #03dac6;
+    text-decoration: none;
+}
+
+.contact-info-card .contact-details a:hover {
+    text-decoration: underline;
+}
+
+.or-divider {
+    text-align: center;
+    color: #9fb3c8;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(36, 59, 85, 0.8);
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    border: 1px solid #2962ff;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #bb86fc;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #2b486b;
+    color: #eee;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #03dac6;
+    box-shadow: 0 0 5px #03dac6;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    background: linear-gradient(45deg, #2962ff, #bb86fc);
+    color: #1e1e1e;
+    padding: 1.1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(41, 98, 255, 0.6);
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(41, 98, 255, 0.8);
+}
+
+/* Footer */
+footer {
+    background: #141e30;
+    color: #ccc;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 10px;
+    opacity: 0.8;
+}
+
+footer a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes slideInRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.05); opacity: 1; }
+}
+
+/* רספונסיביות */
+@media (max-width: 992px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .hero-visual {
+        margin-top: 3rem;
+    }
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+    .hero-text .highlight {
+        font-size: 2rem;
+    }
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+    }
+    .about-image {
+        order: -1;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2.2rem; }
+    h3 { font-size: 1.6rem; }
+    p { font-size: 1rem; }
+    .cta-button { font-size: 1.1rem; padding: 1rem 2rem; }
+
+    .nav-links {
+        display: none;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .hero-section {
+        padding-top: 80px;
+        min-height: auto;
+        padding-bottom: 60px;
+    }
+    .hero-content {
+        gap: 2rem;
+    }
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+    .hero-text .highlight {
+        font-size: 1.8rem;
+    }
+    .hero-text p {
+        font-size: 1.1rem;
+    }
+    .numbers-circle {
+        width: 280px;
+        height: 280px;
+    }
+    .center-number {
+        font-size: 3.5rem;
+    }
+
+    .services-grid, .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .service-card, .testimonial-card, .contact-form, .contact-info-card {
+        padding: 2rem;
+    }
+    .profile-image {
+        width: 250px;
+        height: 250px;
+    }
+    .wisdom-circle {
+        width: 250px;
+        height: 250px;
+    }
+    .wisdom-circle::before {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.8rem; }
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+    .hero-text .highlight {
+        font-size: 1.5rem;
+    }
+    .hero-text p {
+        font-size: 1rem;
+    }
+    .numbers-circle {
+        width: 240px;
+        height: 240px;
+    }
+    .center-number {
+        font-size: 3rem;
+    }
+    .cta-button {
+        padding: 0.8rem 1.8rem;
+        font-size: 1rem;
+    }
+    .contact-form, .contact-info-card {
+        padding: 2rem 1.5rem;
+    }
+    .form-group label {
+        font-size: 0.95rem;
+    }
+    .form-group input, .form-group textarea {
+        padding: 0.8rem;
+        font-size: 0.95rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">יורם וידל</a>
+            <ul class="nav-links">
+                <li><a href="#home">בית</a></li>
+                <li><a href="#services">שירותים</a></li>
+                <li><a href="#testimonials">המלצות</a></li>
+                <li><a href="#about">אודות</a></li>
+                <li><a href="#contact">צור קשר</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>
+                        <span class="highlight">יורם וידל</span>
+                        ייעוץ נומרולוגי מקצועי
+                    </h1>
+                    <p>גלו את הכוח הנסתר במספרים שלכם. מצאו את הייעוד, הבינו את עצמכם והגיעו לפוטנציאל האמיתי בליווי אישי וחם.</p>
+                    <div style="margin: 1rem 0; font-size: 1.1rem; color: #f0c14b;">
+                        📞 052-302-4422 | 📧 yvidal@gmail.com
+                    </div>
+                    <a href="https://wa.me/972523024422?text=%D7%94%D7%99%20%D7%99%D7%95%D7%A8%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%A0%D7%95%D7%9E%D7%A8%D7%95%D7%9C%D7%95%D7%92%D7%99" class="cta-button whatsapp-button" target="_blank" rel="noopener">💬 שלח הודעה בוואטסאפ</a>
+                    <p class="cta-subtext">לבירור זמינות ומחיר בהתאמה אישית</p>
+                </div>
+                <div class="hero-visual">
+                    <div class="numbers-circle">
+                        <div class="center-number">7</div>
+                        <div class="floating-number">1</div>
+                        <div class="floating-number">2</div>
+                        <div class="floating-number">3</div>
+                        <div class="floating-number">4</div>
+                        <div class="floating-number">5</div>
+                        <div class="floating-number">6</div>
+                        <div class="floating-number">8</div>
+                        <div class="floating-number">9</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>השירותים שלי</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔮</div>
+                    <h3>ליווי אישי</h3>
+                    <p>תהליך אישי מותאם לצרכים שלכם, בגישה נעימה ועמוקה המבוססת על נומרולוגיה, הקשבה פעילה וניסיון רב בליווי אנשים.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>מציאת יעוד</h3>
+                    <p>גילוי המטרה האמיתית בחיים דרך ניתוח נומרולוגי מעמיק ותובנות אישיות שיעזרו להבין את הייעוד האמיתי.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌟</div>
+                    <h3>מעברי חיים</h3>
+                    <p>ליווי וחיזוק במעברי חיים משמעותיים - קריירה, זוגיות, החלטות גדולות, ושינויים חיוניים בחיים.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💝</div>
+                    <h3>יעוץ זוגיות</h3>
+                    <p>הבנת הדינמיקה בזוגיות דרך נומרולוגיה, שיפור התקשורת והעמקת הקשר בין בני הזוג.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🧘</div>
+                    <h3>חיפוש פנימי</h3>
+                    <p>מסע לתוך הנפש לגילוי כוחות נסתרים, פיתוח אינטואיציה והעמקת הקשר עם העצמי הפנימי.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌈</div>
+                    <h3>פיתוח אישי</h3>
+                    <p>כלים מעשיים לפיתוח אישי, חיזוק הביטחון העצמי והגשמת חלומות ושאיפות אישיות.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>מה אומרים עליי</h2>
+            <p class="section-subtitle">כמה מילים מאנשים שליוויתי</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote-icon">”</div>
+                    <p>יורם אדם מיוחד בעל שילוב נדיר של יצירתיות, רגישות ועומק. הוא יודע להקשיב באמת, לשאול את השאלות הנכונות ולהעניק תובנות מתוך מקום כן ואכפתי.</p>
+                    <div class="testimonial-author">רווית ג.</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote-icon">”</div>
+                    <p>החוויה הייתה מדויקת ומלאה בתובנות משמעותיות. יורם הפגין רגישות רבה ונטולת שיפוטיות, וסקרנות אמיתית להכיר אותי דרך המספרים. ממליצה בחום על הייעוץ שלו.</p>
+                    <div class="testimonial-author">גלית ס.<span class="testimonial-role">יועצת חינוכית</span></div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote-icon">”</div>
+                    <p>יורם יודע להתחבר לאנשים, להסביר דברים בצורה ברורה ומדויקת, ונותן תחושה שיש מי שמקשיב ומכוון באמת. קיבלתי תובנות משמעותיות וכלים שעזרו לי מאוד.</p>
+                    <div class="testimonial-author">עמית</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote-icon">”</div>
+                    <p>בענווה, בפשטות ובעדינות יורם הראה לי דברים נכונים כל כך על הזוגיות שלי. הוא אישר תחושות שלי וחידש לי נקודות מבט על החיים.</p>
+                    <div class="testimonial-author">נעמי ש.</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote-icon">”</div>
+                    <p>הגעתי בלי לדעת למה לצפות, והוא היה מדויק ברמות. יצאתי מהפגישה עם הרבה חומר למחשבה ותחושה טובה. ממליצה מכל הלב לכל מי שמתלבט.</p>
+                    <div class="testimonial-author">נעמי נ.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/yoram-vidal-profile.jpg" alt="יורם וידל - מומחה נומרולוגיה" class="profile-image">
+                </div>
+                <div class="about-text">
+                    <h2>אודות יורם וידל</h2>
+                    <p>שמי יורם וידל, ואני מתמחה בייעוץ נומרולוגי מקצועי. לצד הנומרולוגיה, אני מביא איתי גם ניסיון רב שנים בליווי וטיפול באנשים מתחום הרפואה האלטרנטיבית - שילוב שנותן לי כלים עמוקים להקשיב, להבין ולראות לעומק את האדם שמולי.</p>
+                    <p>הגישה שלי מבוססת על שילוב של ידע נומרולוגי עמוק, הקשבה אמפתית וניסיון רב בליווי אנשים במגוון מצבי חיים. אני מאמין שלכל אדם יש ייעוד ייחודי, והמספרים יכולים לעזור לנו לגלות אותו.</p>
+                    <p>המטרה שלי היא לתת לך כלים מעשיים להבנת עצמך, לפיתוח הפוטנציאל שלך ולהשגת איזון והרמוניה בחיים.</p>
+                </div>
+                <div class="about-visual">
+                    <div class="wisdom-circle"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>צור קשר</h2>
+
+            <div class="contact-info-card">
+                <h3>הדרך הכי מהירה ליצור קשר</h3>
+                <a href="https://wa.me/972523024422?text=%D7%94%D7%99%20%D7%99%D7%95%D7%A8%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%A0%D7%95%D7%9E%D7%A8%D7%95%D7%9C%D7%95%D7%92%D7%99" class="cta-button whatsapp-button" target="_blank" rel="noopener">💬 שלח הודעה בוואטסאפ</a>
+                <div class="contact-details">
+                    <p style="margin-bottom: 0.4rem;">📞 <a href="tel:0523024422">052-302-4422</a></p>
+                    <p style="margin-bottom: 0.4rem;">📧 <a href="mailto:yvidal@gmail.com">yvidal@gmail.com</a></p>
+                    <p style="margin-bottom: 0;">📍 רמת גן</p>
+                </div>
+            </div>
+
+            <p class="or-divider">או השאירו פרטים ואחזור אליכם</p>
+
+            <form class="contact-form" action="https://formspree.io/f/xldleprd" method="POST">
+                <div class="form-group">
+                    <label for="name">שם מלא</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">אימייל</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">טלפון</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">מה תרצה לחלוק או לשאול?</label>
+                    <textarea id="message" name="message" placeholder="ספרו לי מה מעניין אתכם בנומרולוגיה או איזה תחום תרצו לחקור..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">שלח הודעה</button>
+            </form>
+
+            <!-- Thank you message (hidden by default) -->
+            <div id="thank-you" style="display: none; text-align: center; padding: 2rem; background: #d4edda; color: #155724; border-radius: 10px; margin-top: 2rem;">
+                <h3>תודה רבה!</h3>
+                <p>ההודעה נשלחה בהצלחה. אחזור אליכם בהקדם האפשרי.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 יורם וידל - ייעוץ נומרולוגי | 📞 052-302-4422 | 📧 yvidal@gmail.com | 📍 רמת גן</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(20, 30, 48, 0.95)';
+            } else {
+                header.style.background = 'rgba(25, 39, 59, 0.8)';
+            }
+        });
+
+        // Check for form submission success
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('success') === 'true') {
+            document.getElementById('thank-you').style.display = 'block';
+            document.querySelector('.contact-form').style.display = 'none';
+        }
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe service and testimonial cards
+        document.querySelectorAll('.service-card, .testimonial-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(50px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+
+        // Random number animation in the hero circle
+        function animateNumbers() {
+            const floatingNumbers = document.querySelectorAll('.floating-number');
+            const centerNumber = document.querySelector('.center-number');
+
+            if (centerNumber) {
+                centerNumber.textContent = Math.floor(Math.random() * 9) + 1;
+                centerNumber.style.transform = `scale(${1 + Math.random() * 0.1})`;
+            }
+
+            floatingNumbers.forEach((number, index) => {
+                setTimeout(() => {
+                    number.textContent = Math.floor(Math.random() * 9) + 1;
+                    number.style.transform = `scale(${0.8 + Math.random() * 0.4})`;
+                }, index * 200);
+            });
+        }
+
+        setInterval(animateNumbers, 3000);
+    </script>
+</body>
+</html>
