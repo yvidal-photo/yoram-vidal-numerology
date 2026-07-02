@@ -391,16 +391,22 @@ nav {
 .credential-item {
     padding: 1.1rem 0;
     border-bottom: 1px solid rgba(140, 90, 43, 0.15);
-    font-size: 1.1rem;
+    text-align: center;
 }
 
 .credential-item:last-child {
     border-bottom: none;
 }
 
-.credential-item .name {
+.credential-item p {
+    margin-bottom: 0;
+}
+
+.credential-name {
     font-weight: 500;
     color: #8C5A2B;
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
 }
 
 .credentials-note {
@@ -736,10 +742,22 @@ footer a:hover {
             <h2>הכשרה ורקע מקצועי</h2>
             <p style="max-width: 700px; margin: 0 auto 1.5rem;">מאחוריי שנים ארוכות של למידה וטיפול בעולמות הריפוי וההתפתחות האישית. הנה התחנות המרכזיות שעיצבו את דרכי:</p>
             <div class="credentials-list">
-                <div class="credential-item"><span class="name"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-6px;display:inline-block"><path d="M9 4l-2 16M17 4l-2 16M4 9h16M4 15h16"/></svg> נומרולוגיה:</span> לימוד מעמיק ואינטנסיבי אצל מספר מורים פרטיים מובילים בתחום. לאורך הדרך חקרתי כלים נוספים להבנת נפש האדם (ביניהם גם קלפי טארוט), אך בנומרולוגיה מצאתי את השפה המדויקת, המבוססת והנכונה ביותר עבורי.</div>
-                <div class="credential-item"><span class="name"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-6px;display:inline-block"><path d="M12 20v-6M12 14l-4-8M12 14l-1-9M12 14l1-9M12 14l4-8"/></svg> שיאצו:</span> לימודים והסמכה בבית הספר "תמורות" - מהמוסדות הוותיקים והמובילים בישראל לרפואה משלימה.</div>
-                <div class="credential-item"><span class="name"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-6px;display:inline-block"><path d="M13 3L4 14h6l-1 7 9-11h-6z"/></svg> ביואנרגיה:</span> לימוד והעמקה בשיטה הייחודית בהדרכתו הישירה של רפי רוזן (מפתח השיטה בארץ).</div>
-                <div class="credential-item"><span class="name"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-6px;display:inline-block"><path d="M12 4v4M12 16v4M4 12h4M16 12h4M6.5 6.5l2.8 2.8M14.7 14.7l2.8 2.8M17.5 6.5l-2.8 2.8M9.3 14.7l-2.8 2.8"/></svg> הילינג ורייקי:</span> הגעה לדרגה 2, המאפשרת עבודה אנרגטית עמוקה וממוקדת.</div>
+                <div class="credential-item">
+                    <div class="credential-name"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-4px;display:inline-block"><path d="M9 4l-2 16M17 4l-2 16M4 9h16M4 15h16"/></svg> נומרולוגיה</div>
+                    <p>לימוד מעמיק ואינטנסיבי אצל מספר מורים פרטיים מובילים בתחום. לאורך הדרך חקרתי כלים נוספים להבנת נפש האדם (ביניהם גם קלפי טארוט), אך בנומרולוגיה מצאתי את השפה המדויקת, המבוססת והנכונה ביותר עבורי.</p>
+                </div>
+                <div class="credential-item">
+                    <div class="credential-name"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-4px;display:inline-block"><path d="M12 20v-6M12 14l-4-8M12 14l-1-9M12 14l1-9M12 14l4-8"/></svg> שיאצו</div>
+                    <p>לימודים והסמכה בבית הספר "תמורות" - מהמוסדות הוותיקים והמובילים בישראל לרפואה משלימה.</p>
+                </div>
+                <div class="credential-item">
+                    <div class="credential-name"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-4px;display:inline-block"><path d="M13 3L4 14h6l-1 7 9-11h-6z"/></svg> ביואנרגיה</div>
+                    <p>לימוד והעמקה בשיטה הייחודית בהדרכתו הישירה של רפי רוזן (מפתח השיטה בארץ).</p>
+                </div>
+                <div class="credential-item">
+                    <div class="credential-name"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-4px;display:inline-block"><path d="M12 4v4M12 16v4M4 12h4M16 12h4M6.5 6.5l2.8 2.8M14.7 14.7l2.8 2.8M17.5 6.5l-2.8 2.8M9.3 14.7l-2.8 2.8"/></svg> הילינג ורייקי</div>
+                    <p>הגעה לדרגה 2, המאפשרת עבודה אנרגטית עמוקה וממוקדת.</p>
+                </div>
             </div>
             <p class="credentials-note"><strong>השילוב שהוא היתרון שלכם:</strong> כל הכלים והניסיון שצברתי לאורך השנים בתחומי המגע, הטיפול והאנרגיה, מתנקזים היום לתוך הייעוץ הנומרולוגי שלי. הם מאפשרים לי לא רק לקרוא מספרים, אלא באמת להקשיב לכם, לראות אתכם מעבר למילים ולתת לכם ליווי עמוק ומקיף במיוחד.</p>
         </div>
