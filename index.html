@@ -212,14 +212,20 @@ nav {
 
 .service-item {
     display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 1.2rem 1.5rem;
+    padding: 1.5rem 1.5rem;
     border-bottom: 1px solid rgba(140, 90, 43, 0.15);
 }
 
 .service-item:nth-child(odd) {
     border-left: 1px solid rgba(140, 90, 43, 0.15);
+}
+
+.service-icon {
+    color: #8C5A2B;
+    margin-bottom: 0.6rem;
 }
 
 .service-text {
@@ -545,6 +551,12 @@ footer a:hover {
     .services-list {
         grid-template-columns: 1fr;
     }
+    .service-icon {
+        display: none;
+    }
+    .service-item {
+        padding: 1.1rem 1.5rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -674,36 +686,42 @@ footer a:hover {
             <h2>השירותים שלי</h2>
             <div class="services-list">
                 <div class="service-item">
+                    <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="12" r="6"/><circle cx="16" cy="12" r="6"/></svg></div>
                     <div class="service-text">
                         <h3>ליווי אישי</h3>
                         <p>אני מלווה אתכם בתהליך שמותאם בדיוק אליכם. בלי הגדרות נוקשות או נוסחאות קבועות, אלא מתוך הקשבה אמיתית ועבודה משותפת על מה שבאמת חשוב לכם.</p>
                     </div>
                 </div>
                 <div class="service-item">
+                    <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7l2 5-2 5-2-5z"/></svg></div>
                     <div class="service-text">
                         <h3>מציאת כיוון וייעוד</h3>
                         <p>דרך המספרים שלכם, נעבוד יחד כדי לזהות את הדרך שבאמת מתאימה לכם. נבין מהו ה"ייעוד" שלכם – אבל בלי המילים הגדולות, פשוט ובגובה העיניים.</p>
                     </div>
                 </div>
                 <div class="service-item">
+                    <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v6M12 10l-6 10M12 10l6 10"/></svg></div>
                     <div class="service-text">
                         <h3>צמתים חשובים בחיים</h3>
                         <p>כשאתם עומדים בפני החלטה גדולה כמו שינוי קריירה, מעבר, או זוגיות חדשה, אני כאן כדי לעזור לכם לעשות סדר בבלבול, לראות את הדברים בבהירות ולצעוד בביטחון.</p>
                     </div>
                 </div>
                 <div class="service-item">
+                    <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></svg></div>
                     <div class="service-text">
                         <h3>ייעוץ והבנה זוגית</h3>
                         <p>אני עוזר לזוגות להבין טוב יותר את הדינמיקה ביניהם. נראה יחד מאיפה מגיעות אי-ההבנות, ונלמד איך לגשר על הפערים וליצור תקשורת מקרבת, תומכת ומבינה.</p>
                     </div>
                 </div>
                 <div class="service-item">
+                    <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8"/></svg></div>
                     <div class="service-text">
                         <h3>היכרות וחיפוש פנימי</h3>
                         <p>לפעמים הדרך הכי טובה להתקדם היא פשוט להכיר את עצמכם קצת יותר לעומק. נצא יחד למסע שבו תגלו מחדש את הכוחות והאיכויות שאולי שכחתם שקיימים בתוככם.</p>
                     </div>
                 </div>
                 <div class="service-item">
+                    <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="12" r="4"/><path d="M12 12h9M17 12v4M20 12v3"/></svg></div>
                     <div class="service-text">
                         <h3>כלים לשינוי ופיתוח אישי</h3>
                         <p>תובנות זה נהדר, אבל המטרה היא להביא אותן לתוך החיים עצמם. אני מציע לכם כלים מעשיים ופרקטיים שיכולים לעזור לכם ליישם את השינוי ולהתקדם לעבר מה שאתם באמת רוצים.</p>
