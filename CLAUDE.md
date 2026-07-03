@@ -25,6 +25,7 @@
 - **בלי קופסאות:** אין כרטיסים עם רקע/מסגרת/צל - רק קווי הפרדה דקים (border-bottom).
 - **ריווח מצומצם:** המשתמש רגיש לריווח מוגזם - padding אנכי לסקשן ~1.8rem בדסקטופ, ~1.3rem בנייד.
 - **אייקונים בנייד:** לפעמים המשתמש רוצה אייקון בדסקטופ אבל לא בנייד (כי הוא מוסיף גובה/גלילה בלי ערך) - פתרון: `display:none` על האייקון בתוך media query, לא הסרה מה-HTML.
+- **Accordion לתוכן ארוך חוזר:** כשיש כמה פריטים חוזרים עם פסקת הסבר (כמו credentials), ויועץ חיצוני/המשתמש מציין שזה "מאריך" את הדף - פתרון שעבד טוב: accordion פשוט ב-vanilla JS. `<button class="credential-toggle">` עוטף אייקון+שם+שברון (chevron SVG), לוחצים מוסיפים class `open` ל-`.credential-item`, ה-`<p>` עובר מ-`max-height:0;opacity:0` ל-`max-height:300px;opacity:1` עם transition. סגור כברירת מחדל. תבנית JS ב-`<script>` בתחתית הדף (querySelectorAll + closest + classList.toggle).
 
 ## פרטים טכניים
 - **טופס יצירת קשר:** Formspree, מזהה `xldleprd` → yvidal@gmail.com

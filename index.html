@@ -393,9 +393,17 @@ nav {
     border-bottom: none;
 }
 
-.credential-item p {
-    margin-bottom: 0;
-    width: 100%;
+.credential-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    cursor: pointer;
+    color: inherit;
 }
 
 .credential-icon {
@@ -407,7 +415,31 @@ nav {
     font-weight: 500;
     color: #8C5A2B;
     font-size: 1.1rem;
-    margin-bottom: 0.4rem;
+}
+
+.credential-chevron {
+    color: #8C5A2B;
+    margin-top: 0.5rem;
+    transition: transform 0.25s ease;
+}
+
+.credential-item.open .credential-chevron {
+    transform: rotate(180deg);
+}
+
+.credential-item p {
+    margin-bottom: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease, margin-top 0.3s ease;
+}
+
+.credential-item.open p {
+    max-height: 300px;
+    opacity: 1;
+    margin-top: 0.8rem;
 }
 
 /* Contact */
@@ -739,24 +771,36 @@ footer a:hover {
             <p style="max-width: 700px; margin: 0 auto 1.5rem;">מאחוריי שנים ארוכות של למידה וטיפול בעולמות הריפוי וההתפתחות האישית.</p>
             <div class="credentials-list">
                 <div class="credential-item">
-                    <div class="credential-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4l-2 16M17 4l-2 16M4 9h16M4 15h16"/></svg></div>
-                    <div class="credential-name">נומרולוגיה</div>
-                    <p>לימוד מעמיק ואינטנסיבי אצל מספר מורים פרטיים מובילים בתחום. לאורך הדרך חקרתי כלים נוספים להבנת נפש האדם (ביניהם גם קלפי טארוט), אך בנומרולוגיה מצאתי את השפה המדויקת, המבוססת והנכונה ביותר עבורי.</p>
+                    <button class="credential-toggle" aria-expanded="false" aria-controls="cred-desc-1">
+                        <div class="credential-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4l-2 16M17 4l-2 16M4 9h16M4 15h16"/></svg></div>
+                        <div class="credential-name">נומרולוגיה</div>
+                        <svg class="credential-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <p id="cred-desc-1">לימוד מעמיק ואינטנסיבי אצל מספר מורים פרטיים מובילים בתחום. לאורך הדרך חקרתי כלים נוספים להבנת נפש האדם (ביניהם גם קלפי טארוט), אך בנומרולוגיה מצאתי את השפה המדויקת, המבוססת והנכונה ביותר עבורי.</p>
                 </div>
                 <div class="credential-item">
-                    <div class="credential-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-6M12 14l-4-8M12 14l-1-9M12 14l1-9M12 14l4-8"/></svg></div>
-                    <div class="credential-name">שיאצו</div>
-                    <p>לימודים והסמכה בבית הספר "תמורות" - מהמוסדות הוותיקים והמובילים בישראל לרפואה משלימה.</p>
+                    <button class="credential-toggle" aria-expanded="false" aria-controls="cred-desc-2">
+                        <div class="credential-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-6M12 14l-4-8M12 14l-1-9M12 14l1-9M12 14l4-8"/></svg></div>
+                        <div class="credential-name">שיאצו</div>
+                        <svg class="credential-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <p id="cred-desc-2">לימודים והסמכה בבית הספר "תמורות" - מהמוסדות הוותיקים והמובילים בישראל לרפואה משלימה.</p>
                 </div>
                 <div class="credential-item">
-                    <div class="credential-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3L4 14h6l-1 7 9-11h-6z"/></svg></div>
-                    <div class="credential-name">ביואנרגיה</div>
-                    <p>לימוד והעמקה בשיטה הייחודית בהדרכתו הישירה של רפי רוזן (מפתח השיטה בארץ).</p>
+                    <button class="credential-toggle" aria-expanded="false" aria-controls="cred-desc-3">
+                        <div class="credential-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3L4 14h6l-1 7 9-11h-6z"/></svg></div>
+                        <div class="credential-name">ביואנרגיה</div>
+                        <svg class="credential-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <p id="cred-desc-3">לימוד והעמקה בשיטה הייחודית בהדרכתו הישירה של רפי רוזן (מפתח השיטה בארץ).</p>
                 </div>
                 <div class="credential-item">
-                    <div class="credential-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v4M12 16v4M4 12h4M16 12h4M6.5 6.5l2.8 2.8M14.7 14.7l2.8 2.8M17.5 6.5l-2.8 2.8M9.3 14.7l-2.8 2.8"/></svg></div>
-                    <div class="credential-name">הילינג ורייקי</div>
-                    <p>הגעה לדרגה 2, המאפשרת עבודה אנרגטית עמוקה וממוקדת.</p>
+                    <button class="credential-toggle" aria-expanded="false" aria-controls="cred-desc-4">
+                        <div class="credential-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v4M12 16v4M4 12h4M16 12h4M6.5 6.5l2.8 2.8M14.7 14.7l2.8 2.8M17.5 6.5l-2.8 2.8M9.3 14.7l-2.8 2.8"/></svg></div>
+                        <div class="credential-name">הילינג ורייקי</div>
+                        <svg class="credential-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <p id="cred-desc-4">הגעה לדרגה 2, המאפשרת עבודה אנרגטית עמוקה וממוקדת.</p>
                 </div>
             </div>
         </div>
@@ -884,6 +928,14 @@ footer a:hover {
             item.style.transform = 'translateY(20px)';
             item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
             observer.observe(item);
+        });
+
+        document.querySelectorAll('.credential-toggle').forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const item = toggle.closest('.credential-item');
+                const isOpen = item.classList.toggle('open');
+                toggle.setAttribute('aria-expanded', isOpen);
+            });
         });
     </script>
 </body>
