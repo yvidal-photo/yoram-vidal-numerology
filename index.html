@@ -1220,31 +1220,39 @@
 
 
     @media(min-width:901px){
+      .hero{
+        padding-bottom:42px !important;
+      }
+
       .hero-wave{
-        bottom:-8% !important;
-        height:46% !important;
+        bottom:-14% !important;
+        height:40% !important;
       }
 
       .portrait-shell{
-        padding-bottom:14px;
+        padding-bottom:8px;
       }
 
       .portrait-caption{
         position:relative;
         z-index:5;
-        display:inline-block;
+        display:block;
         margin-top:12px;
-        padding:10px 14px;
-        background:rgba(255,253,249,.92);
-        border:1px solid rgba(199,146,63,.22);
-        border-radius:16px;
-        box-shadow:0 12px 32px rgba(16,33,58,.08);
-        backdrop-filter:blur(6px);
+        padding:0 8px;
+        background:transparent !important;
+        border:0 !important;
+        border-radius:0 !important;
+        box-shadow:none !important;
+        backdrop-filter:none !important;
       }
 
       .portrait-caption strong,
       .portrait-caption span{
         color:var(--ink) !important;
+      }
+
+      .trust-strip{
+        margin-top:-18px !important;
       }
     }
 
