@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>יורם וידל | ייעוץ נומרולוגי אישי וזוגי</title>
   <meta name="description" content="ייעוץ נומרולוגי אישי וזוגי בגובה העיניים, להבנת דפוסים, חוזקות, צמתי חיים ומערכות יחסים. פגישות ברמת גן או בזום.">
-  <meta name="theme-color" content="#17130f">
+  <meta name="theme-color" content="#2B211B">
   <meta property="og:title" content="יורם וידל | ייעוץ נומרולוגי אישי וזוגי">
   <meta property="og:description" content="לראות את התמונה הרחבה דרך המספרים — בשיחה רגישה, בהירה ומעשית.">
   <meta property="og:type" content="website">
@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --ink:#17130f;
+      --ink:#332820;
       --ink-soft:#4f463e;
       --cream:#f6f0e7;
       --paper:#fffdf9;
@@ -47,7 +47,7 @@
       color:var(--copper-dark);font-weight:600;font-size:.9rem;
       letter-spacing:.04em;
     }
-    .eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+    .eyebrow::before{content:none}
     h1,h2,h3{margin:0;color:var(--ink);line-height:1.12}
     h1,h2{font-family:"Heebo",Arial,sans-serif}
     h1{font-size:clamp(2.35rem,5.6vw,5.15rem);font-weight:600;letter-spacing:-.03em}
@@ -78,8 +78,8 @@
       border:0;text-decoration:none;cursor:pointer;font-weight:600;
       border-radius:999px;transition:.25s ease;
     }
-    .nav-cta{padding:.7rem 1.15rem;background:var(--ink);color:white}
-    .nav-cta:hover{transform:translateY(-2px);background:#000}
+    .nav-cta{padding:.7rem 1.15rem;background:#2B211B;color:white}
+    .nav-cta:hover{transform:translateY(-2px);background:#1F1713}
     .menu-btn{display:none;border:0;background:transparent;font-size:1.55rem}
     .hero{padding:56px 0 28px}
     .hero-grid{display:grid;grid-template-columns:1.18fr .82fr;align-items:center;gap:56px}
@@ -96,7 +96,7 @@
     .hero-note{margin-top:16px;font-size:.92rem;color:#756b62}
     .portrait-shell{position:relative;isolation:isolate;max-width:365px;width:100%;justify-self:center}
     .portrait-shell::before{content:none}
-    .portrait-card{position:relative;overflow:hidden;border-radius:36px 36px 110px 36px;box-shadow:var(--shadow);background:#120f0c;aspect-ratio:4/5}
+    .portrait-card{position:relative;overflow:hidden;border-radius:36px 36px 110px 36px;box-shadow:var(--shadow);background:#2B211B;aspect-ratio:4/5}
     .portrait-card img{width:100%;height:100%;object-fit:cover;object-position:54% center}
     .portrait-card::after{content:none}
     .portrait-caption{
@@ -144,7 +144,7 @@
     .split{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}
     .quote-panel{
       position:sticky;top:110px;padding:38px;border-radius:32px;
-      background:var(--ink);color:white;overflow:hidden;
+      background:#2B211B;color:white;overflow:hidden;
     }
     .quote-panel::after{
       content:"7";position:absolute;left:-10px;bottom:-85px;
@@ -200,7 +200,7 @@
     .testimonial footer{margin-top:20px;color:var(--copper-dark);font-weight:600}
     .contact-wrap{
       display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;
-      padding:46px;border-radius:36px;background:var(--ink);color:#fff;
+      padding:46px;border-radius:36px;background:#2B211B;color:#fff;
       box-shadow:var(--shadow)
     }
     .contact-wrap h2{color:#fff}
@@ -596,6 +596,77 @@
         white-space:nowrap !important;
         max-width:100%;
       }
+    }
+
+
+    /* Warmer dark palette */
+    .quote-panel,
+    .contact-wrap{
+      background:#2B211B !important;
+    }
+
+    h1, h2, h3,
+    .brand,
+    .accordion-title strong,
+    .portrait-caption strong{
+      color:#332820;
+    }
+
+    .contact-wrap h2,
+    .quote-panel h2,
+    .quote-panel h3{
+      color:#ffffff !important;
+    }
+
+    .eyebrow{
+      gap:0 !important;
+      letter-spacing:.035em;
+    }
+
+
+    .nav-cta,
+    .quote-panel,
+    .contact-wrap{
+      background-color:#2B211B !important;
+    }
+
+    .nav-cta:hover{
+      background-color:#1F1713 !important;
+    }
+
+
+    /* Final visible brown palette */
+    :root{
+      --ink:#3A2A22;
+    }
+
+    .nav-cta,
+    .quote-panel,
+    .contact-wrap{
+      background:#4A3328 !important;
+      background-color:#4A3328 !important;
+    }
+
+    .nav-cta:hover{
+      background:#3B281F !important;
+      background-color:#3B281F !important;
+    }
+
+    .portrait-card{
+      background:#4A3328 !important;
+    }
+
+    h1, h2, h3,
+    .brand,
+    .accordion-title strong,
+    .portrait-caption strong{
+      color:#3A2A22 !important;
+    }
+
+    .contact-wrap h2,
+    .quote-panel h2,
+    .quote-panel h3{
+      color:#ffffff !important;
     }
 
 </style>
