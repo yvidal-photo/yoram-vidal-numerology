@@ -5,1638 +5,614 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>יורם וידל | ייעוץ נומרולוגי אישי וזוגי</title>
   <meta name="description" content="ייעוץ נומרולוגי אישי וזוגי בגובה העיניים, להבנת דפוסים, חוזקות, צמתי חיים ומערכות יחסים. פגישות ברמת גן או בזום.">
-  <meta name="theme-color" content="#2B211B">
-  <meta property="og:title" content="יורם וידל | ייעוץ נומרולוגי אישי וזוגי">
-  <meta property="og:description" content="לראות את התמונה הרחבה דרך המספרים, בשיחה רגישה, בהירה ומעשית.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/yoram-vidal-profile.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --ink:#332820;
-      --ink-soft:#4f463e;
-      --cream:#f6f0e7;
-      --paper:#fffdf9;
-      --copper:#a86236;
-      --copper-dark:#7f4527;
-      --sage:#6f806a;
-      --line:rgba(23,19,15,.12);
-      --shadow:0 22px 70px rgba(37,25,16,.12);
-      --radius:24px;
+      --navy-deep:#141F34;
+      --navy:#1B2C4A;
+      --navy-mid:#22385C;
+      --navy-soft:#2A4468;
+      --gold:#E0B36C;
+      --gold-soft:#C9975A;
+      --emerald:#5FA085;
+      --emerald-soft:#7FB89D;
+      --star-yellow:#F0C97A;
+      --star-blue:#93AEDE;
+      --cream:#EDE6D8;
+      --body-txt:#B7C2D6;
+      --line:rgba(224,179,108,.15);
+      --panel:rgba(20,31,52,.5);
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{
       margin:0;
-      color:var(--ink);
-      background:
-        radial-gradient(circle at 8% 0%, rgba(168,98,54,.12), transparent 34rem),
-        linear-gradient(180deg,#fbf8f3 0%,#f5eee4 100%);
+      color:var(--body-txt);
+      background:var(--navy);
       font-family:"Heebo",Arial,sans-serif;
+      font-weight:300;
       line-height:1.7;
-      overflow-x:hidden;
     }
-    a{color:inherit}
-    img{max-width:100%;display:block}
-    button,input,textarea{font:inherit}
-    .wrap{width:min(1160px,calc(100% - 40px));margin-inline:auto}
-    .eyebrow{
-      display:inline-flex;align-items:center;gap:.55rem;
-      color:var(--copper-dark);font-weight:600;font-size:.9rem;
-      letter-spacing:.04em;
-    }
-    .eyebrow::before{content:none}
-    h1,h2,h3{margin:0;color:var(--ink);line-height:1.12}
-    h1,h2{font-family:"Heebo",Arial,sans-serif}
-    h1{font-size:clamp(2.35rem,5.6vw,5.15rem);font-weight:600;letter-spacing:-.03em}
-    h2{font-size:clamp(2rem,4vw,3.45rem);font-weight:600;letter-spacing:-.018em}
-    h3{font-size:1.25rem}
-    p{margin:0;color:var(--ink-soft);font-size:1.08rem}
-    section{scroll-margin-top:92px}
-    .nav{
-      position:sticky;top:0;z-index:20;
-      backdrop-filter:blur(16px);
-      background:rgba(251,248,243,.86);
-      border-bottom:1px solid var(--line);
-    }
-    .nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .brand{text-decoration:none;display:flex;align-items:center;gap:12px;font-weight:700}
-    .brand-mark{
-      width:39px;height:39px;border-radius:50%;
-      display:grid;place-items:center;color:#fff;
-      background:linear-gradient(145deg,var(--copper),var(--copper-dark));
-      box-shadow:0 9px 24px rgba(168,98,54,.25);
-      font-family:"Heebo",Arial,sans-serif;font-size:1.35rem;
-    }
-    .nav-links{display:flex;align-items:center;gap:25px}
-    .nav-links a{text-decoration:none;font-size:.95rem;color:#3f3730}
-    .nav-links a:hover{color:var(--copper)}
-    .nav-cta,.btn{
-      display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
-      border:0;text-decoration:none;cursor:pointer;font-weight:600;
-      border-radius:999px;transition:.25s ease;
-    }
-    .nav-cta{padding:.7rem 1.15rem;background:#2B211B;color:white}
-    .nav-cta:hover{transform:translateY(-2px);background:#1F1713}
-    .menu-btn{display:none;border:0;background:transparent;font-size:1.55rem}
-    .hero{padding:56px 0 28px}
-    .hero-grid{display:grid;grid-template-columns:1.18fr .82fr;align-items:center;gap:56px}
-    .hero-copy{max-width:690px}
-    .hero h1 span{color:var(--copper)}
-    .hero-title-line{display:block;white-space:nowrap}
-    .hero-lead{font-size:clamp(1.15rem,1.7vw,1.36rem);max-width:650px;margin-top:24px}
-    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
-    .btn{padding:.95rem 1.4rem}
-    .btn-primary{background:var(--copper);color:#fff;box-shadow:0 12px 30px rgba(168,98,54,.25)}
-    .btn-primary:hover{background:var(--copper-dark);transform:translateY(-2px)}
-    .btn-secondary{background:rgba(255,255,255,.68);border:1px solid var(--line)}
-    .btn-secondary:hover{background:#fff;transform:translateY(-2px)}
-    .hero-note{margin-top:16px;font-size:.92rem;color:#756b62}
-    .portrait-shell{position:relative;isolation:isolate;max-width:365px;width:100%;justify-self:center}
-    .portrait-shell::before{content:none}
-    .portrait-card{position:relative;overflow:hidden;border-radius:36px 36px 110px 36px;box-shadow:var(--shadow);background:#2B211B;aspect-ratio:4/5}
-    .portrait-card img{width:100%;height:100%;object-fit:cover;object-position:54% center}
-    .portrait-card::after{content:none}
-    .portrait-caption{
-      margin-top:14px;
-      padding:0 8px;
-      text-align:right;
-      color:var(--ink);
-    }
-    .portrait-caption strong{
-      display:block;
-      font-size:1.08rem;
-      margin-bottom:3px;
-      color:var(--ink);
-    }
-    .portrait-caption span{
-      display:block;
-      font-size:.88rem;
-      color:#6f655d;
-      white-space:normal;
-    }
-    .trust-strip{padding:16px 0 46px}
-    .trust-box{
-      display:grid;grid-template-columns:repeat(4,1fr);
-      background:rgba(255,255,255,.55);border:1px solid var(--line);
-      border-radius:20px;overflow:hidden;
-    }
-    .trust-item{padding:20px;text-align:center;border-left:1px solid var(--line)}
-    .trust-item:last-child{border-left:0}
-    .trust-item strong{display:block;font-size:1rem}
-    .trust-item span{color:#756b62;font-size:.92rem}
-    .section{padding:72px 0}
-    .section-head{max-width:760px;margin-bottom:30px}
-    .section-head p{margin-top:16px}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .card{
-      min-height:240px;padding:28px;border-radius:var(--radius);
-      background:rgba(255,255,255,.68);border:1px solid rgba(23,19,15,.1);
-      box-shadow:0 12px 40px rgba(33,23,16,.045);
-      transition:.25s ease;
-    }
-    .card:hover{transform:translateY(-5px);box-shadow:0 20px 55px rgba(33,23,16,.09)}
-    .card-number{font-family:"Heebo",Arial,sans-serif;color:var(--copper);font-size:2rem;margin-bottom:30px}
-    .card h3{margin-bottom:10px}
-    .card p{font-size:1rem}
-    .split{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}
-    .quote-panel{
-      position:sticky;top:110px;padding:38px;border-radius:32px;
-      background:#2B211B;color:white;overflow:hidden;
-    }
-    .quote-panel::after{
-      content:"7";position:absolute;left:-10px;bottom:-85px;
-      font-family:"Heebo",Arial,sans-serif;font-size:18rem;color:rgba(255,255,255,.045);
-    }
-    .quote-panel p{color:rgba(255,255,255,.82);font-size:1.25rem}
-    .quote-panel strong{display:block;margin-top:24px;color:#e3b18f}
-    .timeline{display:grid;gap:12px}
-    .step{display:grid;grid-template-columns:58px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}
-    .step:last-child{border-bottom:0}
-    .step-index{
-      width:48px;height:48px;border-radius:50%;display:grid;place-items:center;
-      background:#fff;border:1px solid var(--line);font-weight:700;color:var(--copper);
-    }
-    .step h3{margin-bottom:6px}
-    .about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
-    .about-copy p+ p{margin-top:17px}
-    .facts{display:grid;gap:12px}
-    .fact{
-      padding:22px;border-radius:18px;background:rgba(255,255,255,.62);
-      border:1px solid var(--line)
-    }
-    .fact strong{display:block;color:var(--copper-dark);margin-bottom:4px}
+    .wrap{width:min(1100px,calc(100% - 40px));margin-inline:auto}
+    h1,h2,h3{margin:0;color:var(--cream);font-family:"Heebo",Arial,sans-serif;font-weight:500;line-height:1.2}
+    p{margin:0;color:var(--body-txt);font-size:1.1rem}
 
-    .pricing-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:900px;margin-inline:auto}
-    .price-card{
-      position:relative;padding:34px;border-radius:28px;background:var(--paper);
-      border:1px solid var(--line);box-shadow:0 14px 44px rgba(33,23,16,.06)
-    }
-    .price-card.featured{border-color:rgba(168,98,54,.42);box-shadow:0 20px 60px rgba(168,98,54,.12)}
-    .price-badge{
-      position:absolute;top:18px;left:18px;padding:.35rem .7rem;border-radius:999px;
-      background:rgba(168,98,54,.12);color:var(--copper-dark);font-size:.78rem;font-weight:700
-    }
-    .price-card h3{font-size:1.45rem;margin-bottom:8px}
-    .price{font-family:"Heebo",Arial,sans-serif;font-size:3.2rem;line-height:1;color:var(--copper);margin:22px 0 8px}
-    .price small{font-family:"Heebo",sans-serif;font-size:1rem;color:#756b62;font-weight:400}
-    .price-details{list-style:none;padding:0;margin:22px 0;display:grid;gap:9px;color:var(--ink-soft)}
-    .price-details li::before{content:"✓";color:var(--sage);font-weight:700;margin-left:8px}
-    .intro-call{
-      max-width:900px;margin:22px auto 0;padding:24px 28px;border-radius:22px;
-      display:flex;align-items:center;justify-content:space-between;gap:24px;
-      background:rgba(255,255,255,.55);border:1px solid var(--line)
-    }
-    .intro-call h3{margin-bottom:5px}
-    .intro-call p{font-size:1rem}
+    section{position:relative;overflow:hidden;scroll-margin-top:76px}
+    section > .wrap{position:relative;z-index:1}
+    section.content{padding:64px 0}
 
-    .testimonials{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-    .testimonial{
-      padding:30px;border-radius:24px;background:var(--paper);border:1px solid var(--line)
-    }
-    .testimonial blockquote{margin:0;font-size:1.12rem;color:#443c35}
-    .testimonial footer{margin-top:20px;color:var(--copper-dark);font-weight:600}
-    .contact-wrap{
-      display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;
-      padding:46px;border-radius:36px;background:#2B211B;color:#fff;
-      box-shadow:var(--shadow)
-    }
-    .contact-wrap h2{color:#fff}
-    .contact-wrap p{color:rgba(255,255,255,.72);margin-top:16px}
-    .contact-links{display:grid;gap:10px;margin-top:28px}
-    .contact-links a{color:#fff;text-decoration:none}
-    .form{background:#fff;padding:28px;border-radius:24px}
-    .field{margin-bottom:15px}
-    .field label{display:block;color:#3f3730;font-weight:600;font-size:.9rem;margin-bottom:6px}
-    .field input,.field textarea{
-      width:100%;border:1px solid #ded7cf;background:#fbfaf8;
-      border-radius:12px;padding:.9rem 1rem;color:var(--ink)
-    }
-    .field input:focus,.field textarea:focus{outline:2px solid rgba(168,98,54,.25);border-color:var(--copper)}
-    .field textarea{min-height:105px;resize:vertical}
-    .submit{width:100%;padding:1rem;background:var(--copper);color:#fff;border:0;border-radius:12px;font-weight:700;cursor:pointer}
-    .submit:hover{background:var(--copper-dark)}
-    .fineprint{font-size:.82rem!important;color:rgba(255,255,255,.55)!important;margin-top:18px!important}
-    .footer{padding:22px 0 78px;color:#746a61;font-size:.9rem}
-    .footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-    .floating-wa{
-      position:fixed;left:22px;bottom:22px;z-index:15;
-      width:58px;height:58px;border-radius:50%;display:grid;place-items:center;
-      background:#238b5d;color:#fff;text-decoration:none;
-      box-shadow:0 14px 34px rgba(35,139,93,.35);font-size:1.35rem;
-    }
-    .reveal{opacity:0;transform:translateY(20px);transition:.7s ease}
-    .reveal.visible{opacity:1;transform:none}
+    /* Nav */
+    .site-nav{position:sticky;top:0;z-index:20;background:rgba(20,31,52,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 0;position:relative}
+    .brand{color:var(--gold);font-family:"Heebo",Arial,sans-serif;font-size:1.3rem;text-decoration:none;font-weight:700}
+    .nav-links{display:flex;align-items:center;gap:22px;list-style:none;margin:0;padding:0}
+    .nav-links a{color:var(--cream);text-decoration:none;font-size:.92rem}
+    .nav-links a:hover{color:var(--gold)}
+    .nav-cta-spacer{visibility:hidden;padding:.6rem 1.1rem;font-weight:700;font-size:.85rem}
+    .menu-btn{display:none;background:none;border:0;color:var(--cream);font-size:1.5rem;cursor:pointer;padding:0}
 
-    @media(min-width:901px) and (max-width:1400px){
-      .portrait-shell{max-width:340px}
-      .hero-grid{grid-template-columns:1.14fr .86fr;gap:52px}
-    }
+    .floating-wa{position:fixed;left:22px;bottom:22px;z-index:15;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--emerald);color:#0F1B2E;box-shadow:0 12px 28px rgba(0,0,0,.35);text-decoration:none}
+    .floating-wa:hover{background:var(--emerald-soft)}
 
     @media(max-width:900px){
-      .nav-links{display:none;position:absolute;top:76px;right:20px;left:20px;padding:18px;
-        flex-direction:column;background:#fff;border-radius:18px;box-shadow:var(--shadow)}
+      .nav-links{display:none;position:absolute;top:100%;right:0;left:0;flex-direction:column;background:var(--navy-deep);padding:16px;border-radius:0 0 14px 14px;gap:16px;border:1px solid var(--line);border-top:0}
       .nav-links.open{display:flex}
       .menu-btn{display:block}
-      .nav-cta{display:none}
-      .hero-grid,.split,.about-grid,.contact-wrap{grid-template-columns:1fr}
-      .hero{padding-top:42px}
-      .portrait-shell{max-width:300px;margin:auto}
-      .quote-panel{position:relative;top:auto}
-      .cards{grid-template-columns:1fr 1fr}
-      .trust-box{grid-template-columns:1fr 1fr}
-      .trust-item:nth-child(2){border-left:0}
-      .trust-item:nth-child(-n+2){border-bottom:1px solid var(--line)}
+      .nav-cta-spacer{display:none}
+      .floating-wa{width:50px;height:50px;left:16px;bottom:16px}
     }
-    @media(max-width:620px){
-      .wrap{width:min(100% - 28px,1160px)}
-      .hero-grid{gap:38px}
-      .portrait-card{border-radius:30px 30px 90px 30px}
-      .cards,.testimonials,.pricing-grid{grid-template-columns:1fr}
-      .intro-call{align-items:flex-start;flex-direction:column}
-      .trust-box{grid-template-columns:1fr}
-      .trust-item{border-left:0;border-bottom:1px solid var(--line)!important}
-      .trust-item:last-child{border-bottom:0!important}
-      .section{padding:58px 0}
-      .contact-wrap{padding:24px}
-      .form{padding:20px}
-      .floating-wa{width:52px;height:52px;left:15px;bottom:15px}
+
+    /* Twinkling numbers ambient layer (stars in the night sky) - lives inside each section so it scrolls with content */
+    .section-stars{position:absolute;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+    .float-num{position:absolute;font-family:Georgia,serif;font-weight:700;animation:twinkle ease-in-out infinite}
+    .float-num.gold{color:var(--gold)}
+    .float-num.yellow{color:var(--star-yellow)}
+    .float-num.blue{color:var(--star-blue)}
+    @keyframes twinkle{
+      0%,40%,100%{opacity:var(--dim,.22);transform:scale(.85);filter:drop-shadow(0 0 2px currentColor)}
+      50%{opacity:var(--peak,.9);transform:scale(1.2);filter:drop-shadow(0 0 10px currentColor)}
+      60%{opacity:var(--dim,.22);transform:scale(.85);filter:drop-shadow(0 0 2px currentColor)}
     }
     @media(prefers-reduced-motion:reduce){
-      html{scroll-behavior:auto} .reveal{opacity:1;transform:none;transition:none}
-      *{transition:none!important}
+      .float-num{animation:none;display:none}
     }
 
-    @media(max-width:620px){
-      h1{font-size:clamp(1.95rem,9.5vw,2.55rem);letter-spacing:-.025em}
-      h2{font-size:clamp(1.75rem,7.6vw,2.25rem)}
-      .hero-copy{max-width:100%}
-      .hero-title-line{white-space:nowrap}
+    .grid-motif{position:absolute;opacity:.16;pointer-events:none;z-index:0}
+    @keyframes pulseGlow{
+      0%,100%{filter:drop-shadow(0 0 2px rgba(224,179,108,.35))}
+      50%{filter:drop-shadow(0 0 10px rgba(224,179,108,.75))}
     }
+    .pulse{animation:pulseGlow 2.6s ease-in-out infinite}
 
+    .eyebrow{display:block;font-weight:600;font-size:.9rem;letter-spacing:.04em;margin-bottom:10px}
+    .eyebrow.gold{color:var(--gold)}
+    .section-head{max-width:680px;margin-bottom:32px;text-align:right}
+    .section-head p{margin-top:14px}
+    .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+    .reveal.visible{opacity:1;transform:none}
 
-    @media(max-width:620px){
-      .section-head h2,
-      .contact-wrap h2{
-        white-space:nowrap;
-        font-size:clamp(1.42rem,6.2vw,1.9rem);
-        letter-spacing:-.018em;
-      }
-    }
+    /* Accordion */
+    .accordion-list{display:grid;gap:12px;max-width:820px}
+    .accordion-item{border:1px solid var(--line);border-radius:16px;background:var(--panel);overflow:hidden}
+    .accordion-item.open{border-color:var(--emerald-soft)}
+    .accordion-trigger{width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 20px;background:none;border:0;cursor:pointer;text-align:right;font-family:inherit;color:var(--cream)}
+    .accordion-title{display:flex;flex-direction:column;gap:3px}
+    .accordion-title strong{font-size:1.05rem;color:var(--cream);font-weight:500}
+    .accordion-title span{color:var(--body-txt);font-size:1.1rem}
+    .accordion-icon{flex:0 0 auto;color:var(--emerald-soft);transition:transform .3s ease}
+    .accordion-item.open .accordion-icon{transform:rotate(180deg)}
+    .accordion-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s ease}
+    .accordion-item.open .accordion-panel{grid-template-rows:1fr}
+    .accordion-panel-inner{overflow:hidden}
+    .accordion-panel-content{padding:0 20px 18px;color:var(--body-txt);font-size:1.1rem}
 
+    /* Process */
+    .split{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:start}
+    .quote-panel{background:var(--navy-deep);border:1px solid var(--line);border-radius:20px;padding:30px}
+    .timeline{display:grid;gap:6px}
+    .step{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+    .step:last-child{border-bottom:0}
+    .step-index{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--navy-deep);border:1px solid var(--emerald-soft);font-weight:700;color:var(--emerald-soft);font-family:Georgia,serif}
+    .step h3{margin-bottom:4px;font-size:1.1rem}
 
-    /* Typography system: unified across the entire page */
-    :root{
-      --title-size-desktop: 3.08rem;
-      --title-size-mobile: 1.82rem;
-      --subtitle-size-desktop: 1.26rem;
-      --subtitle-size-mobile: 1.12rem;
-      --body-size-desktop: 1.04rem;
-      --body-size-mobile: 1rem;
-    }
+    /* About */
+    .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:start;text-align:right}
+    .about-copy p + p{margin-top:14px}
+    .facts{display:grid;gap:10px}
+    .fact{padding:18px;border-radius:14px;background:var(--panel);border:1px solid var(--line)}
+    .fact strong{display:block;color:var(--gold);margin-bottom:3px;font-family:Georgia,serif}
+    .fact span{font-size:1.1rem}
 
-    h1, h2{
-      font-family:"Heebo",Arial,sans-serif !important;
-      font-size:var(--title-size-desktop) !important;
-      font-weight:600 !important;
-      line-height:1.12 !important;
-      letter-spacing:-.024em !important;
-    }
+    /* Pricing */
+    .pricing-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:860px}
+    .price-card{position:relative;padding:28px;border-radius:18px;background:var(--panel);border:1px solid var(--line)}
+    .price-badge{position:absolute;top:16px;left:16px;padding:.3rem .6rem;border-radius:999px;background:rgba(224,179,108,.15);color:var(--gold);font-size:.76rem;font-weight:700}
+    .price-card h3{font-size:1.3rem;margin-bottom:8px}
+    .price{font-size:2.6rem;font-family:Georgia,serif;color:var(--gold);margin:18px 0 8px}
+    .price-details{list-style:none;padding:0;margin:18px 0;display:grid;gap:8px;color:var(--body-txt);font-size:1.1rem}
+    .price-details li::before{content:"✓ ";color:var(--emerald-soft)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 1.3rem;border-radius:999px;text-decoration:none;font-weight:600;border:0;cursor:pointer;font-family:inherit}
+    .btn-primary{background:var(--gold);color:var(--navy-deep)}
+    .btn-secondary{background:transparent;border:1px solid var(--emerald-soft);color:var(--emerald-soft)}
+    .intro-call{max-width:860px;margin:20px 0 0;padding:22px 26px;border-radius:18px;background:var(--panel);border:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .intro-call h3{margin-bottom:4px;font-size:1.1rem}
 
-    h3,
-    .price-card h3,
-    .intro-call h3,
-    .step h3,
-    .card h3{
-      font-family:"Heebo",Arial,sans-serif !important;
-      font-size:var(--subtitle-size-desktop) !important;
-      font-weight:600 !important;
-      line-height:1.25 !important;
-      letter-spacing:-.01em !important;
-    }
+    /* Testimonials */
+    .testimonials{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .testimonial{padding:24px;border-radius:16px;background:var(--panel);border:1px solid var(--line)}
+    .testimonial blockquote{margin:0;font-size:1.1rem;color:var(--body-txt)}
+    .testimonial footer{margin-top:16px;color:var(--gold);font-weight:600;font-size:.92rem}
 
-    p,
-    .hero-lead,
-    .card p,
-    .testimonial blockquote,
-    .step p,
-    .fact span,
-    .price-details,
-    .intro-call p,
-    .contact-wrap p,
-    .portrait-caption span{
-      font-family:"Heebo",Arial,sans-serif !important;
-      font-size:var(--body-size-desktop) !important;
-      line-height:1.72 !important;
-      font-weight:400 !important;
-    }
+    /* Contact */
+    .contact-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px}
+    .contact-wrap h2{color:var(--cream)}
+    .contact-links{display:grid;gap:8px;margin-top:22px}
+    .contact-links a{color:var(--cream);text-decoration:none}
+    .fineprint{font-size:.82rem!important;color:rgba(183,194,214,.6)!important;margin-top:16px!important}
+    .form{background:var(--cream);padding:26px;border-radius:18px}
+    .field{margin-bottom:14px}
+    .field label{display:block;color:var(--navy-deep);font-weight:600;font-size:.9rem;margin-bottom:5px}
+    .field input,.field textarea{width:100%;border:1px solid rgba(43,36,32,.15);background:#fff;border-radius:10px;padding:.85rem 1rem;color:var(--navy-deep);font-family:inherit}
+    .field textarea{min-height:100px;resize:vertical}
+    .required-mark{color:#B5392C;font-weight:700;margin-right:3px}
+    .required-note{margin:0 0 12px!important;color:#6f655d!important;font-size:.85rem!important}
+    .submit{width:100%;padding:1rem;background:var(--emerald);color:#0F1B2E;border:0;border-radius:10px;font-weight:700;cursor:pointer;font-family:inherit}
 
-    .section-head h2,
-    .contact-wrap h2,
-    .hero h1{
-      white-space:nowrap;
-    }
+    /* Hero */
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;text-align:right}
+    .hero-photo-shell{max-width:300px;width:100%;justify-self:center}
+    .hero-photo{width:100%;aspect-ratio:1;object-fit:cover;border-radius:50%;border:2px solid var(--gold)}
+    .hero-photo-caption{text-align:center;margin-top:12px}
+    .hero-photo-caption strong{display:block;color:var(--cream);font-family:Georgia,serif}
+    .hero-photo-caption span{font-size:.9rem;color:var(--body-txt)}
+    .hero-note{margin-top:16px;font-size:.92rem;color:#8A97AE}
 
-    @media(max-width:620px){
-      h1, h2{
-        font-size:var(--title-size-mobile) !important;
-        line-height:1.14 !important;
-      }
+    /* Calculator */
+    .calc-form{max-width:340px;margin:24px auto 0;display:grid;gap:12px;text-align:right}
+    .calc-form label{display:block;font-size:.85rem;font-weight:600;color:var(--body-txt);margin-bottom:5px}
+    .calc-form input{width:100%;padding:.9rem;border:1px solid var(--navy-soft);border-radius:10px;font-family:inherit;background:var(--navy-deep);color:var(--cream);text-align:center}
+    .calc-form button{padding:.9rem;border:0;border-radius:10px;background:var(--gold);color:var(--navy-deep);font-weight:700;cursor:pointer;width:100%;font-family:inherit}
+    .calc-date-row{display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:8px}
+    .calc-date-row input::-webkit-outer-spin-button,
+    .calc-date-row input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+    .calc-date-row input{-moz-appearance:textfield}
+    .cta-soft{display:inline-block;margin-top:20px;padding:.75rem 1.4rem;border:1px solid var(--emerald);color:var(--emerald);border-radius:999px;text-decoration:none;font-weight:600}
 
-      h3,
-      .price-card h3,
-      .intro-call h3,
-      .step h3,
-      .card h3{
-        font-size:var(--subtitle-size-mobile) !important;
-      }
-
-      p,
-      .hero-lead,
-      .card p,
-      .testimonial blockquote,
-      .step p,
-      .fact span,
-      .price-details,
-      .intro-call p,
-      .contact-wrap p,
-      .portrait-caption span{
-        font-size:var(--body-size-mobile) !important;
-        line-height:1.68 !important;
-      }
-
-      .section-head h2,
+    @media(max-width:900px){
+      .split,.about-grid,.contact-wrap{grid-template-columns:1fr}
+      .pricing-grid,.testimonials{grid-template-columns:1fr}
+      .intro-call{flex-direction:column;align-items:flex-start}
+      .hero-grid{grid-template-columns:1fr;text-align:center}
+      .hero-photo-shell{order:-1;max-width:220px}
+      .section-head{text-align:center;margin-inline:auto}
+      .quote-panel{text-align:center}
+      .about-copy{text-align:center}
+      .intro-call h3{text-align:center}
+      .contact-wrap .eyebrow{text-align:center}
+      .facts{text-align:center}
       .contact-wrap h2,
-      .hero h1{
-        white-space:nowrap !important;
-      }
+      .contact-wrap > div > p,
+      .contact-links{text-align:center}
     }
-
-
-    /* Accordion / drawers */
-    .accordion-list{
-      display:grid;
-      gap:14px;
-      max-width:920px;
-    }
-    .accordion-item{
-      border:1px solid var(--line);
-      border-radius:22px;
-      background:rgba(255,255,255,.68);
-      overflow:hidden;
-      box-shadow:0 10px 30px rgba(33,23,16,.04);
-    }
-    .accordion-trigger{
-      width:100%;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-      padding:20px 22px;
-      background:linear-gradient(180deg,rgba(255,255,255,.36),rgba(255,255,255,.18));
-      border:0;
-      cursor:pointer;
-      text-align:right;
-      color:var(--ink);
-      transition:background .25s ease;
-    }
-    .accordion-trigger:hover{
-      background:linear-gradient(180deg,rgba(255,255,255,.62),rgba(255,255,255,.3));
-    }
-    .accordion-title{
-      display:flex;
-      flex-direction:column;
-      align-items:flex-start;
-      gap:4px;
-    }
-    .accordion-title strong{
-      font-family:"Heebo",Arial,sans-serif;
-      font-size:1.16rem;
-      font-weight:600;
-      color:var(--ink);
-    }
-    .accordion-title span{
-      color:#766b61;
-      font-size:.96rem;
-    }
-    .accordion-icon{
-      width:34px;
-      height:34px;
-      border-radius:50%;
-      display:grid;
-      place-items:center;
-      background:rgba(168,98,54,.12);
-      color:var(--copper-dark);
-      font-size:1.05rem;
-      line-height:1;
-      flex:0 0 auto;
-      transition:transform .32s ease, background .25s ease;
-    }
-    .accordion-item.open .accordion-icon{
-      transform:rotate(180deg);
-      background:rgba(168,98,54,.22);
-    }
-    .accordion-panel{
-      display:grid;
-      grid-template-rows:0fr;
-      transition:grid-template-rows .34s ease;
-    }
-    .accordion-panel-inner{
-      overflow:hidden;
-    }
-    .accordion-panel-content{
-      padding:0 22px 20px;
-      color:var(--ink-soft);
-      opacity:0;
-      transform:translateY(-8px);
-      transition:opacity .26s ease, transform .26s ease;
-    }
-    .accordion-item.open .accordion-panel{
-      grid-template-rows:1fr;
-    }
-    .accordion-item.open .accordion-panel-content{
-      opacity:1;
-      transform:translateY(0);
-    }
-
-    /* Testimonials carousel on mobile */
-    @media(max-width:900px){
-      .testimonials{
-        display:flex;
-        gap:14px;
-        overflow-x:auto;
-        scroll-snap-type:x mandatory;
-        padding-bottom:8px;
-      }
-      .testimonials::-webkit-scrollbar{
-        height:8px;
-      }
-      .testimonials::-webkit-scrollbar-thumb{
-        background:rgba(168,98,54,.28);
-        border-radius:999px;
-      }
-      .testimonial{
-        min-width:84%;
-        scroll-snap-align:start;
-      }
-    }
-
-    @media(max-width:620px){
-      .accordion-trigger{
-        padding:16px 16px;
-      }
-      .accordion-panel-content{
-        padding:0 16px 16px;
-      }
-      .accordion-title strong{
-        font-size:1.05rem;
-      }
-      .accordion-title span{
-        font-size:.92rem;
-      }
-      .testimonial{
-        min-width:88%;
-      }
-    }
-
-
-    @media(max-width:620px){
-      .section-head h2,
-      .contact-wrap h2,
-      .hero h1{
-        max-width:100%;
-        overflow:hidden;
-      }
-    }
-
-  
-    @media(max-width:900px){
-      .contact-wrap{
-        grid-template-columns:1fr !important;
-        justify-items:center;
-        align-items:start;
-        row-gap:22px;
-        padding:24px 18px !important;
-      }
-      .contact-wrap > div,
-      .contact-wrap .form{
-        width:100%;
-        max-width:560px;
-      }
-      .contact-wrap .form{
-        margin:0 auto;
-        align-self:stretch;
-      }
-    }
-
-    @media(max-width:620px){
-      .contact-wrap{
-        padding:22px 16px !important;
-        border-radius:28px;
-      }
-      .contact-wrap > div{
-        text-align:right;
-      }
-      .contact-wrap h2{
-        font-size:var(--title-size-mobile) !important;
-        white-space:nowrap !important;
-        letter-spacing:-.024em !important;
-        overflow:hidden;
-        max-width:100%;
-      }
-      .contact-wrap .form{
-        padding:18px !important;
-        border-radius:20px;
-      }
-    }
-
-
-    @media(min-width:901px){
-      .nav-cta{
-        position:relative;
-        left:0;
-        transform:translateX(44px);
-      }
-      .nav-cta:hover{
-        left:0;
-        transform:translateX(44px) translateY(-2px);
-      }
-    }
-
-
-    .required-mark{
-      color:#c0392b;
-      font-weight:700;
-      margin-right:3px;
-    }
-    .required-note{
-      margin:0 0 14px !important;
-      color:#6f655d !important;
-      font-size:.88rem !important;
-      line-height:1.5 !important;
-      text-align:right;
-    }
-
-
-    /* Global font override */
-    html, body, button, input, textarea, select,
-    h1, h2, h3, h4, h5, h6,
-    p, span, a, label, strong, em, small,
-    blockquote, footer, li, div {
-      font-family:"Heebo", Arial, sans-serif !important;
-    }
-
-
-    @media(max-width:620px){
-      .section-head h2,
-      .contact-wrap h2,
-      .hero h1{
-        white-space:nowrap !important;
-        max-width:100%;
-      }
-    }
-
-
-    /* Warmer dark palette */
-    .quote-panel,
-    .contact-wrap{
-      background:#2B211B !important;
-    }
-
-    h1, h2, h3,
-    .brand,
-    .accordion-title strong,
-    .portrait-caption strong{
-      color:#332820;
-    }
-
-    .contact-wrap h2,
-    .quote-panel h2,
-    .quote-panel h3{
-      color:#ffffff !important;
-    }
-
-    .eyebrow{
-      gap:0 !important;
-      letter-spacing:.035em;
-    }
-
-
-    .nav-cta,
-    .quote-panel,
-    .contact-wrap{
-      background-color:#2B211B !important;
-    }
-
-    .nav-cta:hover{
-      background-color:#1F1713 !important;
-    }
-
-
-    /* Final visible brown palette */
-    :root{
-      --ink:#3A2A22;
-    }
-
-    .nav-cta,
-    .quote-panel,
-    .contact-wrap{
-      background:#4A3328 !important;
-      background-color:#4A3328 !important;
-    }
-
-    .nav-cta:hover{
-      background:#3B281F !important;
-      background-color:#3B281F !important;
-    }
-
-    .portrait-card{
-      background:#4A3328 !important;
-    }
-
-    h1, h2, h3,
-    .brand,
-    .accordion-title strong,
-    .portrait-caption strong{
-      color:#3A2A22 !important;
-    }
-
-    .contact-wrap h2,
-    .quote-panel h2,
-    .quote-panel h3{
-      color:#ffffff !important;
-    }
-
-
-    /* ===== Alternative visual direction: personal + refined numerology ===== */
-    :root{
-      --ink:#274A6A;
-      --ink-soft:#39465a;
-      --cream:#fbf7f0;
-      --paper:#fffdf9;
-      --copper:#c7923f;
-      --copper-dark:#9f6e25;
-      --sage:#75806e;
-      --line:rgba(16,33,58,.12);
-      --shadow:0 24px 70px rgba(16,33,58,.11);
-    }
-
-    body{
-      color:var(--ink);
-      background:
-        radial-gradient(circle at 12% 2%, rgba(199,146,63,.10), transparent 28rem),
-        linear-gradient(180deg,#fffaf4 0%,#f8f2e9 100%);
-    }
-
-    .nav{
-      background:rgba(255,250,244,.88);
-      border-bottom:1px solid rgba(16,33,58,.08);
-    }
-
-    .brand-mark{
-      background:linear-gradient(145deg,#d7ad64,#b77b28);
-      color:#fff;
-      box-shadow:0 10px 28px rgba(183,123,40,.25);
-    }
-
-    .nav-links a,
-    .brand{
-      color:var(--ink);
-    }
-
-    .nav-links a:hover{
-      color:var(--copper-dark);
-    }
-
-    .nav-cta{
-      background:#274A6A !important;
-      border:1px solid rgba(199,146,63,.45);
-      color:#fff;
-      box-shadow:0 10px 28px rgba(16,33,58,.18);
-    }
-
-    .nav-cta:hover{
-      background:#335E82 !important;
-    }
-
-    .hero{
-      position:relative;
-      overflow:hidden;
-      isolation:isolate;
-      padding-top:64px;
-    }
-
-    .hero::before{
-      content:"";
-      position:absolute;
-      width:590px;
-      height:590px;
-      left:-120px;
-      top:-140px;
-      border-radius:50%;
-      background:
-        repeating-radial-gradient(
-          circle at center,
-          transparent 0 31px,
-          rgba(199,146,63,.18) 32px 33px
-        );
-      opacity:.5;
-      z-index:-2;
-      mask-image:linear-gradient(to right, black, transparent 82%);
-    }
-
-    .hero::after{
-      content:"";
-      position:absolute;
-      width:760px;
-      height:470px;
-      left:-170px;
-      bottom:-270px;
-      border-radius:50%;
-      background:
-        radial-gradient(ellipse at center,
-          rgba(16,33,58,.95) 0%,
-          rgba(16,33,58,.82) 36%,
-          rgba(16,33,58,.22) 62%,
-          transparent 72%);
-      transform:rotate(-10deg);
-      z-index:-3;
-      opacity:.92;
-    }
-
-    .hero-copy{
-      position:relative;
-      z-index:2;
-    }
-
-    .eyebrow{
-      color:var(--copper-dark);
-      font-weight:600;
-      letter-spacing:.045em;
-    }
-
-    h1,h2,h3,
-    .accordion-title strong,
-    .portrait-caption strong{
-      color:var(--ink) !important;
-    }
-
-    .hero h1 .hero-title-line:last-child{
-      color:var(--copper-dark) !important;
-    }
-
-    .hero-lead,
-    p{
-      color:var(--ink-soft);
-    }
-
-    .btn-primary{
-      background:#274A6A;
-      color:#fff;
-      border:1px solid rgba(199,146,63,.55);
-      box-shadow:0 12px 30px rgba(16,33,58,.18);
-    }
-
-    .btn-primary:hover{
-      background:#335E82;
-    }
-
-    .btn-secondary{
-      background:rgba(255,253,249,.76);
-      border:1px solid rgba(199,146,63,.55);
-      color:var(--ink);
-    }
-
-    .btn-secondary:hover{
-      background:#fff;
-    }
-
-    .portrait-card{
-      border:1px solid rgba(199,146,63,.42);
-      box-shadow:
-        0 26px 70px rgba(16,33,58,.17),
-        0 0 0 8px rgba(255,255,255,.42);
-    }
-
-    .portrait-shell::after{
-      content:"";
-      position:absolute;
-      width:130px;
-      height:130px;
-      left:-28px;
-      top:-32px;
-      border-radius:50%;
-      border:1px solid rgba(199,146,63,.36);
-      box-shadow:
-        0 0 0 16px rgba(199,146,63,.05),
-        0 0 0 32px rgba(199,146,63,.035);
-      z-index:-1;
-    }
-
-    .trust-box{
-      background:rgba(255,253,249,.84);
-      border-color:rgba(199,146,63,.25);
-      box-shadow:0 18px 50px rgba(16,33,58,.06);
-    }
-
-    .trust-item strong{
-      color:var(--ink);
-    }
-
-    .trust-item span{
-      color:#697386;
-    }
-
-    .card,
-    .accordion-item,
-    .testimonial,
-    .price-card,
-    .fact,
-    .intro-call{
-      background:rgba(255,253,249,.9);
-      border-color:rgba(199,146,63,.22);
-      box-shadow:0 14px 44px rgba(16,33,58,.055);
-    }
-
-    .card-number,
-    .price,
-    .fact strong,
-    .testimonial footer{
-      color:var(--copper-dark);
-    }
-
-    .accordion-icon{
-      background:rgba(199,146,63,.13);
-      color:var(--copper-dark);
-    }
-
-    .accordion-item.open .accordion-icon{
-      background:rgba(199,146,63,.22);
-    }
-
-    .quote-panel,
-    .contact-wrap{
-      background:
-        linear-gradient(145deg,#274A6A 0%,#335E82 100%) !important;
-      color:#fff;
-      border:1px solid rgba(199,146,63,.32);
-      box-shadow:0 24px 70px rgba(16,33,58,.18);
-    }
-
-    .quote-panel::before,
-    .contact-wrap::before{
-      content:"";
-      position:absolute;
-      inset:0;
-      pointer-events:none;
-      background:
-        radial-gradient(circle at 82% 12%,rgba(199,146,63,.18),transparent 34%),
-        repeating-radial-gradient(circle at 92% 18%,transparent 0 24px,rgba(199,146,63,.07) 25px 26px);
-      opacity:.72;
-    }
-
-    .quote-panel,
-    .contact-wrap{
-      position:relative;
-      overflow:hidden;
-    }
-
-    .quote-panel > *,
-    .contact-wrap > *{
-      position:relative;
-      z-index:1;
-    }
-
-    .quote-panel p,
-    .contact-wrap p{
-      color:rgba(255,255,255,.82) !important;
-    }
-
-    .contact-wrap h2,
-    .quote-panel h2,
-    .quote-panel h3{
-      color:#fff !important;
-    }
-
-    .form{
-      background:rgba(255,253,249,.97);
-      border:1px solid rgba(199,146,63,.22);
-      box-shadow:0 18px 45px rgba(16,33,58,.12);
-    }
-
-    .field input,
-    .field textarea{
-      background:#fffdf9;
-      border-color:rgba(16,33,58,.15);
-    }
-
-    .field input:focus,
-    .field textarea:focus{
-      outline:2px solid rgba(199,146,63,.22);
-      border-color:var(--copper);
-    }
-
-    .submit{
-      background:#274A6A;
-      border:1px solid rgba(199,146,63,.55);
-    }
-
-    .submit:hover{
-      background:#335E82;
-    }
-
-    .floating-wa{
-      background:#274A6A;
-      border:1px solid rgba(199,146,63,.55);
-      box-shadow:0 16px 38px rgba(16,33,58,.28);
-    }
-
-    footer.footer{
-      color:#667084;
-    }
-
-    @media(max-width:900px){
-      .hero::before{
-        width:420px;
-        height:420px;
-        left:-190px;
-        top:-90px;
-        opacity:.32;
-      }
-
-      .hero::after{
-        width:560px;
-        height:300px;
-        left:-250px;
-        bottom:-220px;
-        opacity:.45;
-      }
-
-      .portrait-shell::after{
-        width:90px;
-        height:90px;
-        left:-18px;
-        top:-18px;
-      }
-    }
-
-    @media(max-width:620px){
-      .hero{
-        padding-top:42px;
-      }
-
-      .hero::before{
-        width:330px;
-        height:330px;
-        left:-170px;
-        top:-60px;
-        opacity:.24;
-      }
-
-      .hero::after{
-        display:none;
-      }
-
-      .portrait-shell::after{
-        display:none;
-      }
-
-      .quote-panel,
-      .contact-wrap{
-        border-radius:26px;
-      }
-    }
-
-
-    /* Stronger visual layer: cinematic, personal, and numerology-inspired */
-    .hero{
-      min-height:720px;
-      display:flex;
-      align-items:center;
-      position:relative;
-      overflow:hidden;
-      isolation:isolate;
-      background:
-        radial-gradient(circle at 78% 18%, rgba(255,255,255,.9), transparent 26rem),
-        linear-gradient(135deg,#fffaf4 0%,#f9f0e3 64%,#efe7da 100%);
-    }
-
-    .hero-art{
-      position:absolute;
-      inset:0;
-      z-index:-1;
-      pointer-events:none;
-      overflow:hidden;
-    }
-
-    .numerology-wheel{
-      position:absolute;
-      width:min(50vw,690px);
-      height:auto;
-      left:-70px;
-      top:20px;
-      opacity:.72;
-      filter:drop-shadow(0 20px 42px rgba(199,146,63,.08));
-    }
-
-    .hero-wave{
-      position:absolute;
-      width:112%;
-      height:52%;
-      left:-6%;
-      bottom:-3%;
-      opacity:.96;
-    }
-
-    .hero-grid{
-      position:relative;
-      z-index:2;
-    }
-
-    .hero-copy{
-      padding:34px 38px;
-      border-radius:34px;
-      background:rgba(255,253,249,.54);
-      border:1px solid rgba(199,146,63,.2);
-      box-shadow:0 24px 70px rgba(16,33,58,.08);
-      backdrop-filter:blur(8px);
-    }
-
-    .hero h1{
-      text-shadow:0 1px 0 rgba(255,255,255,.6);
-    }
-
-    .portrait-shell{
-      position:relative;
-    }
-
-    .portrait-shell::before{
-      content:"";
-      position:absolute;
-      inset:-24px -24px 56px -24px;
-      border-radius:52% 48% 58% 42% / 44% 56% 44% 56%;
-      background:
-        radial-gradient(circle at 48% 42%, rgba(245,219,164,.44), rgba(199,146,63,.08) 58%, transparent 70%);
-      z-index:-1;
-      filter:blur(1px);
-    }
-
-    .portrait-shell::after{
-      width:170px;
-      height:170px;
-      left:-54px;
-      top:-52px;
-      border:1px solid rgba(199,146,63,.44);
-      box-shadow:
-        0 0 0 18px rgba(199,146,63,.05),
-        0 0 0 38px rgba(199,146,63,.03);
-    }
-
-    .portrait-card{
-      border-color:rgba(199,146,63,.58);
-      box-shadow:
-        0 28px 80px rgba(16,33,58,.25),
-        0 0 0 10px rgba(255,255,255,.45);
-    }
-
-    .trust-strip{
-      position:relative;
-      margin-top:-36px;
-      z-index:3;
-    }
-
-    .trust-box{
-      backdrop-filter:blur(12px);
-      background:rgba(255,253,249,.9);
-      border-color:rgba(199,146,63,.28);
-      box-shadow:0 20px 60px rgba(16,33,58,.09);
-    }
-
-    @media(max-width:900px){
-      .hero{
-        min-height:auto;
-        padding-top:46px;
-        padding-bottom:32px;
-      }
-
-      .hero-copy{
-        padding:26px 24px;
-      }
-
-      .numerology-wheel{
-        width:560px;
-        left:-310px;
-        top:120px;
-        opacity:.28;
-      }
-
-      .hero-wave{
-        height:34%;
-        bottom:-8%;
-        opacity:.28;
-      }
-
-      .trust-strip{
-        margin-top:0;
-      }
-    }
-
-    @media(max-width:620px){
-      .hero-copy{
-        padding:22px 18px;
-        border-radius:26px;
-        backdrop-filter:blur(5px);
-      }
-
-      .numerology-wheel{
-        width:430px;
-        left:-280px;
-        top:160px;
-        opacity:.19;
-      }
-
-      .hero-wave{
-        display:none;
-      }
-
-      .portrait-shell::before,
-      .portrait-shell::after{
-        display:none;
-      }
-    }
-
-
-    /* Mobile visual treatment: keep the new direction visible, but lighter and cleaner */
-    @media(max-width:900px){
-      .hero{
-        background:
-          radial-gradient(circle at 78% 14%, rgba(255,255,255,.92), transparent 20rem),
-          linear-gradient(145deg,#fffaf4 0%,#f5ecdf 68%,#e9eef2 100%);
-      }
-
-      .numerology-wheel{
-        width:500px !important;
-        left:-235px !important;
-        top:92px !important;
-        opacity:.34 !important;
-      }
-
-      .hero-wave{
-        display:block !important;
-        height:30% !important;
-        bottom:-5% !important;
-        opacity:.42 !important;
-      }
-
-      .hero-copy{
-        background:rgba(255,253,249,.68) !important;
-        border:1px solid rgba(199,146,63,.24) !important;
-      }
-    }
-
-    @media(max-width:620px){
-      .hero{
-        padding-bottom:58px !important;
-      }
-
-      .numerology-wheel{
-        width:420px !important;
-        left:-240px !important;
-        top:140px !important;
-        opacity:.27 !important;
-      }
-
-      .hero-wave{
-        display:block !important;
-        width:140% !important;
-        left:-20% !important;
-        height:24% !important;
-        bottom:-3% !important;
-        opacity:.34 !important;
-      }
-    }
-
-
-    @media(min-width:901px){
-      .hero{
-        padding-bottom:42px !important;
-      }
-
-      .hero-wave{
-        bottom:-14% !important;
-        height:40% !important;
-      }
-
-      .portrait-shell{
-        padding-bottom:8px;
-      }
-
-      .portrait-caption{
-        position:relative;
-        z-index:5;
-        display:block;
-        margin-top:12px;
-        padding:0 8px;
-        background:transparent !important;
-        border:0 !important;
-        border-radius:0 !important;
-        box-shadow:none !important;
-        backdrop-filter:none !important;
-      }
-
-      .portrait-caption strong,
-      .portrait-caption span{
-        color:var(--ink) !important;
-      }
-
-      .trust-strip{
-        margin-top:-18px !important;
-      }
-    }
-
-
-    /* Portrait tuning for the new brighter photograph */
-    .portrait-card{
-      border-radius:30px 30px 82px 30px !important;
-      border:1px solid rgba(199,146,63,.38) !important;
-      box-shadow:0 22px 58px rgba(16,33,58,.16) !important;
-    }
-
-    .portrait-card img{
-      object-fit:cover !important;
-      object-position:center 38% !important;
-      filter:saturate(.96) contrast(.98) brightness(1.01);
-    }
-
-    @media(min-width:901px){
-      .portrait-shell{
-        max-width:345px !important;
-      }
-    }
-
-    @media(max-width:900px){
-      .portrait-shell{
-        max-width:285px !important;
-      }
-    }
-
-</style>
+  </style>
 </head>
 <body>
-  <nav class="nav" aria-label="ניווט ראשי">
+  <header class="site-nav">
     <div class="wrap nav-inner">
-      <a class="brand" href="#top"><span class="brand-mark">י</span><span>יורם וידל</span></a>
-      <button class="menu-btn" aria-label="פתיחת תפריט" aria-expanded="false">☰</button>
-      <div class="nav-links">
-        <a href="#about">אודות</a>
-        <a href="#for-whom">למי זה מתאים</a>
-        <a href="#process">איך זה עובד</a>
-        <a href="#pricing">מחירים</a>
-        <a href="#recommendations">המלצות</a>
-        <a href="#contact">יצירת קשר</a>
-      </div>
-      <a class="nav-cta" href="https://wa.me/972523024422?text=%D7%94%D7%99%20%D7%99%D7%95%D7%A8%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%A0%D7%95%D7%9E%D7%A8%D7%95%D7%9C%D7%95%D7%92%D7%99" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="flex:0 0 auto"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.05 0C5.463 0 .102 5.362.102 11.949c0 2.096.548 4.15 1.588 5.965L0 24l6.212-1.628c1.75.955 3.72 1.459 5.808 1.459h.005c6.588 0 11.949-5.362 11.949-11.949C24 5.362 18.638.001 12.05.001zm0 21.844h-.004c-1.86 0-3.696-.502-5.309-1.451l-.381-.227-3.939 1.032 1.05-3.844-.249-.394c-1.033-1.646-1.578-3.55-1.578-5.51 0-5.706 4.644-10.35 10.354-10.35 2.766 0 5.363 1.078 7.318 3.035 1.955 1.956 3.033 4.554 3.032 7.324 0 5.706-4.644 10.35-10.354 10.35z"/></svg><span>בדיקת התאמה קצרה</span></a>
+      <a href="#hero" class="brand">יורם וידל</a>
+      <button class="menu-btn" type="button" aria-label="פתיחת תפריט" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="#for-whom">למי זה מתאים</a></li>
+        <li><a href="#process">איך זה עובד</a></li>
+        <li><a href="#about">עליי</a></li>
+        <li><a href="#pricing">מחירים</a></li>
+        <li><a href="#testimonials">המלצות</a></li>
+        <li><a href="#contact">צור קשר</a></li>
+      </ul>
+      <span class="nav-cta-spacer" aria-hidden="true">בדיקת התאמה</span>
     </div>
-  </nav>
+  </header>
 
-  <main id="top">
-    <section class="hero">
+  <a class="floating-wa" href="https://wa.me/972523024422?text=%D7%94%D7%99%20%D7%99%D7%95%D7%A8%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%91%D7%93%D7%95%D7%A7%20%D7%94%D7%AA%D7%90%D7%9E%D7%94" target="_blank" rel="noopener" aria-label="יצירת קשר בוואטסאפ">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.05 0C5.463 0 .102 5.362.102 11.949c0 2.096.548 4.15 1.588 5.965L0 24l6.212-1.628c1.75.955 3.72 1.459 5.808 1.459h.005c6.588 0 11.949-5.362 11.949-11.949C24 5.362 18.638.001 12.05.001zm0 21.844h-.004c-1.86 0-3.696-.502-5.309-1.451l-.381-.227-3.939 1.032 1.05-3.844-.249-.394c-1.033-1.646-1.578-3.55-1.578-5.51 0-5.706 4.644-10.35 10.354-10.35 2.766 0 5.363 1.078 7.318 3.035 1.955 1.956 3.033 4.554 3.032 7.324 0 5.706-4.644 10.35-10.354 10.35z"/></svg>
+  </a>
 
-      <div class="hero-art" aria-hidden="true">
-        <svg class="numerology-wheel" viewBox="0 0 640 640" role="presentation">
-          <defs>
-            <radialGradient id="wheelGlow" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#f6dcae" stop-opacity=".8"/>
-              <stop offset="38%" stop-color="#d3a14e" stop-opacity=".18"/>
-              <stop offset="100%" stop-color="#d3a14e" stop-opacity="0"/>
-            </radialGradient>
-          </defs>
-          <circle cx="320" cy="320" r="278" fill="url(#wheelGlow)"/>
-          <g fill="none" stroke="#c8953c" stroke-width="1.25" opacity=".48">
-            <circle cx="320" cy="320" r="242"/>
-            <circle cx="320" cy="320" r="202"/>
-            <circle cx="320" cy="320" r="158"/>
-            <circle cx="320" cy="320" r="112"/>
-            <circle cx="320" cy="320" r="66"/>
-            <path d="M320 78v484M78 320h484M149 149l342 342M491 149L149 491"/>
-            <path d="M198 100l244 440M100 198l440 244M442 100L198 540M540 198L100 442"/>
-          </g>
-          <g fill="#b67d28" font-family="Heebo, Arial, sans-serif" font-size="28" text-anchor="middle" opacity=".68">
-            <text x="320" y="113">3</text>
-            <text x="444" y="157">8</text>
-            <text x="520" y="262">7</text>
-            <text x="520" y="388">11</text>
-            <text x="443" y="496">4</text>
-            <text x="320" y="540">6</text>
-            <text x="196" y="496">23</text>
-            <text x="120" y="388">5</text>
-            <text x="120" y="262">9</text>
-            <text x="196" y="157">1</text>
-          </g>
-          <g fill="#d8a955" opacity=".92">
-            <circle cx="320" cy="320" r="8"/>
-            <path d="M320 272l10 38 38 10-38 10-10 38-10-38-38-10 38-10z"/>
-          </g>
-        </svg>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <path id="spiral-path" d="M263.2 260.0 L263.2 260.5 L263.2 261.0 L263.1 261.5 L262.9 262.0 L262.6 262.5 L262.3 263.0 L261.8 263.4 L261.4 263.7 L260.8 264.0 L260.2 264.1 L259.5 264.2 L258.9 264.2 L258.2 264.1 L257.5 263.9 L256.9 263.6 L256.3 263.1 L255.8 262.6 L255.3 262.0 L254.9 261.3 L254.6 260.5 L254.5 259.7 L254.5 258.8 L254.6 257.9 L254.8 257.0 L255.2 256.2 L255.7 255.4 L256.4 254.7 L257.2 254.0 L258.1 253.5 L259.1 253.1 L260.1 252.8 L261.2 252.8 L262.4 252.9 L263.5 253.1 L264.7 253.6 L265.7 254.2 L266.7 255.0 L267.6 256.0 L268.3 257.1 L268.9 258.4 L269.3 259.8 L269.4 261.2 L269.4 262.7 L269.1 264.2 L268.6 265.7 L267.8 267.1 L266.8 268.4 L265.6 269.6 L264.2 270.6 L262.6 271.4 L260.9 272.0 L259.0 272.3 L257.1 272.3 L255.1 272.0 L253.2 271.4 L251.3 270.5 L249.5 269.3 L247.9 267.8 L246.5 266.1 L245.4 264.0 L244.5 261.8 L244.0 259.4 L243.9 256.9 L244.1 254.4 L244.8 251.8 L245.8 249.3 L247.3 247.0 L249.2 244.8 L251.4 242.9 L253.9 241.3 L256.8 240.1 L259.8 239.3 L263.0 239.0 L266.4 239.1 L269.7 239.8 L273.0 241.1 L276.1 242.8 L279.1 245.1 L281.7 247.8 L283.9 251.0 L285.6 254.6 L286.8 258.6 L287.4 262.7 L287.4 267.0 L286.7 271.4 L285.3 275.7 L283.2 279.9 L280.4 283.8 L277.0 287.3 L273.0 290.4 L268.4 292.8 L263.4 294.6 L258.1 295.7 L252.5 295.9 L246.8 295.2 L241.1 293.7 L235.6 291.2 L230.4 287.8 L225.6 283.6 L221.4 278.6 L218.0 272.8 L215.4 266.5 L213.7 259.6 L213.1 252.4 L213.6 244.9 L215.3 237.5 L218.2 230.2 L222.2 223.2 L227.4 216.8 L233.7 211.1 L240.9 206.3 L249.0 202.6 L257.8 200.0 L267.2 198.8 L276.8 199.1 L286.6 200.8 L296.2 204.1 L305.4 209.0 L314.0 215.3 L321.8 223.1 L328.4 232.2 L333.7 242.5 L337.5 253.7 L339.6 265.7 L339.9 278.2 L338.2 290.9 L334.5 303.6 L328.7 315.8 L321.0 327.4 L311.4 337.8 L300.0 347.0 L287.0 354.5 L272.6 360.0 L257.2 363.4 L241.0 364.5 L224.5 363.0 L207.9 359.0 L191.7 352.2 L176.3 342.9 L162.2 331.1"
+            fill="none" stroke="#E0B36C" stroke-width="1.5" stroke-linecap="round"/>
+    </defs>
+  </svg>
 
-        <svg class="hero-wave" viewBox="0 0 1400 500" preserveAspectRatio="none" role="presentation">
-          <defs>
-            <linearGradient id="waveFill" x1="0" x2="1" y1="0" y2="1">
-              <stop offset="0%" stop-color="#2A5070" stop-opacity=".08"/>
-              <stop offset="52%" stop-color="#274A6A" stop-opacity=".82"/>
-              <stop offset="100%" stop-color="#274A6A" stop-opacity=".98"/>
-            </linearGradient>
-            <linearGradient id="goldLine" x1="0" x2="1">
-              <stop offset="0%" stop-color="#d8a955" stop-opacity="0"/>
-              <stop offset="42%" stop-color="#d8a955" stop-opacity=".7"/>
-              <stop offset="100%" stop-color="#f5dba4" stop-opacity=".95"/>
-            </linearGradient>
-          </defs>
-          <path d="M0 385C280 300 430 430 690 318C940 210 1090 112 1400 162V500H0Z" fill="url(#waveFill)"/>
-          <path d="M0 414C320 322 510 444 755 330C970 230 1140 170 1400 194" fill="none" stroke="url(#goldLine)" stroke-width="2"/>
-          <path d="M0 448C310 370 500 475 770 372C1000 284 1180 230 1400 244" fill="none" stroke="url(#goldLine)" stroke-width="1.2" opacity=".75"/>
-          <g fill="#f3d69a">
-            <circle cx="820" cy="310" r="4"/>
-            <circle cx="1040" cy="225" r="3"/>
-            <circle cx="1200" cy="188" r="3"/>
-            <circle cx="1315" cy="175" r="4"/>
-          </g>
-        </svg>
+  <section id="hero" style="background:var(--navy-deep)">
+    <div class="section-stars"></div>
+    <svg class="grid-motif" width="520" height="520" viewBox="0 0 520 520" style="left:-160px;top:-120px">
+      <use href="#spiral-path"/>
+    </svg>
+    <div class="wrap hero-grid" style="padding:70px 0 40px">
+      <div>
+        <p class="eyebrow gold" style="margin-bottom:0">ייעוץ נומרולוגי אישי וזוגי</p>
+        <h1 style="font-size:clamp(2rem,5vw,3.2rem);margin-top:10px">לראות את התמונה הרחבה<br><span style="color:var(--gold)">דרך המספרים שלך</span></h1>
+        <p style="max-width:600px;margin:20px 0 0;font-size:1.1rem">מפגש אישי, רגיש ומעשי להבנת דפוסים, חוזקות, מערכות יחסים וצמתי חיים. בלי שיפוטיות ובלי הבטחות גדולות, רק שיחה כנה שמאפשרת לראות דברים אחרת.</p>
+        <p class="hero-note">פגישה ברמת גן או בזום · כשעה עד שעה וחצי</p>
       </div>
-
-      <div class="wrap hero-grid">
-        <div class="hero-copy reveal">
-          <span class="eyebrow">ייעוץ נומרולוגי אישי וזוגי</span>
-          <h1><span class="hero-title-line" style="color:var(--ink)">לראות את התמונה הרחבה</span><span class="hero-title-line">דרך המספרים שלך.</span></h1>
-          <p class="hero-lead">מפגש אישי, רגיש ומעשי להבנת דפוסים, חוזקות, מערכות יחסים וצמתי חיים. בלי שיפוטיות ובלי הבטחות גדולות, רק שיחה כנה שמאפשרת לראות דברים אחרת.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://wa.me/972523024422?text=%D7%94%D7%99%20%D7%99%D7%95%D7%A8%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%A0%D7%95%D7%9E%D7%A8%D7%95%D7%9C%D7%95%D7%92%D7%99" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="flex:0 0 auto"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.05 0C5.463 0 .102 5.362.102 11.949c0 2.096.548 4.15 1.588 5.965L0 24l6.212-1.628c1.75.955 3.72 1.459 5.808 1.459h.005c6.588 0 11.949-5.362 11.949-11.949C24 5.362 18.638.001 12.05.001zm0 21.844h-.004c-1.86 0-3.696-.502-5.309-1.451l-.381-.227-3.939 1.032 1.05-3.844-.249-.394c-1.033-1.646-1.578-3.55-1.578-5.51 0-5.706 4.644-10.35 10.354-10.35 2.766 0 5.363 1.078 7.318 3.035 1.955 1.956 3.033 4.554 3.032 7.324 0 5.706-4.644 10.35-10.354 10.35z"/></svg><span>בדיקת התאמה בוואטסאפ</span></a>
-            <a class="btn btn-secondary" href="#process">איך נראית פגישה?</a>
-          </div>
-          <div class="hero-note">פגישה ברמת גן או בזום · כשעה עד שעה וחצי</div>
+      <div class="hero-photo-shell">
+        <img src="assets/yoram-vidal-profile.jpg" alt="דיוקן של יורם וידל" class="hero-photo">
+        <div class="hero-photo-caption">
+          <strong>יורם וידל</strong>
+          <span>מלווה תהליכי התבוננות והתפתחות</span>
         </div>
-        <div class="portrait-shell reveal">
-          <div class="portrait-card">
-            <img src="assets/yoram-vidal-profile.jpg" alt="דיוקן של יורם וידל">
-          </div>
-          <div class="portrait-caption">
-            <strong>יורם וידל</strong>
-            <span>מלווה תהליכי התבוננות והתפתחות</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="trust-strip">
-      <div class="wrap trust-box reveal">
-        <div class="trust-item"><strong>אישי</strong><span>מפגש המותאם אליך</span></div>
-        <div class="trust-item"><strong>זוגי</strong><span>הבנת הדינמיקה ביניכם</span></div>
-        <div class="trust-item"><strong>בגובה העיניים</strong><span>שיחה בהירה ולא שיפוטית</span></div>
-        <div class="trust-item"><strong>מעשי</strong><span>תובנות שאפשר לקחת לחיים</span></div>
       </div>
     </div>
+  </section>
 
-    <section id="for-whom" class="section">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <span class="eyebrow">למי זה יכול להתאים</span>
-          <h2>כשהגיע הזמן להבין לעומק</h2>
-          <p>הייעוץ אינו נועד לתת תשובה אחת “נכונה”, אלא להאיר זוויות חדשות ולסייע לך להקשיב לעצמך בצורה מדויקת יותר.</p>
-        </div>
-        
-
-<div class="accordion-list">
-          <div class="accordion-item reveal open">
-            <button class="accordion-trigger" type="button" aria-expanded="true">
-              <div class="accordion-title">
-                <strong>צומת בחיים ושינוי</strong>
-                <span>החלטה, מעבר או תחושה שהכיוון הנוכחי כבר אינו מתאים</span>
-              </div>
-              <span class="accordion-icon">⌄</span>
-            </button>
-            <div class="accordion-panel">
-              <div class="accordion-panel-inner">
-                <div class="accordion-panel-content">
-                  מתאים למי שנמצא מול שינוי בקריירה, מעבר, זוגיות, החלטה משמעותית או תקופה חדשה, ורוצה לראות את התמונה בצורה בהירה יותר.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item reveal">
-            <button class="accordion-trigger" type="button" aria-expanded="false">
-              <div class="accordion-title">
-                <strong>היכרות עצמית והתבוננות</strong>
-                <span>דפוסים, חוזקות, רגישויות ומה שמניע אותך מבפנים</span>
-              </div>
-              <span class="accordion-icon">⌄</span>
-            </button>
-            <div class="accordion-panel">
-              <div class="accordion-panel-inner">
-                <div class="accordion-panel-content">
-                  מתאים למי שרוצה להכיר את עצמו לעומק, להבין דפוסים שחוזרים בחיים, לזהות כוחות פנימיים ולפגוש את עצמו מזווית חדשה.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item reveal">
-            <button class="accordion-trigger" type="button" aria-expanded="false">
-              <div class="accordion-title">
-                <strong>זוגיות וקשרים</strong>
-                <span>הבנת הדינמיקה, נקודות החיבור והפערים</span>
-              </div>
-              <span class="accordion-icon">⌄</span>
-            </button>
-            <div class="accordion-panel">
-              <div class="accordion-panel-inner">
-                <div class="accordion-panel-content">
-                  מתאים ליחידים או לזוגות שרוצים להבין טוב יותר את התקשורת, הצרכים השונים, מקורות החיכוך והכוחות שבקשר.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item reveal">
-            <button class="accordion-trigger" type="button" aria-expanded="false">
-              <div class="accordion-title">
-                <strong>כיוון, קריירה וייעוד</strong>
-                <span>בירור תחומי עשייה והדרך שמתאימה לך</span>
-              </div>
-              <span class="accordion-icon">⌄</span>
-            </button>
-            <div class="accordion-panel">
-              <div class="accordion-panel-inner">
-                <div class="accordion-panel-content">
-                  מתאים למי שמתלבט לגבי תחום עיסוק, שינוי מקצועי או הדרך שבה הכישורים והנטיות הטבעיות שלו יכולים לקבל ביטוי.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="process" class="section">
-      <div class="wrap split">
-        <aside class="quote-panel reveal">
-          <span class="eyebrow" style="color:#e3b18f">המפגש</span>
-          <p>“המטרה אינה להכניס אותך לתוך הגדרה, אלא לפתוח מרחב שבו אפשר לראות את עצמך באופן רחב, בהיר וחומל יותר.”</p>
-          
-        </aside>
+  <section id="calculator" class="content" style="background:var(--navy)">
+    <div class="section-stars"></div>
+    <svg class="grid-motif" width="420" height="420" viewBox="0 0 520 520" style="right:-140px;bottom:-100px;transform:scaleX(-1) rotate(25deg)">
+      <use href="#spiral-path"/>
+    </svg>
+    <div class="wrap" style="text-align:center">
+      <h2 style="font-size:clamp(1.6rem,3.5vw,2.2rem)">מה המספר שלך?</h2>
+      <p style="margin-top:10px">גלה את מספר הגורל שלך, חישוב מבוסס תאריך הלידה שלך</p>
+      <form id="calc-form" class="calc-form">
         <div>
-          <div class="section-head reveal">
-            <span class="eyebrow">איך זה עובד</span>
-            <h2>פגישה אחת. תמונה חדשה.</h2>
+          <label>תאריך לידה (שנה / חודש / יום)</label>
+          <div class="calc-date-row">
+            <input type="number" id="calc-year" min="1900" max="2100" placeholder="שנה" required inputmode="numeric">
+            <input type="number" id="calc-month" min="1" max="12" placeholder="חודש" required inputmode="numeric">
+            <input type="number" id="calc-day" min="1" max="31" placeholder="יום" required inputmode="numeric">
           </div>
-          <div class="timeline">
-            <div class="step reveal"><div class="step-index">1</div><div><h3>לפני הפגישה</h3><p>נאסוף את הפרטים הדרושים להכנת המפה הנומרולוגית ונבין בקצרה מה מעסיק אותך.</p></div></div>
-            <div class="step reveal"><div class="step-index">2</div><div><h3>במהלך המפגש</h3><p>נבחן יחד את המפה, נזהה דפוסים, כוחות ואתגרים ונחבר אותם לחיים שלך כאן ועכשיו.</p></div></div>
-            <div class="step reveal"><div class="step-index">3</div><div><h3>בסיום</h3><p>נרכז את התובנות המרכזיות וננסח כיוונים מעשיים להמשך, בלי כפייה ובלי תחזיות מוחלטות.</p></div></div>
+        </div>
+        <button type="submit">גלה את המספר שלי</button>
+      </form>
+      <div id="calc-result" style="display:none;margin-top:34px">
+        <svg id="grid-svg" width="190" height="190" viewBox="0 0 220 220" style="margin:0 auto;display:block" class="pulse">
+          <g stroke="#3A4E70" stroke-width="1" fill="none">
+            <line x1="0" y1="73" x2="220" y2="73"/><line x1="0" y1="147" x2="220" y2="147"/>
+            <line x1="73" y1="0" x2="73" y2="220"/><line x1="147" y1="0" x2="147" y2="220"/>
+          </g>
+          <g font-family="Georgia,serif" font-size="30" text-anchor="middle" fill="#5A6B88">
+            <text x="36" y="48">1</text><text x="110" y="48">2</text><text x="183" y="48">3</text>
+            <text x="36" y="122">4</text><text x="110" y="122">5</text><text x="183" y="122">6</text>
+            <text x="36" y="196">7</text><text x="110" y="196">8</text><text x="183" y="196">9</text>
+          </g>
+          <circle id="grid-highlight-circle" cx="0" cy="0" r="26" fill="none" stroke="#F5CE93" stroke-width="2.5" style="display:none"/>
+          <text id="grid-highlight-text" x="0" y="0" font-family="Georgia,serif" font-size="30" text-anchor="middle" fill="#F5CE93" font-weight="bold" style="display:none"></text>
+        </svg>
+        <p id="calc-text" style="max-width:480px;margin:20px auto 0"></p>
+        <a id="calc-cta" href="#" target="_blank" rel="noopener" class="cta-soft">רוצה להבין את זה לעומק?</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="for-whom" class="content" style="background:var(--navy-mid)">
+    <div class="section-stars"></div>
+    <svg class="grid-motif" width="380" height="380" viewBox="0 0 520 520" style="right:-130px;top:-110px;transform:rotate(110deg)">
+      <use href="#spiral-path"/>
+    </svg>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow gold">למי זה יכול להתאים</span>
+        <h2>כשהגיע הזמן להבין לעומק</h2>
+        <p>הייעוץ אינו נועד לתת תשובה אחת "נכונה", אלא להאיר זוויות חדשות ולסייע לך להקשיב לעצמך בצורה מדויקת יותר.</p>
+      </div>
+      <div class="accordion-list">
+        <div class="accordion-item reveal open">
+          <button class="accordion-trigger" type="button" aria-expanded="true">
+            <div class="accordion-title">
+              <strong>צומת בחיים ושינוי</strong>
+              <span>החלטה, מעבר או תחושה שהכיוון הנוכחי כבר אינו מתאים</span>
+            </div>
+            <span class="accordion-icon">⌄</span>
+          </button>
+          <div class="accordion-panel">
+            <div class="accordion-panel-inner">
+              <div class="accordion-panel-content">מתאים למי שנמצא מול שינוי בקריירה, מעבר, זוגיות, החלטה משמעותית או תקופה חדשה, ורוצה לראות את התמונה בצורה בהירה יותר.</div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger" type="button" aria-expanded="false">
+            <div class="accordion-title">
+              <strong>היכרות עצמית והתבוננות</strong>
+              <span>דפוסים, חוזקות, רגישויות ומה שמניע אותך מבפנים</span>
+            </div>
+            <span class="accordion-icon">⌄</span>
+          </button>
+          <div class="accordion-panel">
+            <div class="accordion-panel-inner">
+              <div class="accordion-panel-content">מתאים למי שרוצה להכיר את עצמו לעומק, להבין דפוסים שחוזרים בחיים, לזהות כוחות פנימיים ולפגוש את עצמו מזווית חדשה.</div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger" type="button" aria-expanded="false">
+            <div class="accordion-title">
+              <strong>זוגיות וקשרים</strong>
+              <span>הבנת הדינמיקה, נקודות החיבור והפערים</span>
+            </div>
+            <span class="accordion-icon">⌄</span>
+          </button>
+          <div class="accordion-panel">
+            <div class="accordion-panel-inner">
+              <div class="accordion-panel-content">מתאים ליחידים או לזוגות שרוצים להבין טוב יותר את התקשורת, הצרכים השונים, מקורות החיכוך והכוחות שבקשר.</div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item reveal">
+          <button class="accordion-trigger" type="button" aria-expanded="false">
+            <div class="accordion-title">
+              <strong>כיוון, קריירה וייעוד</strong>
+              <span>בירור תחומי עשייה והדרך שמתאימה לך</span>
+            </div>
+            <span class="accordion-icon">⌄</span>
+          </button>
+          <div class="accordion-panel">
+            <div class="accordion-panel-inner">
+              <div class="accordion-panel-content">מתאים למי שמתלבט לגבי תחום עיסוק, שינוי מקצועי או הדרך שבה הכישורים והנטיות הטבעיות שלו יכולים לקבל ביטוי.</div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="about" class="section">
-      <div class="wrap about-grid">
-        <div class="about-copy reveal">
-          <span class="eyebrow">קצת עליי</span>
-          <h2>חיבור בין יצירה והקשבה</h2>
-          <p>במשך שנים רבות אני חי את עולמות היצירה והאמנות, בעיקר דרך מוזיקה וצילום. במקביל העמקתי בעולמות ההתפתחות האישית והרוחנית ולמדתי שיאצו, ביואנרגיה, הילינג ורייקי.</p>
-          <p>הנומרולוגיה הפכה עבורי לשפה שמאפשרת לחבר בין הקשבה, ניסיון חיים וראייה של דפוסים. אני עובד בגישה אנושית, רגישה ומעשית, מתוך כבוד לבחירה החופשית של האדם שמולי.</p>
-        </div>
-        <div class="facts reveal">
-          <div class="fact"><strong>נומרולוגיה</strong><span>לימוד מעמיק אצל מורים פרטיים ועבודה מתמשכת עם מפות אישיות וזוגיות.</span></div>
-          <div class="fact"><strong>שיאצו</strong><span>לימודים והסמכה בבית הספר “תמורות”.</span></div>
-          <div class="fact"><strong>ביואנרגיה</strong><span>לימוד והעמקה בשיטה בהדרכת רפי רוזן.</span></div>
-          <div class="fact"><strong>הילינג ורייקי</strong><span>הכשרה וניסיון מעשי בעבודה אנרגטית.</span></div>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="pricing" class="section">
-      <div class="wrap">
+  <section id="process" class="content" style="background:var(--navy-soft)">
+    <div class="section-stars"></div>
+    <svg class="grid-motif" width="440" height="440" viewBox="0 0 520 520" style="left:-150px;bottom:-130px;transform:rotate(200deg)">
+      <use href="#spiral-path"/>
+    </svg>
+    <div class="wrap split">
+      <aside class="quote-panel reveal">
+        <span class="eyebrow gold">המפגש</span>
+        <p>"המטרה אינה להכניס אותך לתוך הגדרה, אלא לפתוח מרחב שבו אפשר לראות את עצמך באופן רחב, בהיר וחומל יותר."</p>
+      </aside>
+      <div>
         <div class="section-head reveal">
-          <span class="eyebrow">מחירים ברורים מראש</span>
-          <h2>מחירים ברורים מראש</h2>
-          <p>בחרתי במחיר קבוע לכל סוג מפגש. כך אפשר לדעת מראש מה מקבלים ומה העלות, ולהחליט בנחת אם זה מתאים.</p>
+          <span class="eyebrow gold">איך זה עובד</span>
+          <h2>פגישה אחת. תמונה חדשה.</h2>
         </div>
-
-        <div class="pricing-grid">
-          <article class="price-card featured reveal">
-            <span class="price-badge">מחיר השקה</span>
-            <h3>ייעוץ אישי</h3>
-            <p>מפגש ממוקד במפה האישית, בדפוסים, בחוזקות ובשאלות שמעסיקות אותך כעת.</p>
-            <div class="price">350 ₪</div>
-            <ul class="price-details">
-              <li>כשעה עד שעה וחצי</li>
-              <li>הכנת מפה מראש</li>
-              <li>פגישה ברמת גן או בזום</li>
-              <li>סיכום הכיוונים המרכזיים בסיום</li>
-            </ul>
-            <a class="btn btn-primary" href="https://wa.me/972523024422?text=%D7%94%D7%99%20%D7%99%D7%95%D7%A8%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%91%D7%93%D7%95%D7%A7%20%D7%94%D7%AA%D7%90%D7%9E%D7%94%20%D7%9C%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%90%D7%99%D7%A9%D7%99" target="_blank" rel="noopener">בדיקת התאמה לייעוץ אישי</a>
-          </article>
-
-          <article class="price-card reveal">
-            <span class="price-badge">מחיר השקה</span>
-            <h3>ייעוץ זוגי</h3>
-            <p>מפגש להבנת הדינמיקה הזוגית, נקודות החיבור, הפערים ודרכי התקשורת ביניכם.</p>
-            <div class="price">450 ₪</div>
-            <ul class="price-details">
-              <li>כשעה וחצי</li>
-              <li>הכנת שתי מפות מראש</li>
-              <li>פגישה ברמת גן או בזום</li>
-              <li>מיקוד בדינמיקה ובצרכים של שני בני הזוג</li>
-            </ul>
-            <a class="btn btn-secondary" href="https://wa.me/972523024422?text=%D7%94%D7%99%20%D7%99%D7%95%D7%A8%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%91%D7%93%D7%95%D7%A7%20%D7%94%D7%AA%D7%90%D7%9E%D7%94%20%D7%9C%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%96%D7%95%D7%92%D7%99" target="_blank" rel="noopener">בדיקת התאמה לייעוץ זוגי</a>
-          </article>
-        </div>
-
-        <div class="intro-call reveal">
-          <div>
-            <h3>לא בטוחים מה מתאים?</h3>
-            <p>אפשר להתחיל בבדיקת התאמה קצרה של 10–15 דקות, ללא עלות וללא התחייבות. נבין מה מעסיק אתכם ואסביר איך נראה המפגש.</p>
-          </div>
-          <a class="btn btn-primary" href="https://wa.me/972523024422?text=%D7%94%D7%99%20%D7%99%D7%95%D7%A8%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%91%D7%93%D7%99%D7%A7%D7%AA%20%D7%94%D7%AA%D7%90%D7%9E%D7%94%20%D7%A7%D7%A6%D7%A8%D7%94%20%D7%9C%D7%9C%D7%90%20%D7%94%D7%AA%D7%97%D7%99%D7%99%D7%91%D7%95%D7%AA" target="_blank" rel="noopener">לתיאום בדיקת התאמה</a>
+        <div class="timeline">
+          <div class="step reveal"><div class="step-index">1</div><div><h3>לפני הפגישה</h3><p>נאסוף את הפרטים הדרושים להכנת המפה הנומרולוגית ונבין בקצרה מה מעסיק אותך.</p></div></div>
+          <div class="step reveal"><div class="step-index">2</div><div><h3>במהלך המפגש</h3><p>נבחן יחד את המפה, נזהה דפוסים, כוחות ואתגרים ונחבר אותם לחיים שלך כאן ועכשיו.</p></div></div>
+          <div class="step reveal"><div class="step-index">3</div><div><h3>בסיום</h3><p>נרכז את התובנות המרכזיות וננסח כיוונים מעשיים להמשך, בלי כפייה ובלי תחזיות מוחלטות.</p></div></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="recommendations" class="section">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <span class="eyebrow">מילים מאנשים שפגשו אותי</span>
-          <h2>הקשבה מתחילה במקום בטוח</h2>
-        </div>
-        <div class="testimonials">
-          <article class="testimonial reveal"><blockquote>“יורם אדם מיוחד בעל שילוב נדיר של יצירתיות, רגישות ועומק. הוא יודע להקשיב באמת, לשאול את השאלות הנכונות ולהעניק תובנות מתוך מקום כן ואכפתי.”</blockquote><footer>רוית גורני</footer></article>
-          <article class="testimonial reveal"><blockquote>“החוויה הייתה מדויקת ומלאה בתובנות משמעותיות. יורם הפגין רגישות רבה ונטולת שיפוטיות, וסקרנות אמיתית להכיר אותי דרך המספרים.”</blockquote><footer>גלית סלומון, יועצת חינוכית</footer></article>
-          <article class="testimonial reveal"><blockquote>“יורם יודע להתחבר לאנשים, להסביר דברים בצורה ברורה ומדויקת, ונותן תחושה שיש מי שמקשיב ומכוון באמת.”</blockquote><footer>עמית אריכא</footer></article>
-          <article class="testimonial reveal"><blockquote>“בענווה, בפשטות ובעדינות יורם הראה לי דברים נכונים כל כך על הזוגיות שלי, ואפשר לי לראות נקודות מבט חדשות.”</blockquote><footer>נעמי שחטר</footer></article>
-          <article class="testimonial reveal"><blockquote>“הגעתי בלי לדעת למה לצפות, והוא היה מדויק ברמות. יצאתי מהפגישה עם הרבה חומר למחשבה ותחושה טובה. ממליצה מכל הלב לכל מי שמתלבט.”</blockquote><footer>נעמי נגר</footer></article>
-        </div>
+  <section id="about" class="content" style="background:var(--navy-mid)">
+    <div class="section-stars"></div>
+    <svg class="grid-motif" width="400" height="400" viewBox="0 0 520 520" style="right:-120px;bottom:-120px;transform:scaleY(-1) rotate(60deg)">
+      <use href="#spiral-path"/>
+    </svg>
+    <div class="wrap about-grid">
+      <div class="about-copy reveal">
+        <span class="eyebrow gold">קצת עליי</span>
+        <h2>חיבור בין יצירה והקשבה</h2>
+        <p>במשך שנים רבות אני חי את עולמות היצירה והאומנות, בעיקר דרך מוזיקה וצילום. במקביל העמקתי בעולמות ההתפתחות האישית והרוחנית ולמדתי שיאצו, ביואנרגיה, הילינג ורייקי.</p>
+        <p>הנומרולוגיה הפכה עבורי לשפה שמאפשרת לחבר בין הקשבה, ניסיון חיים וראייה של דפוסים. אני עובד בגישה אנושית, רגישה ומעשית, מתוך כבוד לבחירה החופשית של האדם שמולי.</p>
       </div>
-    </section>
+      <div class="facts reveal">
+        <div class="fact"><strong>נומרולוגיה</strong><span>לימוד מעמיק אצל מורים פרטיים ועבודה מתמשכת עם מפות אישיות וזוגיות.</span></div>
+        <div class="fact"><strong>שיאצו</strong><span>לימודים והסמכה בבית הספר "תמורות".</span></div>
+        <div class="fact"><strong>ביואנרגיה</strong><span>לימוד והעמקה בשיטה בהדרכת רפי רוזן.</span></div>
+        <div class="fact"><strong>הילינג ורייקי</strong><span>הכשרה וניסיון מעשי בעבודה אנרגטית.</span></div>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact" class="section">
-      <div class="wrap contact-wrap reveal">
+  <section id="pricing" class="content" style="background:var(--navy-soft)">
+    <div class="section-stars"></div>
+    <svg class="grid-motif" width="360" height="360" viewBox="0 0 520 520" style="left:-110px;top:-100px;transform:rotate(-70deg)">
+      <use href="#spiral-path"/>
+    </svg>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow gold">מחירים ברורים מראש</span>
+        <h2>מחירים ברורים מראש</h2>
+        <p>בחרתי במחיר קבוע לכל סוג מפגש. כך אפשר לדעת מראש מה מקבלים ומה העלות, ולהחליט בנחת אם זה מתאים.</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card reveal">
+          <span class="price-badge">מחיר השקה</span>
+          <h3>ייעוץ אישי</h3>
+          <p>מפגש ממוקד במפה האישית, בדפוסים, בחוזקות ובשאלות שמעסיקות אותך כעת.</p>
+          <div class="price">350 ₪</div>
+          <ul class="price-details">
+            <li>כשעה עד שעה וחצי</li>
+            <li>הכנת מפה מראש</li>
+            <li>פגישה ברמת גן או בזום</li>
+            <li>סיכום הכיוונים המרכזיים בסיום</li>
+          </ul>
+          <a class="btn btn-primary" href="https://wa.me/972523024422?text=%D7%94%D7%99%20%D7%99%D7%95%D7%A8%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%91%D7%93%D7%95%D7%A7%20%D7%94%D7%AA%D7%90%D7%9E%D7%94%20%D7%9C%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%90%D7%99%D7%A9%D7%99" target="_blank" rel="noopener">בדיקת התאמה לייעוץ אישי</a>
+        </article>
+        <article class="price-card reveal">
+          <span class="price-badge">מחיר השקה</span>
+          <h3>ייעוץ זוגי</h3>
+          <p>מפגש להבנת הדינמיקה הזוגית, נקודות החיבור, הפערים ודרכי התקשורת ביניכם.</p>
+          <div class="price">450 ₪</div>
+          <ul class="price-details">
+            <li>כשעה וחצי</li>
+            <li>הכנת שתי מפות מראש</li>
+            <li>פגישה ברמת גן או בזום</li>
+            <li>מיקוד בדינמיקה ובצרכים של שני בני הזוג</li>
+          </ul>
+          <a class="btn btn-secondary" href="https://wa.me/972523024422?text=%D7%94%D7%99%20%D7%99%D7%95%D7%A8%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%91%D7%93%D7%95%D7%A7%20%D7%94%D7%AA%D7%90%D7%9E%D7%94%20%D7%9C%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%96%D7%95%D7%92%D7%99" target="_blank" rel="noopener">בדיקת התאמה לייעוץ זוגי</a>
+        </article>
+      </div>
+      <div class="intro-call reveal">
         <div>
-          <span class="eyebrow" style="color:#e3b18f">יצירת קשר</span>
-          <h2>מתחילים בבדיקת התאמה</h2>
-          <p>בשיחה של 10–15 דקות, ללא עלות וללא התחייבות, נבדוק מה מעסיק אותך ואיזה סוג מפגש עשוי להתאים: אישי או זוגי.</p>
-          <div class="contact-links">
-            <a href="tel:0523024422">טלפון: 052-302-4422</a>
-            <a href="mailto:yvidal@gmail.com">דוא״ל: yvidal@gmail.com</a>
-            <span>רמת גן · אפשרות לפגישה בזום</span>
-          </div>
-          <p class="fineprint">הייעוץ הנומרולוגי הוא כלי להתבוננות ולהתפתחות אישית ואינו תחליף לייעוץ רפואי, נפשי, משפטי או כלכלי מקצועי.</p>
+          <h3>לא בטוחים מה מתאים?</h3>
+          <p>אפשר להתחיל בבדיקת התאמה קצרה של 10–15 דקות, ללא עלות וללא התחייבות. נבין מה מעסיק אתכם ואסביר איך נראה המפגש.</p>
         </div>
-        <form class="form" action="https://formspree.io/f/xldleprd" method="POST">
-          <input type="hidden" name="_subject" value="פנייה חדשה מדף הייעוץ הנומרולוגי">
-          <p class="required-note"><span class="required-mark" aria-hidden="true">*</span> כל השדות הם שדות חובה</p>
-          <div class="field"><label for="name">שם מלא <span class="required-mark" aria-hidden="true">*</span></label><input id="name" name="name" autocomplete="name" required></div>
-          <div class="field"><label for="phone">טלפון <span class="required-mark" aria-hidden="true">*</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
-          <div class="field"><label for="email">דוא״ל <span class="required-mark" aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" required></div>
-          <div class="field"><label for="message">במה תרצה להתמקד? <span class="required-mark" aria-hidden="true">*</span></label><textarea id="message" name="message" placeholder="אפשר לכתוב בקצרה מה מעסיק אותך כרגע" required></textarea></div>
-          <button class="submit" type="submit">שליחת פרטים</button>
-        </form>
+        <a class="btn btn-primary" href="https://wa.me/972523024422?text=%D7%94%D7%99%20%D7%99%D7%95%D7%A8%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%91%D7%93%D7%99%D7%A7%D7%AA%20%D7%94%D7%AA%D7%90%D7%9E%D7%94%20%D7%A7%D7%A6%D7%A8%D7%94%20%D7%9C%D7%9C%D7%90%20%D7%94%D7%AA%D7%97%D7%99%D7%99%D7%91%D7%95%D7%AA" target="_blank" rel="noopener">לתיאום בדיקת התאמה</a>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer class="footer">
-    <div class="wrap footer-inner"><span>© 2026 יורם וידל</span><span>ייעוץ נומרולוגי אישי וזוגי · רמת גן וזום</span></div>
-  </footer>
+  <section id="testimonials" class="content" style="background:var(--navy-mid)">
+    <div class="section-stars"></div>
+    <svg class="grid-motif" width="340" height="340" viewBox="0 0 520 520" style="right:-100px;top:-90px;transform:scaleX(-1) rotate(150deg)">
+      <use href="#spiral-path"/>
+    </svg>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow gold">מילים מאנשים שפגשו אותי</span>
+        <h2>הקשבה מתחילה במקום בטוח</h2>
+      </div>
+      <div class="testimonials">
+        <article class="testimonial reveal"><blockquote>"יורם אדם מיוחד בעל שילוב נדיר של יצירתיות, רגישות ועומק. הוא יודע להקשיב באמת, לשאול את השאלות הנכונות ולהעניק תובנות מתוך מקום כן ואכפתי."</blockquote><footer>רוית גורני</footer></article>
+        <article class="testimonial reveal"><blockquote>"החוויה הייתה מדויקת ומלאה בתובנות משמעותיות. יורם הפגין רגישות רבה ונטולת שיפוטיות, וסקרנות אמיתית להכיר אותי דרך המספרים."</blockquote><footer>גלית סלומון, יועצת חינוכית</footer></article>
+        <article class="testimonial reveal"><blockquote>"יורם יודע להתחבר לאנשים, להסביר דברים בצורה ברורה ומדויקת, ונותן תחושה שיש מי שמקשיב ומכוון באמת."</blockquote><footer>עמית אריכא</footer></article>
+        <article class="testimonial reveal"><blockquote>"בענווה, בפשטות ובעדינות יורם הראה לי דברים נכונים כל כך על הזוגיות שלי, ואפשר לי לראות נקודות מבט חדשות."</blockquote><footer>נעמי שחטר</footer></article>
+        <article class="testimonial reveal"><blockquote>"הגעתי בלי לדעת למה לצפות, והוא היה מדויק ברמות. יצאתי מהפגישה עם הרבה חומר למחשבה ותחושה טובה. ממליצה מכל הלב לכל מי שמתלבט."</blockquote><footer>נעמי נגר</footer></article>
+      </div>
+    </div>
+  </section>
 
-  <a class="floating-wa" aria-label="יצירת קשר בוואטסאפ" href="https://wa.me/972523024422?text=%D7%94%D7%99%20%D7%99%D7%95%D7%A8%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%A0%D7%95%D7%9E%D7%A8%D7%95%D7%9C%D7%95%D7%92%D7%99" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="flex:0 0 auto"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.05 0C5.463 0 .102 5.362.102 11.949c0 2.096.548 4.15 1.588 5.965L0 24l6.212-1.628c1.75.955 3.72 1.459 5.808 1.459h.005c6.588 0 11.949-5.362 11.949-11.949C24 5.362 18.638.001 12.05.001zm0 21.844h-.004c-1.86 0-3.696-.502-5.309-1.451l-.381-.227-3.939 1.032 1.05-3.844-.249-.394c-1.033-1.646-1.578-3.55-1.578-5.51 0-5.706 4.644-10.35 10.354-10.35 2.766 0 5.363 1.078 7.318 3.035 1.955 1.956 3.033 4.554 3.032 7.324 0 5.706-4.644 10.35-10.354 10.35z"/></svg></a>
+  <section id="contact" class="content" style="background:var(--navy-deep)">
+    <div class="section-stars"></div>
+    <svg class="grid-motif" width="420" height="420" viewBox="0 0 520 520" style="left:-140px;bottom:-110px;transform:rotate(300deg)">
+      <use href="#spiral-path"/>
+    </svg>
+    <div class="wrap contact-wrap reveal">
+      <div>
+        <span class="eyebrow gold">יצירת קשר</span>
+        <h2>מתחילים בבדיקת התאמה</h2>
+        <p>בשיחה של 10–15 דקות, ללא עלות וללא התחייבות, נבדוק מה מעסיק אותך ואיזה סוג מפגש עשוי להתאים: אישי או זוגי.</p>
+        <div class="contact-links">
+          <a href="tel:0523024422">טלפון: 052-302-4422</a>
+          <a href="mailto:yvidal@gmail.com">דוא"ל: yvidal@gmail.com</a>
+          <span>רמת גן · אפשרות לפגישה בזום</span>
+        </div>
+        <p class="fineprint">הייעוץ הנומרולוגי הוא כלי להתבוננות ולהתפתחות אישית ואינו תחליף לייעוץ רפואי, נפשי, משפטי או כלכלי מקצועי.</p>
+      </div>
+      <form class="form" action="https://formspree.io/f/xldleprd" method="POST">
+        <input type="hidden" name="_subject" value="פנייה חדשה מדף הייעוץ הנומרולוגי">
+        <p class="required-note"><span class="required-mark" aria-hidden="true">*</span> כל השדות הם שדות חובה</p>
+        <div class="field"><label for="name">שם מלא <span class="required-mark" aria-hidden="true">*</span></label><input id="name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="phone">טלפון <span class="required-mark" aria-hidden="true">*</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+        <div class="field"><label for="email">דוא"ל <span class="required-mark" aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="message">במה תרצה להתמקד? <span class="required-mark" aria-hidden="true">*</span></label><textarea id="message" name="message" placeholder="אפשר לכתוב בקצרה מה מעסיק אותך כרגע" required></textarea></div>
+        <button class="submit" type="submit">שליחת פרטים</button>
+      </form>
+    </div>
+  </section>
 
   <script>
+    // Life Path calculation
+    function reduceToSingleDigit(n) {
+      while (n > 9) {
+        n = String(n).split('').reduce((sum, d) => sum + Number(d), 0);
+      }
+      return n;
+    }
+
+    function calculateLifePath(dateString) {
+      const digits = dateString.replace(/-/g, '').split('').map(Number);
+      const total = digits.reduce((sum, d) => sum + d, 0);
+      return reduceToSingleDigit(total);
+    }
+
+    // Grid cell centers for the Pythagorean-style reveal (reading order 1-9)
+    const GRID_POS = {
+      1:{x:36,y:36},  2:{x:110,y:36},  3:{x:183,y:36},
+      4:{x:36,y:110}, 5:{x:110,y:110}, 6:{x:183,y:110},
+      7:{x:36,y:183}, 8:{x:110,y:183}, 9:{x:183,y:183}
+    };
+
+    // Interpretive texts (מאושר ע"י יורם, 2026-07-05)
+    const LIFE_PATH_TEXTS = {
+      1: "את/ה בעל/ת יכולת להוביל ולפתוח דרכים חדשות. עצמאות ומטרה ברורה מניעים אותך, אבל חשוב לזכור לשתף גם אחרים.",
+      2: "את/ה רגיש/ה לדינמיקה בין אנשים ויודע/ת להקשיב כשצריך. שיתוף פעולה ואיזון חשובים לך, לפעמים על חשבון הצורך של עצמך.",
+      3: "יש בך יצירתיות מחשבתית וכושר ביטוי טבעי. יכולת הישרדותית טובה. יכולת להומור וקלילות, ולפעמים קושי להתמקד בדבר אחד.",
+      4: "צורך ביציבות וסדר. מתאים/ה לעבוד ויכולת עבודה טובה. יעיל/ה, בעל/ת יכולת אילתור ונוטה להיצמד לכללים אישיים.",
+      5: "את/ה מחפש/ת חופש ותנועה. סקרנות ולעיתים אי שקט מניעים אותך. שינוי מרגש אך התמדה יכולה לאתגר.",
+      6: "את/ה מתאפיין/ת ביופי, משפחה, בית ודאגה לאחר. אוהב/ת לעזור אך יודע/ת גם לשמור על אינדיבידואליות.",
+      7: "יש בך נטייה להתבוננות פנימית ולחיפוש משמעות מעבר לפני השטח. את/ה זקוק/ה לזמן כדי לעבד ולהבין.",
+      8: "חשוב לך הישגים ותחושת שליטה. יכולות גבוהות. צריך לשים לב לאיזון נכון בין עשייה למנוחה.",
+      9: "בעל/ת חזון ויכולת לקחת אחריות. רצון לתרום מעבר לעצמך. קיימת נדיבות ורגישות לסביבה אבל לפעמים יש נטייה לקחת יותר מדי על עצמך."
+    };
+
+    document.getElementById('calc-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const day = document.getElementById('calc-day').value;
+      const month = document.getElementById('calc-month').value;
+      const year = document.getElementById('calc-year').value;
+      if (!day || !month || !year) return;
+      const date = `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
+
+      const number = calculateLifePath(date);
+      const pos = GRID_POS[number];
+      const resultBox = document.getElementById('calc-result');
+      const circle = document.getElementById('grid-highlight-circle');
+      const text = document.getElementById('grid-highlight-text');
+      const textEl = document.getElementById('calc-text');
+      const ctaEl = document.getElementById('calc-cta');
+
+      circle.setAttribute('cx', pos.x);
+      circle.setAttribute('cy', pos.y);
+      circle.style.display = 'block';
+      text.setAttribute('x', pos.x);
+      text.setAttribute('y', pos.y + 11);
+      text.textContent = number;
+      text.style.display = 'block';
+
+      textEl.textContent = LIFE_PATH_TEXTS[number];
+      const waText = encodeURIComponent(`היי יורם, גיליתי שהמספר שלי הוא ${number} ואני רוצה להבין את זה לעומק`);
+      ctaEl.href = `https://wa.me/972523024422?text=${waText}`;
+      resultBox.style.display = 'block';
+      resultBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+
+    // Twinkling stars - randomized placement/size/timing on every load
+    (function generateStars() {
+      const COLORS = ['gold', 'yellow', 'blue'];
+      const PX_PER_STAR = 140; // density: one star per ~140px of section height
+
+      function randomizeStar(span) {
+        span.className = 'float-num ' + COLORS[Math.floor(Math.random() * COLORS.length)];
+        span.textContent = Math.floor(Math.random() * 9) + 1;
+        span.style.top = (Math.random() * 88 + 4).toFixed(1) + '%';
+        span.style.left = (Math.random() * 88 + 4).toFixed(1) + '%';
+        span.style.fontSize = (Math.random() * 2 + 0.8).toFixed(2) + 'rem';
+        span.style.setProperty('--dim', (Math.random() * 0.15 + 0.15).toFixed(2));
+        span.style.setProperty('--peak', (Math.random() * 0.2 + 0.75).toFixed(2));
+      }
+
+      document.querySelectorAll('.section-stars').forEach(container => {
+        const section = container.parentElement;
+        const count = Math.max(2, Math.round(section.offsetHeight / PX_PER_STAR));
+        for (let i = 0; i < count; i++) {
+          const span = document.createElement('span');
+          randomizeStar(span);
+          span.style.animationDuration = (Math.random() * 9 + 5).toFixed(1) + 's';
+          span.style.animationDelay = (Math.random() * 7).toFixed(1) + 's';
+          // Each time this star's twinkle loop completes (fully dimmed, at the loop
+          // boundary), jump it to a brand new spot - so stars appear to blink out
+          // and reappear elsewhere instead of just pulsing in place forever.
+          span.addEventListener('animationiteration', () => randomizeStar(span));
+          container.appendChild(span);
+        }
+      });
+    })();
+
+    // Mobile nav toggle
     const menuBtn = document.querySelector('.menu-btn');
     const navLinks = document.querySelector('.nav-links');
     menuBtn.addEventListener('click', () => {
       const open = navLinks.classList.toggle('open');
       menuBtn.setAttribute('aria-expanded', open);
-      menuBtn.textContent = open ? '×' : '☰';
     });
     navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
       navLinks.classList.remove('open');
-      menuBtn.setAttribute('aria-expanded','false');
-      menuBtn.textContent='☰';
+      menuBtn.setAttribute('aria-expanded', 'false');
     }));
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {threshold:.12});
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
+    // Accordion toggle
     document.querySelectorAll('.accordion-trigger').forEach(trigger => {
       trigger.addEventListener('click', () => {
         const item = trigger.closest('.accordion-item');
@@ -1645,6 +621,16 @@
       });
     });
 
+    // Scroll reveal
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: .12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
