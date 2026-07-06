@@ -1,6 +1,12 @@
 <!doctype html>
 <html lang="he" dir="rtl">
 <head>
+  <script>
+    (function() {
+      var saved = localStorage.getItem('numerology-theme');
+      if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    })();
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>יורם וידל | ייעוץ נומרולוגי אישי וזוגי</title>
@@ -24,6 +30,23 @@
       --body-txt:#B7C2D6;
       --line:rgba(224,179,108,.15);
       --panel:rgba(20,31,52,.5);
+      --nav-bg:rgba(20,31,52,.92);
+      --on-gold:#141F34;
+    }
+    [data-theme="light"] {
+      --navy-deep:#FAF6EF;
+      --navy:#F7F1E6;
+      --navy-mid:#F1E9DA;
+      --navy-soft:#EADFC7;
+      --gold:#B8863E;
+      --gold-soft:#A5763A;
+      --emerald:#3F7860;
+      --emerald-soft:#5C9481;
+      --cream:#2A3040;
+      --body-txt:#5B6472;
+      --line:rgba(184,134,62,.18);
+      --panel:rgba(255,255,255,.55);
+      --nav-bg:rgba(250,246,239,.92);
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
@@ -44,13 +67,16 @@
     section.content{padding:64px 0}
 
     /* Nav */
-    .site-nav{position:sticky;top:0;z-index:20;background:rgba(20,31,52,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .site-nav{position:sticky;top:0;z-index:20;background:var(--nav-bg);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
     .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 0;position:relative}
     .brand{color:var(--gold);font-family:"Heebo",Arial,sans-serif;font-size:1.3rem;text-decoration:none;font-weight:700}
     .nav-links{display:flex;align-items:center;gap:22px;list-style:none;margin:0;padding:0}
     .nav-links a{color:var(--cream);text-decoration:none;font-size:.92rem}
     .nav-links a:hover{color:var(--gold)}
     .nav-cta-spacer{visibility:hidden;padding:.6rem 1.1rem;font-weight:700;font-size:.85rem}
+    .nav-controls{display:flex;align-items:center;gap:10px}
+    .theme-toggle{background:none;border:1px solid var(--line);color:var(--cream);width:36px;height:36px;border-radius:50%;display:grid;place-items:center;cursor:pointer;font-size:1.05rem;padding:0;line-height:1}
+    .theme-toggle:hover{border-color:var(--gold)}
     .menu-btn{display:none;background:none;border:0;color:var(--cream);font-size:1.5rem;cursor:pointer;padding:0}
 
     .floating-wa{position:fixed;left:22px;bottom:22px;z-index:15;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--emerald);color:#0F1B2E;box-shadow:0 12px 28px rgba(0,0,0,.35);text-decoration:none}
@@ -70,6 +96,7 @@
     .float-num.gold{color:var(--gold)}
     .float-num.yellow{color:var(--star-yellow)}
     .float-num.blue{color:var(--star-blue)}
+    .float-num.light-static{opacity:.13;color:var(--gold-soft);animation:none;filter:none;transform:none}
     @keyframes twinkle{
       0%,40%,100%{opacity:var(--dim,.22);transform:scale(.85);filter:drop-shadow(0 0 2px currentColor)}
       50%{opacity:var(--peak,.9);transform:scale(1.2);filter:drop-shadow(0 0 10px currentColor)}
@@ -79,7 +106,8 @@
       .float-num{animation:none;display:none}
     }
 
-    .grid-motif{position:absolute;opacity:.16;pointer-events:none;z-index:0}
+    .grid-motif{position:absolute;opacity:.16;color:var(--gold);pointer-events:none;z-index:0}
+    [data-theme="light"] .grid-motif{opacity:.22}
     @keyframes pulseGlow{
       0%,100%{filter:drop-shadow(0 0 2px rgba(224,179,108,.35))}
       50%{filter:drop-shadow(0 0 10px rgba(224,179,108,.75))}
@@ -134,7 +162,7 @@
     .price-details{list-style:none;padding:0;margin:18px 0;display:grid;gap:8px;color:var(--body-txt);font-size:1.1rem}
     .price-details li::before{content:"✓ ";color:var(--emerald-soft)}
     .btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 1.3rem;border-radius:999px;text-decoration:none;font-weight:600;border:0;cursor:pointer;font-family:inherit}
-    .btn-primary{background:var(--gold);color:var(--navy-deep)}
+    .btn-primary{background:var(--gold);color:var(--on-gold)}
     .btn-secondary{background:transparent;border:1px solid var(--emerald-soft);color:var(--emerald-soft)}
     .intro-call{max-width:860px;margin:20px 0 0;padding:22px 26px;border-radius:18px;background:var(--panel);border:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:20px}
     .intro-call h3{margin-bottom:4px;font-size:1.1rem}
@@ -146,6 +174,20 @@
     .testimonial footer{margin-top:16px;color:var(--gold);font-weight:600;font-size:.92rem}
 
     /* Contact */
+    #contact{
+      --navy-deep:#141F34;
+      --navy:#1B2C4A;
+      --navy-mid:#22385C;
+      --navy-soft:#2A4468;
+      --gold:#E0B36C;
+      --gold-soft:#C9975A;
+      --emerald:#5FA085;
+      --emerald-soft:#7FB89D;
+      --cream:#EDE6D8;
+      --body-txt:#B7C2D6;
+      --line:rgba(224,179,108,.15);
+      --panel:rgba(20,31,52,.5);
+    }
     .contact-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px}
     .contact-wrap h2{color:var(--cream)}
     .contact-links{display:grid;gap:8px;margin-top:22px}
@@ -173,7 +215,7 @@
     .calc-form{max-width:340px;margin:24px auto 0;display:grid;gap:12px;text-align:right}
     .calc-form label{display:block;font-size:.85rem;font-weight:600;color:var(--body-txt);margin-bottom:5px}
     .calc-form input{width:100%;padding:.9rem;border:1px solid var(--navy-soft);border-radius:10px;font-family:inherit;background:var(--navy-deep);color:var(--cream);text-align:center}
-    .calc-form button{padding:.9rem;border:0;border-radius:10px;background:var(--gold);color:var(--navy-deep);font-weight:700;cursor:pointer;width:100%;font-family:inherit}
+    .calc-form button{padding:.9rem;border:0;border-radius:10px;background:var(--gold);color:var(--on-gold);font-weight:700;cursor:pointer;width:100%;font-family:inherit}
     .calc-date-row{display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:8px}
     .calc-date-row input::-webkit-outer-spin-button,
     .calc-date-row input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
@@ -202,7 +244,10 @@
   <header class="site-nav">
     <div class="wrap nav-inner">
       <a href="#hero" class="brand">יורם וידל</a>
-      <button class="menu-btn" type="button" aria-label="פתיחת תפריט" aria-expanded="false">☰</button>
+      <div class="nav-controls">
+        <button class="theme-toggle" type="button" aria-label="עבור למצב בהיר">☀️</button>
+        <button class="menu-btn" type="button" aria-label="פתיחת תפריט" aria-expanded="false">☰</button>
+      </div>
       <ul class="nav-links">
         <li><a href="#for-whom">למי זה מתאים</a></li>
         <li><a href="#process">איך זה עובד</a></li>
@@ -222,7 +267,7 @@
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <defs>
       <path id="spiral-path" d="M263.2 260.0 L263.2 260.5 L263.2 261.0 L263.1 261.5 L262.9 262.0 L262.6 262.5 L262.3 263.0 L261.8 263.4 L261.4 263.7 L260.8 264.0 L260.2 264.1 L259.5 264.2 L258.9 264.2 L258.2 264.1 L257.5 263.9 L256.9 263.6 L256.3 263.1 L255.8 262.6 L255.3 262.0 L254.9 261.3 L254.6 260.5 L254.5 259.7 L254.5 258.8 L254.6 257.9 L254.8 257.0 L255.2 256.2 L255.7 255.4 L256.4 254.7 L257.2 254.0 L258.1 253.5 L259.1 253.1 L260.1 252.8 L261.2 252.8 L262.4 252.9 L263.5 253.1 L264.7 253.6 L265.7 254.2 L266.7 255.0 L267.6 256.0 L268.3 257.1 L268.9 258.4 L269.3 259.8 L269.4 261.2 L269.4 262.7 L269.1 264.2 L268.6 265.7 L267.8 267.1 L266.8 268.4 L265.6 269.6 L264.2 270.6 L262.6 271.4 L260.9 272.0 L259.0 272.3 L257.1 272.3 L255.1 272.0 L253.2 271.4 L251.3 270.5 L249.5 269.3 L247.9 267.8 L246.5 266.1 L245.4 264.0 L244.5 261.8 L244.0 259.4 L243.9 256.9 L244.1 254.4 L244.8 251.8 L245.8 249.3 L247.3 247.0 L249.2 244.8 L251.4 242.9 L253.9 241.3 L256.8 240.1 L259.8 239.3 L263.0 239.0 L266.4 239.1 L269.7 239.8 L273.0 241.1 L276.1 242.8 L279.1 245.1 L281.7 247.8 L283.9 251.0 L285.6 254.6 L286.8 258.6 L287.4 262.7 L287.4 267.0 L286.7 271.4 L285.3 275.7 L283.2 279.9 L280.4 283.8 L277.0 287.3 L273.0 290.4 L268.4 292.8 L263.4 294.6 L258.1 295.7 L252.5 295.9 L246.8 295.2 L241.1 293.7 L235.6 291.2 L230.4 287.8 L225.6 283.6 L221.4 278.6 L218.0 272.8 L215.4 266.5 L213.7 259.6 L213.1 252.4 L213.6 244.9 L215.3 237.5 L218.2 230.2 L222.2 223.2 L227.4 216.8 L233.7 211.1 L240.9 206.3 L249.0 202.6 L257.8 200.0 L267.2 198.8 L276.8 199.1 L286.6 200.8 L296.2 204.1 L305.4 209.0 L314.0 215.3 L321.8 223.1 L328.4 232.2 L333.7 242.5 L337.5 253.7 L339.6 265.7 L339.9 278.2 L338.2 290.9 L334.5 303.6 L328.7 315.8 L321.0 327.4 L311.4 337.8 L300.0 347.0 L287.0 354.5 L272.6 360.0 L257.2 363.4 L241.0 364.5 L224.5 363.0 L207.9 359.0 L191.7 352.2 L176.3 342.9 L162.2 331.1"
-            fill="none" stroke="#E0B36C" stroke-width="1.5" stroke-linecap="round"/>
+            fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
     </defs>
   </svg>
 
@@ -568,37 +613,97 @@
       resultBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
 
-    // Twinkling stars - randomized placement/size/timing on every load
-    (function generateStars() {
-      const COLORS = ['gold', 'yellow', 'blue'];
-      const PX_PER_STAR = 140; // density: one star per ~140px of section height
+    // Twinkling stars (dark theme) / static faint digits (light theme)
+    const STAR_COLORS = ['gold', 'yellow', 'blue'];
+    const PX_PER_STAR = 140; // density: one star per ~140px of section height
 
-      function randomizeStar(span) {
-        span.className = 'float-num ' + COLORS[Math.floor(Math.random() * COLORS.length)];
-        span.textContent = Math.floor(Math.random() * 9) + 1;
-        span.style.top = (Math.random() * 88 + 4).toFixed(1) + '%';
-        span.style.left = (Math.random() * 88 + 4).toFixed(1) + '%';
-        span.style.fontSize = (Math.random() * 2 + 0.8).toFixed(2) + 'rem';
+    function randomizeStar(span, animated) {
+      span.textContent = Math.floor(Math.random() * 9) + 1;
+      span.style.top = (Math.random() * 88 + 4).toFixed(1) + '%';
+      span.style.left = (Math.random() * 88 + 4).toFixed(1) + '%';
+      span.style.fontSize = (Math.random() * 2 + 0.8).toFixed(2) + 'rem';
+      if (animated) {
+        span.className = 'float-num ' + STAR_COLORS[Math.floor(Math.random() * STAR_COLORS.length)];
         span.style.setProperty('--dim', (Math.random() * 0.15 + 0.15).toFixed(2));
         span.style.setProperty('--peak', (Math.random() * 0.2 + 0.75).toFixed(2));
+      } else {
+        span.className = 'float-num light-static';
+        span.style.removeProperty('--dim');
+        span.style.removeProperty('--peak');
       }
+    }
 
+    (function generateStars() {
+      const isLight = document.documentElement.getAttribute('data-theme') === 'light';
       document.querySelectorAll('.section-stars').forEach(container => {
         const section = container.parentElement;
+        const alwaysAnimated = section.id === 'contact'; // permanent "night window"
+        const animated = alwaysAnimated || !isLight;
         const count = Math.max(2, Math.round(section.offsetHeight / PX_PER_STAR));
         for (let i = 0; i < count; i++) {
           const span = document.createElement('span');
-          randomizeStar(span);
-          span.style.animationDuration = (Math.random() * 9 + 5).toFixed(1) + 's';
-          span.style.animationDelay = (Math.random() * 7).toFixed(1) + 's';
-          // Each time this star's twinkle loop completes (fully dimmed, at the loop
-          // boundary), jump it to a brand new spot - so stars appear to blink out
-          // and reappear elsewhere instead of just pulsing in place forever.
-          span.addEventListener('animationiteration', () => randomizeStar(span));
+          randomizeStar(span, animated);
+          if (animated) {
+            span.style.animationDuration = (Math.random() * 9 + 5).toFixed(1) + 's';
+            span.style.animationDelay = (Math.random() * 7).toFixed(1) + 's';
+            // Each time this star's twinkle loop completes (fully dimmed, at the loop
+            // boundary), jump it to a brand new spot - so stars appear to blink out
+            // and reappear elsewhere instead of just pulsing in place forever.
+            span.addEventListener('animationiteration', () => randomizeStar(span, true));
+          }
           container.appendChild(span);
         }
       });
     })();
+
+    // Called when the visitor flips the theme toggle (Task 2, already implemented) -
+    // updates stars already in the DOM in place, without recreating them.
+    function applyStarsTheme(theme) {
+      document.querySelectorAll('.section-stars').forEach(container => {
+        const section = container.parentElement;
+        if (section.id === 'contact') return; // stays a permanent night window always
+        const animated = theme !== 'light';
+        container.querySelectorAll('.float-num').forEach(span => {
+          if (animated) {
+            span.className = 'float-num ' + STAR_COLORS[Math.floor(Math.random() * STAR_COLORS.length)];
+            span.style.setProperty('--dim', (Math.random() * 0.15 + 0.15).toFixed(2));
+            span.style.setProperty('--peak', (Math.random() * 0.2 + 0.75).toFixed(2));
+            span.style.animationDuration = (Math.random() * 9 + 5).toFixed(1) + 's';
+            span.style.animationDelay = (Math.random() * 7).toFixed(1) + 's';
+          } else {
+            span.className = 'float-num light-static';
+            span.style.removeProperty('--dim');
+            span.style.removeProperty('--peak');
+            span.style.removeProperty('animation-duration');
+            span.style.removeProperty('animation-delay');
+          }
+        });
+      });
+    }
+
+    // Theme toggle (light/dark)
+    const THEME_KEY = 'numerology-theme';
+    const themeToggleBtn = document.querySelector('.theme-toggle');
+
+    function updateToggleButton(theme) {
+      themeToggleBtn.setAttribute('aria-label', theme === 'light' ? 'עבור למצב כהה' : 'עבור למצב בהיר');
+      themeToggleBtn.textContent = theme === 'light' ? '🌙' : '☀️';
+    }
+
+    updateToggleButton(document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark');
+
+    themeToggleBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+      const next = current === 'light' ? 'dark' : 'light';
+      if (next === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      } else {
+        document.documentElement.removeAttribute('data-theme');
+      }
+      localStorage.setItem(THEME_KEY, next);
+      updateToggleButton(next);
+      applyStarsTheme(next);
+    });
 
     // Mobile nav toggle
     const menuBtn = document.querySelector('.menu-btn');
